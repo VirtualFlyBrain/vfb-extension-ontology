@@ -1,0 +1,69 @@
+format-version: 1.2
+ontology: vfbext/imports/fbbt_import
+
+[Term]
+id: FBbt:10000000
+name: anatomical entity
+namespace: fly_anatomy.ontology
+alt_id: FBbt_root:00000000
+def: "Anatomical entity which is part_of Drosophila melanogaster." [CARO:MAH]
+subset: cur
+subset: EmbDevSlim
+subset: larval_OF
+synonym: "Drosophila" RELATED []
+disjoint_from: PATO:0000001 ! quality
+
+[Term]
+id: GO:0008150
+name: biological_process
+namespace: fly_anatomy.ontology
+def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
+synonym: "biological process" EXACT []
+synonym: "physiological process" EXACT []
+synonym: "single organism process" RELATED []
+synonym: "single-organism process" RELATED []
+
+[Term]
+id: PATO:0000001
+name: quality
+namespace: fly_anatomy.ontology
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
+synonym: "trait" EXACT []
+
+[Typedef]
+id: has_part
+name: has_part
+namespace: relationship
+xref: BFO:0000051
+xref: OBO_REL:has_part
+is_transitive: true
+is_a: overlaps ! overlaps
+
+[Typedef]
+id: inheres_in
+name: inheres_in
+namespace: fly_anatomy.ontology
+def: "A relationship between a dependent continuant, for example a quality such as color, and an independent continuant, such as an eye." []
+comment: Example red (PATO) inheres_in some eye (FBbt).
+xref: RO:0000052
+
+[Typedef]
+id: overlaps
+name: overlaps
+namespace: fly_anatomy.ontology
+xref: RO:0002131
+holds_over_chain: has_part overlaps
+holds_over_chain: has_part part_of
+transitive_over: part_of ! part of
+expand_expression_to: "BFO_0000051 some (BFO_0000050 some ?Y)" []
+
+[Typedef]
+id: part_of
+name: part of
+namespace: relationship
+xref: BFO:0000050
+xref: OBO_REL:part_of
+is_transitive: true
+is_a: overlaps ! overlaps
+inverse_of: has_part ! has_part
+
