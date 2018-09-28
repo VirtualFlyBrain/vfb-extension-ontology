@@ -10,8 +10,9 @@
 # these can be overwritten on the command line
 
 OBO=http://purl.obolibrary.org/obo
+VFB=fbbt/vfb
 ONT=vfbext
-BASE=$(OBO)/$(ONT)
+BASE=$(OBO)/$(VFB)
 SRC=$(ONT)-edit.owl
 RELEASEDIR=../..
 ROBOT= robot
@@ -26,10 +27,10 @@ DOSDPT=dosdp-tools
 # Top-level targets
 # ----------------------------------------
 
-all: all_imports sparql_test patterns $(ONT).owl $(ONT).obo 
+all: all_imports sparql_test $(ONT).owl $(ONT).obo $(ONT)_merged.json
 test: sparql_test all
 prepare_release: all
-	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
+	cp $(ONT).owl $(ONT).obo $(ONT)_merged.json $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
 	cp imports/*.owl $(RELEASEDIR)/imports &&\
 	cp imports/*.obo $(RELEASEDIR)/imports &&\
@@ -46,8 +47,19 @@ prepare_release: all
 # after that we annotate the ontology with the release versionInfo
 $(ONT).owl: $(SRC)
 	$(ROBOT)  reason -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+
 $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
+
+$(ONT).json: $(ONT).owl
+	$(ROBOT) convert -i $< -f json -o $@
+
+$(ONT)_merged.owl: $(ONT).owl
+	$(ROBOT) merge --collapse-import-closure -i $< -o $@
+
+$(ONT)_merged.json: $(ONT).owl
+	$(ROBOT) convert -i $< -f json -o $@
+
 
 # ----------------------------------------
 # Import modules
@@ -78,7 +90,7 @@ all_imports: $(IMPORTS_OWL)
 
 # Use ROBOT, driven entirely by terms lists NOT from source ontology
 imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
-	$(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --method BOT -O $(BASE)/$@ -o $@
+	$(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --method STAR -O $(BASE)/$@ -o $@
 .PRECIOUS: imports/%_import.owl
 
 # convert imports to obo.
@@ -105,7 +117,8 @@ release: $(ONT).owl $(ONT).obo
 
 # these live in the ../sparql directory, and have suffix -violation.sparql
 # adding the name here will make the violation check live
-VCHECKS = equivalent-classes trailing-whitespace owldef-self-reference xref-syntax nolabels
+
+VCHECKS = trailing-whitespace owldef-self-reference xref-syntax nolabels # equivalent-classes
 
 # Only needed until robot supports catalogs
 
