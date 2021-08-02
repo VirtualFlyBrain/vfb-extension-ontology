@@ -1,0 +1,29 @@
+id: vfbext
+title: "Drosophila Anatomy Ontology"
+github_org: FlyBase
+repo: drosophila-anatomy-ontology
+report_fail_on: none
+use_dosdps: FALSE
+namespaces: 
+  - http://purl.obolibrary.org/obo/FBbt/VFBext_
+release_artefacts: 
+  - base
+  - simple
+  - non-classified
+  - full
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products:
+    - id: bfo
+    - id: ro
+    - id: caro
+    - id: fbbt
+    - id: obi
+edit_format: owl
+robot_java_args: '-Xmx8G'
+allow_equivalents: asserted-only
+release_date: TRUE
