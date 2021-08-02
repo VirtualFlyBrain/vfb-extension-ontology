@@ -4,7 +4,6 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/caro_import.owl" uri="imports/caro_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/fbbt_import.owl" uri="imports/fbbt_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/obi_import.owl" uri="imports/obi_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
