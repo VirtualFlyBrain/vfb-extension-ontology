@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbbt/vfb/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbbt/vfb/imports/caro_import.owl" uri="imports/caro_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbbt/vfb/imports/fbbt_import.owl" uri="imports/fbbt_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbbt/vfb/imports/obi_import.owl" uri="imports/obi_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbbt/vfb/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/fbbt/vfb/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/caro_import.owl" uri="imports/caro_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/fbbt_import.owl" uri="imports/fbbt_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/vfbext/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
