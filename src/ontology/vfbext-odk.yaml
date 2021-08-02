@@ -5,7 +5,8 @@ repo: drosophila-anatomy-ontology
 report_fail_on: none
 use_dosdps: FALSE
 namespaces: 
-  - http://purl.obolibrary.org/obo/FBbt/VFB/VFBext_
+  - http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_
+  - http://purl.obolibrary.org/obo/fbbt/vfb/VFB_
 release_artefacts: 
   - base
   - simple

@@ -85,7 +85,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  bfo ro caro fbbt obi
+IMPORTS =  ro caro fbbt obi
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -246,15 +246,6 @@ refresh-%:
 IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
-
-
-## ONTOLOGY: bfo
-## Copy of bfo is re-downloaded whenever source changes
-mirror/bfo.trigger: $(SRC)
-
-mirror/bfo.owl: mirror/bfo.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/bfo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: mirror/%.owl
 
 
 ## ONTOLOGY: ro
