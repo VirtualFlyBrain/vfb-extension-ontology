@@ -143,9 +143,10 @@ AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/depicts> "depicts")
 #   Classes
 ############################
 
-# Class: vfb:VFB_10000005 (cluster)
+# Class: vfb:VFB_10000005 (cell cluster)
 
-AnnotationAssertion(rdfs:label vfb:VFB_10000005 "cluster")
+AnnotationAssertion(rdfs:label vfb:VFB_10000005 "cell cluster")
+SubClassOf(vfb:VFB_10000005 obo:BFO_0000004)
 
 # Class: vfb:VFBext_0000004 (expression pattern fragment)
 
@@ -173,6 +174,7 @@ SubClassOf(vfb:VFBext_0000007 vfb:VFBext_0000014)
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000010 "2018-09-26T07:54:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000010 "intersectional expression pattern"@en)
 AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000010 "dos"^^xsd:string)
+SubClassOf(vfb:VFBext_0000010 obo:FBbt_10000000)
 
 # Class: vfb:VFBext_0000014 (channel)
 
