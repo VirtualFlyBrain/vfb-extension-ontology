@@ -8,7 +8,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(vfb2:=<http://purl.obolibrary.org/obo/fbbt/vfb#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
-Prefix(oboInOwl1:=<ttp://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/fbbt/vfb/vfb_ext.owl>
@@ -55,7 +54,7 @@ Declaration(AnnotationProperty(oboInOwl:SubsetProperty))
 Declaration(AnnotationProperty(oboInOwl:creation_date))
 Declaration(AnnotationProperty(oboInOwl:hasDbXref))
 Declaration(AnnotationProperty(oboInOwl:inSubset))
-Declaration(AnnotationProperty(oboInOwl1:created_by))
+Declaration(AnnotationProperty(oboInOwl:created_by))
 ############################
 #   Annotation Properties
 ############################
@@ -145,7 +144,7 @@ SubObjectPropertyOf(vfb:VFBext_0000003 vfb:VFBext_0000001)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:17088209") <http://purl.obolibrary.org/obo/IAO_0000115> vfb:VFBext_0000008 "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000008 "2018-09-26T07:48:55Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000008 "has hemidriver"@en)
-AnnotationAssertion(oboInOwl1:created_by vfb:VFBext_0000008 "dos"^^xsd:string)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000008 "dos"^^xsd:string)
 ObjectPropertyDomain(vfb:VFBext_0000008 vfb:VFBext_0000010)
 
 # Object Property: vfb:VFBext_0000009 (has driver)
@@ -153,9 +152,9 @@ ObjectPropertyDomain(vfb:VFBext_0000008 vfb:VFBext_0000010)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:8223268") Annotation(oboInOwl:hasDbXref "Wikipedia:GAL4/UAS_system") <http://purl.obolibrary.org/obo/IAO_0000115> vfb:VFBext_0000009 "A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements.")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000009 "2018-09-26T07:49:10Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000009 "has driver"@en)
-AnnotationAssertion(oboInOwl1:created_by vfb:VFBext_0000009 "dos"^^xsd:string)
 SubObjectPropertyOf(vfb:VFBext_0000009 <http://purl.obolibrary.org/obo/RO_0002292>)
 ObjectPropertyDomain(vfb:VFBext_0000009 <http://purl.obolibrary.org/obo/CARO_0030002>)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000009 "dos"^^xsd:string)
 
 # Object Property: <http://xmlns.com/foaf/0.1/depicts> (depicts)
 
@@ -193,14 +192,14 @@ SubClassOf(vfb:VFBext_0000006 <http://xmlns.com/foaf/0.1/image>)
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000007 "2018-05-15T15:53:38Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment vfb:VFBext_0000007 "A single channel image that is used as a template for image registration.")
 AnnotationAssertion(rdfs:label vfb:VFBext_0000007 "template image"@en)
-AnnotationAssertion(oboInOwl1:created_by vfb:VFBext_0000007 "dos"^^xsd:string)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000007 "dos"^^xsd:string)
 SubClassOf(vfb:VFBext_0000007 vfb:VFBext_0000014)
 
 # Class: vfb:VFBext_0000010 (intersectional expression pattern)
 
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000010 "2018-09-26T07:54:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000010 "intersectional expression pattern"@en)
-AnnotationAssertion(oboInOwl1:created_by vfb:VFBext_0000010 "dos"^^xsd:string)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000010 "dos"^^xsd:string)
 
 # Class: vfb:VFBext_0000014 (channel)
 
