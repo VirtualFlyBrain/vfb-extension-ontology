@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: vfbext/releases/2021-08-03/vfbext-simple.owl
-date: 03:08:2021 10:42
+date: 03:08:2021 12:45
 subsetdef: clone ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""

@@ -48,7 +48,7 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "03:08:2021 10:42"
+            "val": "03:08:2021 12:45"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",

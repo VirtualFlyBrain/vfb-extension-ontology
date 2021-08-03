@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-simple.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-08-03/vfbext-simple.owl"/>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">03:08:2021 10:42</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">03:08:2021 12:45</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-03</owl:versionInfo>
     </owl:Ontology>
