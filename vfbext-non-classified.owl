@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vfbext.owl#"
-     xml:base="http://purl.obolibrary.org/obo/vfbext.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vfbext/vfbext-non-classified.owl#"
+     xml:base="http://purl.obolibrary.org/obo/vfbext/vfbext-non-classified.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -21,8 +21,8 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboInOwl2="ttp://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-08-02/vfbext.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-non-classified.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-08-02/vfbext-non-classified.owl"/>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02:08:2021 15:40</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-02</owl:versionInfo>
@@ -1485,6 +1485,10 @@ Examples include: the relationship between two channels collected simultaneously
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -2978,19 +2982,6 @@ For example, A and B may be gene products and binding of B by A positively regul
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000096"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process that has specified output a software product and that involves the creation of source code.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -3016,12 +3007,6 @@ For example, A and B may be gene products and binding of B by A positively regul
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">creating a data set</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A planned process that has a data set as its specified output.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -3791,18 +3776,6 @@ For example, A and B may be gene products and binding of B by A positively regul
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002266"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0010000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
         <oboInOwl:id>CARO:0000003</oboInOwl:id>
@@ -3817,7 +3790,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <!-- http://purl.obolibrary.org/obo/CARO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
         <obo:IAO_0000112>Examples include feces, urine, blood, blood plasma, lymph, hemolymph, cerbro-spinal fluid.  This class does not encompass anatomical entities with inherent 3D structure such as dentine and arthropod cuticle.</obo:IAO_0000112>
         <obo:IAO_0000115>Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body and that does not have inherent 3D shape generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>portion of organism substance</oboInOwl:hasExactSynonym>
@@ -3844,12 +3817,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
         <owl:disjointWith>
             <owl:Restriction>
@@ -3905,7 +3872,6 @@ For example, A and B may be gene products and binding of B by A positively regul
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010004"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
         <obo:IAO_0000115>Anatomical structure that is an individual member of a clade and, at some point in its life-cycle, consists of more than one cell.</obo:IAO_0000115>
         <oboInOwl:id>CARO:0000012</oboInOwl:id>
         <rdfs:comment>MH: Can&apos;t define this class based on 2 or more cells because most multi cellular organisms (if not all) have only a single cell at some point in life history. 
@@ -3921,8 +3887,7 @@ MH: sexual subtypes should probably be logically defined based on sexual process
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000013">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0005623"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005623"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000014"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000042"/>
@@ -3942,7 +3907,13 @@ MH: sexual subtypes should probably be logically defined based on sexual process
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000014">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000042"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
@@ -3989,8 +3960,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000042"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
@@ -4006,7 +3975,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
         <obo:IAO_0000115>A multicellular anatomical structure that is associated with an embryo and derived from the zygote from which it develops, but which does not contribute to the embryo proper or to structures that are part of the same organism after embryogenesis.</obo:IAO_0000115>
@@ -4022,7 +3990,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
     <!-- http://purl.obolibrary.org/obo/CARO_0001000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4120,14 +4087,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001993"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>An anatomical structure that has more than one cell as a part.</obo:IAO_0000115>
         <obo:IAO_0000117>djs93</obo:IAO_0000117>
         <obo:IAO_creation_date>Sun Feb 27 10:53:00 GMT 2011</obo:IAO_creation_date>
@@ -4158,7 +4117,8 @@ MH: sexual subtypes should probably be logically defined based on sexual process
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010004">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
         <obo:IAO_0000115>An individual member of a clade of cellular organisms.</obo:IAO_0000115>
         <obo:IAO_0000117>mah</obo:IAO_0000117>
         <obo:IAO_creation_date>7.16.2011</obo:IAO_creation_date>
@@ -4188,19 +4148,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0010001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Material anatomical entity consisting of multiple anatomical structures that are not connected to each other.</obo:IAO_0000115>
         <oboInOwl:id>CARO:0000054</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
@@ -4295,7 +4242,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
     <!-- http://purl.obolibrary.org/obo/CL_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
         <obo:IAO_0000115>A cell that is found in a natural setting, which includes multicellular organism cells &apos;in vivo&apos; (i.e. part of an organism), and unicellular organisms &apos;in environment&apos; (i.e. part of a natural environment).</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:comment>To accommodate unicellular organisms better, &apos;cell in vivo&apos; has been re-labeled &apos;native cell&apos; to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. &apos;Native&apos; is intended to contrast with &apos;in vitro&apos;, which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12).</rdfs:comment>
@@ -4414,9 +4360,7 @@ MH: sexual subtypes should probably be logically defined based on sexual process
 
     <!-- http://purl.obolibrary.org/obo/GO_0005623 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005623">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005623"/>
     
 
 
@@ -4500,16 +4444,13 @@ MH: sexual subtypes should probably be logically defined based on sexual process
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019012">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0044464 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044464">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000014"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044464"/>
     
 
 
@@ -4621,12 +4562,6 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">information carrier</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -4941,17 +4876,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">material information bearer</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">A page of a paperback novel with writing on it. The paper itself is a material information bearer, the pattern of ink is the information carrier.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a brain</obo:IAO_0000112>
@@ -5131,7 +5055,7 @@ clustering algorithm.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <obo:IAO_0000111>Viruses</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Viruses</rdfs:label>
@@ -5154,7 +5078,6 @@ clustering algorithm.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12884 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12884">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Viroids</rdfs:label>
     </owl:Class>
@@ -5164,7 +5087,6 @@ clustering algorithm.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010004"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>cellular organisms</rdfs:label>
     </owl:Class>
@@ -5318,17 +5240,6 @@ clustering algorithm.</obo:IAO_0000115>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111>planned process</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
         <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
@@ -5406,12 +5317,6 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000663"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111>classified data set</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A data set that is produced as the output of a class prediction data transformation and consists of a data set with assigned class labels.</obo:IAO_0000115>
@@ -5438,12 +5343,6 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">processed material</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -5468,12 +5367,6 @@ objectives is a planned process.</obo:IAO_0000116>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5597,12 +5490,6 @@ for now.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">regulatory agency</obo:IAO_0000111>
         <obo:IAO_0000112>The US Environmental Protection Agency</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -5652,8 +5539,8 @@ for now.</obo:IAO_0000116>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000458"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111>manufacturing</obo:IAO_0000111>
@@ -5734,12 +5621,6 @@ for now.</obo:IAO_0000116>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200175"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111>clustered data set</obo:IAO_0000111>
         <obo:IAO_0000112>A clustered data set is the output of a K means clustering data transformation</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -5778,12 +5659,6 @@ for now.</obo:IAO_0000116>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111>specimen collection process</obo:IAO_0000111>
@@ -5893,12 +5768,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000704"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">decision tree building data transformation</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A decision tree building data transformation is a data transformation that has objective decision tree induction.</obo:IAO_0000115>
@@ -5959,6 +5828,12 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">k-nearest neighbors</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A k-nearest neighbors is a data transformation which achieves a class discovery or partitioning objective, in which an input data object with vector y is assigned to a class label based upon the k closest training data set points to y; where k is the largest value that class label is assigned.</obo:IAO_0000115>
@@ -5974,6 +5849,12 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000749">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000707"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000704"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">CART</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A CART (classification and regression trees) is a data transformation method for producing a classification or regression model with a tree-based structure.</obo:IAO_0000115>
@@ -5995,12 +5876,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200171"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200188"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111>statistical model validation</obo:IAO_0000111>
         <obo:IAO_0000112>Using the expression levels of 20 proteins to predict whether a cancer patient will respond to a drug. A practical goal would be to determine which subset of the 20 features should be used to produce the best predictive model. - wikipedia</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -6032,12 +5907,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111>manufacturer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>A person or organization that has a manufacturer role</obo:IAO_0000115>
@@ -6579,12 +6448,6 @@ JZ: based on textual definition of edited document, it can be defined as N&amp;S
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111>material supplier</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>A person or organization that provides material supplies to other people or organizations.</obo:IAO_0000115>
@@ -6642,12 +6505,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000112"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">specimen</obo:IAO_0000111>
         <obo:IAO_0000112>Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -6694,12 +6551,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
@@ -6729,6 +6580,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000792"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200188"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">leave one out cross validation method</obo:IAO_0000111>
         <obo:IAO_0000112>The authors conducted  leave-one-out cross validation to estimate the strength and accuracy of the differentially expressed filtered genes. http://bioinformatics.oxfordjournals.org/cgi/content/abstract/19/3/368</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -6759,6 +6616,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200172"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">k-means clustering</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -6947,12 +6810,6 @@ information_encoding
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200172"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">partitioning data transformation</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A partitioning data transformation is a data transformation that has objective partitioning.</obo:IAO_0000115>
@@ -7470,13 +7327,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0030002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-04T10:55:59Z</oboInOwl:creation_date>
         <rdfs:comment>A multicellular structure that is part of an expression pattern.</rdfs:comment>
         <rdfs:label xml:lang="en">expression pattern fragment</rdfs:label>

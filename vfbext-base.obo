@@ -1,0 +1,114 @@
+format-version: 1.2
+data-version: vfbext/releases/2021-08-02/vfbext-base.owl
+date: 02:08:2021 15:40
+subsetdef: clone ""
+subsetdef: neuron ""
+subsetdef: ns_part ""
+subsetdef: synaptic_neuropil ""
+subsetdef: tract ""
+remark: VFB extension ontology
+ontology: vfbext/vfbext-base
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: owl:versionInfo "2021-08-02" xsd:string
+
+[Term]
+id: CARO:0030002
+name: expression pattern
+
+[Term]
+id: VFB:10000005
+name: cluster
+
+[Term]
+id: VFBext:0000004
+name: expression pattern fragment
+comment: A multicellular structure that is part of an expression pattern.
+intersection_of: FBbt:00100313
+intersection_of: BFO:0000050 CARO:0030002 ! expression pattern
+property_value: created_by "dos" xsd:string
+creation_date: 2018-03-04T10:55:59Z
+
+[Term]
+id: VFBext:0000006
+name: multi channel image
+is_a: http://xmlns.com/foaf/0.1/image
+
+[Term]
+id: VFBext:0000007
+name: template image
+comment: A single channel image that is used as a template for image registration.
+is_a: VFBext:0000014 ! channel
+property_value: created_by "dos" xsd:string
+creation_date: 2018-05-15T15:53:38Z
+
+[Term]
+id: VFBext:0000010
+name: intersectional expression pattern
+property_value: created_by "dos" xsd:string
+creation_date: 2018-09-26T07:54:17Z
+
+[Term]
+id: VFBext:0000014
+name: channel
+is_a: http://xmlns.com/foaf/0.1/image
+
+[Typedef]
+id: OBI:0000312
+name: is_specified_output_of
+
+[Typedef]
+id: RO:0002026
+name: in_register_with
+
+[Typedef]
+id: RO:0002350
+name: member_of
+
+[Typedef]
+id: RO:0002351
+name: has_member
+
+[Typedef]
+id: VFBext:0000001
+name: has_channel
+
+[Typedef]
+id: VFBext:0000002
+name: has_background_channel
+is_a: VFBext:0000001 ! has_channel
+
+[Typedef]
+id: VFBext:0000003
+name: has_signal_channel
+is_a: VFBext:0000001 ! has_channel
+
+[Typedef]
+id: VFBext:0000008
+name: has hemidriver
+def: "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements." [PMID:17088209]
+property_value: created_by "dos" xsd:string
+domain: VFBext:0000010 ! intersectional expression pattern
+creation_date: 2018-09-26T07:48:55Z
+
+[Typedef]
+id: VFBext:0000009
+name: has driver
+def: "A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements." [PMID:8223268, Wikipedia:GAL4/UAS_system]
+property_value: created_by "dos" xsd:string
+domain: CARO:0030002 ! expression pattern
+is_a: RO:0002292
+creation_date: 2018-09-26T07:49:10Z
+
+[Typedef]
+id: http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7
+name: has_exemplar
+
+[Typedef]
+id: http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0
+name: exemplar_of
+is_a: RO:0002350 ! member_of
+
+[Typedef]
+id: http://xmlns.com/foaf/0.1/depicts
+name: depicts
+

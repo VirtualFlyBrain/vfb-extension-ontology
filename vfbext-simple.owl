@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vfbext/vfbext-simple.owl#"
+     xml:base="http://purl.obolibrary.org/obo/vfbext/vfbext-simple.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vfb="http://purl.obolibrary.org/obo/fbbt/vfb#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vfb1="http://purl.obolibrary.org/obo/fbbt/vfb/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:oboInOwl2="ttp://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-simple.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-08-02/vfbext-simple.owl"/>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02:08:2021 15:41</oboInOwl:date>
+        <rdfs:comment>VFB extension ontology</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-02</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000111>textual definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_gp2term -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_gp2term">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_ontology -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_ontology">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb#clone -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb#clone">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb#neuron -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb#neuron">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb#ns_part -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb#ns_part">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb#synaptic_neuropil -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb#synaptic_neuropil">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb#tract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb#tract">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005">
+        <rdfs:label>source_data_link</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <obo:IAO_0000117>Mark Miller</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-11T13:47:29Z</dc:date>
+        <rdfs:label>has_license</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references">
+        <rdfs:label>has_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:label>has_source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label>subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- ttp://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="ttp://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/BFO"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBO_REL:part_of</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <rdfs:label>part of</rdfs:label>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label>part_of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7">
+        <rdfs:label xml:lang="en">has_exemplar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <obo:IAO_0000111>is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>is_specified_output_of</rdfs:label>
+        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002026 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002026">
+        <obo:IAO_0000115>A relationship that holds between two images, A and B, where:
+A depicts X;
+B depicts Y;
+X and Y are both of type T&apos;
+C is a 2 layer image consiting of layers A and B;
+A and B are aligned in C according to a shared co-ordinate framework so that common features of X and Y are co-incident with each other.
+Note: A and B may be 2D or 3D.
+Examples include: the relationship between two channels collected simultaneously from a confocal microscope; the relationship between an image dpeicting X and a painted annotation layer that delineates regions of X; the relationship between the tracing of a neuron on an EM stack and the co-ordinate space of the stack; the relationship between two separately collected images that have been brought into register via some image registration software.</obo:IAO_0000115>
+        <oboInOwl:created_by>dos</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-07T12:58:06Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">in register with</rdfs:label>
+        <rdfs:label>in_register_with</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002026"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A relationship that holds between two images, A and B, where:
+A depicts X;
+B depicts Y;
+X and Y are both of type T&apos;
+C is a 2 layer image consiting of layers A and B;
+A and B are aligned in C according to a shared co-ordinate framework so that common features of X and Y are co-incident with each other.
+Note: A and B may be 2D or 3D.
+Examples include: the relationship between two channels collected simultaneously from a confocal microscope; the relationship between an image dpeicting X and a painted annotation layer that delineates regions of X; the relationship between the tracing of a neuron on an EM stack and the co-ordinate space of the stack; the relationship between two separately collected images that have been brought into register via some image registration software.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dos</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002292 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002292">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>Inverse of &apos;expressed in&apos;</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>RO:0002292</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>expresses</oboInOwl:id>
+        <oboInOwl:shorthand>expresses</oboInOwl:shorthand>
+        <rdfs:label>expresses</rdfs:label>
+        <rdfs:label xml:lang="en">expresses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <obo:IAO_0000112>An organism that is a member of a population of organisms</obo:IAO_0000112>
+        <obo:IAO_0000115>is member of is a mereological relation between a item and a collection.</obo:IAO_0000115>
+        <obo:IAO_0000118>is member of</obo:IAO_0000118>
+        <obo:IAO_0000118>member part of</obo:IAO_0000118>
+        <obo:IAO_0000119>SIO</obo:IAO_0000119>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label xml:lang="en">member of</rdfs:label>
+        <rdfs:label>member_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <obo:IAO_0000115>has member is a mereological relation between a collection and an item.</obo:IAO_0000115>
+        <obo:IAO_0000119>SIO</obo:IAO_0000119>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+        <rdfs:label>has_member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+        <rdfs:label>exemplar_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001">
+        <rdfs:label>has_channel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000002">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001"/>
+        <rdfs:label>has_background_channel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000003 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001"/>
+        <rdfs:label>has_signal_channel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <obo:IAO_0000115>A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.</obo:IAO_0000115>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T07:48:55Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">has hemidriver</rdfs:label>
+        <oboInOwl2:created_by>dos</oboInOwl2:created_by>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:17088209</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000009 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000009">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+        <obo:IAO_0000115>A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements.</obo:IAO_0000115>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T07:49:10Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">has driver</rdfs:label>
+        <oboInOwl2:created_by>dos</oboInOwl2:created_by>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000009"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:8223268</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:GAL4/UAS_system</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depicts -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depicts">
+        <rdfs:label>depicts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005">
+        <rdfs:label>cluster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004">
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-04T10:55:59Z</oboInOwl:creation_date>
+        <rdfs:comment>A multicellular structure that is part of an expression pattern.</rdfs:comment>
+        <rdfs:label xml:lang="en">expression pattern fragment</rdfs:label>
+        <oboInOwl2:created_by>dos</oboInOwl2:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006">
+        <rdfs:label>multi channel image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-15T15:53:38Z</oboInOwl:creation_date>
+        <rdfs:comment>A single channel image that is used as a template for image registration.</rdfs:comment>
+        <rdfs:label xml:lang="en">template image</rdfs:label>
+        <oboInOwl2:created_by>dos</oboInOwl2:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010">
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T07:54:17Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">intersectional expression pattern</rdfs:label>
+        <oboInOwl2:created_by>dos</oboInOwl2:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014">
+        <rdfs:label>channel</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

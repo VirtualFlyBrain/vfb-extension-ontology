@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2021-08-02
+data-version: vfbext/releases/2021-08-02/vfbext-full.owl
 date: 02:08:2021 15:40
 subsetdef: clone ""
 subsetdef: core ""
@@ -27,7 +27,7 @@ subsetdef: RO:0002259 ""
 subsetdef: synaptic_neuropil ""
 subsetdef: tract ""
 remark: VFB extension ontology
-ontology: vfbext
+ontology: vfbext/vfbext-full
 property_value: owl:versionInfo "2021-08-02" xsd:string
 
 [Term]
