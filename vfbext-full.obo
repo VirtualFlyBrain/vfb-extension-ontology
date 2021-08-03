@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2021-08-02/vfbext-full.owl
-date: 02:08:2021 15:40
+data-version: vfbext/releases/2021-08-03/vfbext-full.owl
+date: 03:08:2021 10:41
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -28,7 +28,7 @@ subsetdef: synaptic_neuropil ""
 subsetdef: tract ""
 remark: VFB extension ontology
 ontology: vfbext/vfbext-full
-property_value: owl:versionInfo "2021-08-02" xsd:string
+property_value: owl:versionInfo "2021-08-03" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -354,7 +354,6 @@ intersection_of: has_characteristic PATO:0010000 ! maximally connected
 disjoint_from: CARO:0000004 ! organism substance
 relationship: has_characteristic PATO:0002266 ! 3-D shape
 relationship: has_characteristic PATO:0010000 ! maximally connected
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
 
 [Term]
 id: CARO:0000004
@@ -553,23 +552,11 @@ is_a: CARO:0020003 ! cellular anatomical structure
 relationship: has_part CARO:0000013 ! cell
 
 [Term]
-id: CL:0000000
-name: cell
-is_a: CARO:0000003 ! connected anatomical structure
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
-
-[Term]
 id: CL:0000003
 name: native cell
 def: "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment)." []
 comment: To accommodate unicellular organisms better, 'cell in vivo' has been re-labeled 'native cell' to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. 'Native' is intended to contrast with 'in vitro', which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12).
 is_a: CARO:0000013 ! cell
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
-
-[Term]
-id: CL:0000540
-name: neuron
-is_a: CL:0000000 ! cell
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 
 [Term]
@@ -610,7 +597,6 @@ subset: cur
 subset: EmbDevSlim
 subset: larval_OF
 synonym: "Drosophila" RELATED []
-disjoint_from: PATO:0000001 ! quality
 
 [Term]
 id: GO:0003674
@@ -635,8 +621,6 @@ alt_id: GO:0000004
 alt_id: GO:0007582
 alt_id: GO:0044699
 def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
-def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." []
-comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 subset: goslim_aspergillus
 subset: goslim_candida
@@ -653,9 +637,6 @@ synonym: "single organism process" RELATED []
 synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
 is_a: BFO:0000015 ! process
-property_value: IAO:0000118 "biological process" xsd:string
-property_value: IAO:0000118 "physiological process" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 created_by: jl
 creation_date: 2012-09-19T15:05:24Z
 
@@ -1609,7 +1590,7 @@ name: collection of specimens
 def: "A material entity that has two or more specimens as its parts." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0002351 OBI:0100051 {all_only="true"} ! has_member specimen
+intersection_of: RO:0002351 OBI:0100051 {all_only="true"} ! has member specimen
 property_value: http://purl.org/dc/elements/1.1/source "Biobank" xsd:string
 property_value: IAO:0000111 "collection of specimens" xsd:string
 property_value: IAO:0000112 "Blood cells collected from multiple donors over the course of a study." xsd:string
@@ -2158,12 +2139,8 @@ property_value: IAO:0000117 "James Malone" xsd:string
 id: PATO:0000001
 name: quality
 namespace: quality
-alt_id: PATO:0000072
-def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." [PATOC:GVG]
 synonym: "trait" EXACT []
-is_a: BFO:0000020 ! specifically dependent continuant
-property_value: IAO:0000589 "quality (PATO)" xsd:string
 
 [Term]
 id: PATO:0000051
@@ -2362,7 +2339,8 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: VFB:10000005
-name: cluster
+name: cell cluster
+is_a: BFO:0000004 ! independent continuant
 
 [Term]
 id: VFBext:0000004
@@ -2372,7 +2350,7 @@ is_a: FBbt:00100313 ! multicellular structure
 intersection_of: FBbt:00100313 ! multicellular structure
 intersection_of: part_of CARO:0030002 ! expression pattern
 relationship: part_of CARO:0030002 ! expression pattern
-property_value: created_by "dos" xsd:string
+created_by: dos
 creation_date: 2018-03-04T10:55:59Z
 
 [Term]
@@ -2385,13 +2363,14 @@ id: VFBext:0000007
 name: template image
 comment: A single channel image that is used as a template for image registration.
 is_a: VFBext:0000014 ! channel
-property_value: created_by "dos" xsd:string
+created_by: dos
 creation_date: 2018-05-15T15:53:38Z
 
 [Term]
 id: VFBext:0000010
 name: intersectional expression pattern
-property_value: created_by "dos" xsd:string
+is_a: FBbt:10000000 ! anatomical entity
+created_by: dos
 creation_date: 2018-09-26T07:54:17Z
 
 [Term]
@@ -2802,7 +2781,6 @@ creation_date: 2017-09-22T14:14:36Z
 [Typedef]
 id: RO:0002026
 name: in register with
-name: in_register_with
 def: "A relationship that holds between two images, A and B, where:\nA depicts X;\nB depicts Y;\nX and Y are both of type T'\nC is a 2 layer image consiting of layers A and B;\nA and B are aligned in C according to a shared co-ordinate framework so that common features of X and Y are co-incident with each other.\nNote: A and B may be 2D or 3D.\nExamples include: the relationship between two channels collected simultaneously from a confocal microscope; the relationship between an image dpeicting X and a painted annotation layer that delineates regions of X; the relationship between the tracing of a neuron on an EM stack and the co-ordinate space of the stack; the relationship between two separately collected images that have been brought into register via some image registration software." [GOC:dos]
 domain: http://xmlns.com/foaf/0.1/image
 range: http://xmlns.com/foaf/0.1/image
@@ -3053,7 +3031,6 @@ is_a: RO:0002334 ! regulated by
 [Typedef]
 id: RO:0002350
 name: member of
-name: member_of
 def: "is member of is a mereological relation between a item and a collection." []
 property_value: IAO:0000112 "An organism that is a member of a population of organisms" xsd:string
 property_value: IAO:0000118 "is member of" xsd:string
@@ -3061,12 +3038,11 @@ property_value: IAO:0000118 "member part of" xsd:string
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: RO:0001900 RO:0001901
 is_a: part_of ! part_of
-inverse_of: RO:0002351 ! has_member
+inverse_of: RO:0002351 ! has member
 
 [Typedef]
 id: RO:0002351
 name: has member
-name: has_member
 def: "has member is a mereological relation between a collection and an item." []
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: RO:0001900 RO:0001901
@@ -3373,17 +3349,6 @@ range: BFO:0000002 ! continuant
 is_a: RO:0002506 ! causal relation between entities
 
 [Typedef]
-id: RO:0002573
-name: has modifier
-def: "A relation that holds between an attribute or a qualifier and another attribute." []
-subset: ro-eco
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
-property_value: IAO:0000232 "This relation is intended to be used in combination with PATO, to be able to refine PATO quality classes using modifiers such as 'abnormal' and 'normal'. It has yet to be formally aligned into an ontological framework; it's not clear what the ontological status of the \"modifiers\" are." xsd:string
-domain: BFO:0000020 ! specifically dependent continuant
-range: BFO:0000020 ! specifically dependent continuant
-
-[Typedef]
 id: RO:0002578
 name: directly regulates
 def: "Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2." []
@@ -3576,17 +3541,17 @@ is_a: VFBext:0000001 ! has_channel
 id: VFBext:0000008
 name: has hemidriver
 def: "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements." [PMID:17088209]
-property_value: created_by "dos" xsd:string
 domain: VFBext:0000010 ! intersectional expression pattern
+created_by: dos
 creation_date: 2018-09-26T07:48:55Z
 
 [Typedef]
 id: VFBext:0000009
 name: has driver
 def: "A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements." [PMID:8223268, Wikipedia:GAL4/UAS_system]
-property_value: created_by "dos" xsd:string
 domain: CARO:0030002 ! expression pattern
 is_a: expresses ! expresses
+created_by: dos
 creation_date: 2018-09-26T07:49:10Z
 
 [Typedef]
@@ -3709,7 +3674,7 @@ name: has_exemplar
 [Typedef]
 id: http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0
 name: exemplar_of
-is_a: RO:0002350 ! member_of
+is_a: RO:0002350 ! member of
 
 [Typedef]
 id: http://xmlns.com/foaf/0.1/depicts

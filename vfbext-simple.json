@@ -26,11 +26,6 @@
           "sub": "http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/RO_0002351",
-          "pred": "inverseOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002350"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000002"
@@ -53,7 +48,7 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "02:08:2021 15:41"
+            "val": "03:08:2021 10:42"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -61,11 +56,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-08-02"
+            "val": "2021-08-03"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2021-08-02/vfbext-simple.json",
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2021-08-03/vfbext-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -239,68 +234,8 @@
               }
             ],
             "definition": {
-              "val": "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.",
+              "val": "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.",
               "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0000312",
-          "lbl": "is_specified_output_of",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "is_specified_output_of"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "is_specified_output_of"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "PERSON:Bjoern Peters"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/obi.owl"
-              }
-            ],
-            "definition": {
-              "val": "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/RO_0002026",
-          "lbl": "in register with",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2017-12-07T12:58:06Z"
-              }
-            ],
-            "definition": {
-              "val": "A relationship that holds between two images, A and B, where:\nA depicts X;\nB depicts Y;\nX and Y are both of type T'\nC is a 2 layer image consiting of layers A and B;\nA and B are aligned in C according to a shared co-ordinate framework so that common features of X and Y are co-incident with each other.\nNote: A and B may be 2D or 3D.\nExamples include: the relationship between two channels collected simultaneously from a confocal microscope; the relationship between an image dpeicting X and a painted annotation layer that delineates regions of X; the relationship between the tracing of a neuron on an EM stack and the co-ordinate space of the stack; the relationship between two separately collected images that have been brought into register via some image registration software.",
-              "xrefs": [
-                "GOC:dos"
-              ]
             }
           },
           "type": "PROPERTY"
@@ -341,7 +276,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002350",
-          "lbl": "member_of",
+          "lbl": "member of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -373,38 +308,17 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/RO_0002351",
-          "lbl": "has member",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "SIO"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0001900",
-                "val": "http://purl.obolibrary.org/obo/RO_0001901"
-              }
-            ],
-            "definition": {
-              "val": "has member is a mereological relation between a collection and an item.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004",
           "lbl": "expression pattern fragment",
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-03-04T10:55:59Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-03-04T10:55:59Z"
               }
             ],
             "comments": [
@@ -419,12 +333,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-05-15T15:53:38Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-05-15T15:53:38Z"
               }
             ],
             "comments": [
@@ -439,12 +353,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-09-26T07:48:55Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:48:55Z"
               }
             ],
             "definition": {
@@ -462,12 +376,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-09-26T07:49:10Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:49:10Z"
               }
             ],
             "definition": {
@@ -486,12 +400,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-09-26T07:54:17Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:54:17Z"
               }
             ]
           },
@@ -526,7 +440,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005",
-          "lbl": "cluster",
+          "lbl": "cell cluster",
           "type": "CLASS"
         },
         {

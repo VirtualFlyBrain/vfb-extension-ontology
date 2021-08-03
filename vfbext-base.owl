@@ -11,14 +11,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vfb1="http://purl.obolibrary.org/obo/fbbt/vfb#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:oboInOwl2="ttp://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-08-02/vfbext-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-08-03/vfbext-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02:08:2021 15:40</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">03:08:2021 10:41</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-02</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -118,6 +117,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
@@ -133,12 +138,6 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-    
-
-
-    <!-- ttp://www.geneontology.org/formats/oboInOwl#created_by -->
-
-    <owl:AnnotationProperty rdf:about="ttp://www.geneontology.org/formats/oboInOwl#created_by"/>
     
 
 
@@ -167,22 +166,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
-        <rdfs:label>is_specified_output_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002026 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002026">
-        <rdfs:label>in_register_with</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002292 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002292"/>
@@ -191,17 +174,7 @@
 
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
-        <rdfs:label>member_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
-        <rdfs:label>has_member</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
     
 
 
@@ -245,9 +218,9 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
         <obo:IAO_0000115>A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T07:48:55Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">has hemidriver</rdfs:label>
-        <oboInOwl2:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl2:created_by>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
@@ -264,9 +237,9 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CARO_0030002"/>
         <obo:IAO_0000115>A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T07:49:10Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">has driver</rdfs:label>
-        <oboInOwl2:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl2:created_by>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000009"/>
@@ -297,11 +270,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CARO_0030002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0030002">
-        <rdfs:label xml:lang="en">expression pattern</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0030002"/>
     
 
 
@@ -311,10 +288,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_10000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_10000000"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005">
-        <rdfs:label>cluster</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:label>cell cluster</rdfs:label>
     </owl:Class>
     
 
@@ -333,10 +317,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-04T10:55:59Z</oboInOwl:creation_date>
         <rdfs:comment>A multicellular structure that is part of an expression pattern.</rdfs:comment>
         <rdfs:label xml:lang="en">expression pattern fragment</rdfs:label>
-        <oboInOwl2:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl2:created_by>
     </owl:Class>
     
 
@@ -354,10 +338,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-15T15:53:38Z</oboInOwl:creation_date>
         <rdfs:comment>A single channel image that is used as a template for image registration.</rdfs:comment>
         <rdfs:label xml:lang="en">template image</rdfs:label>
-        <oboInOwl2:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl2:created_by>
     </owl:Class>
     
 
@@ -365,9 +349,10 @@
     <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_10000000"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T07:54:17Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">intersectional expression pattern</rdfs:label>
-        <oboInOwl2:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl2:created_by>
     </owl:Class>
     
 

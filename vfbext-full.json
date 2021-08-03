@@ -327,15 +327,6 @@
         },
         {
           "domainClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000020"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/RO_0002573",
-          "rangeClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000020"
-          ]
-        },
-        {
-          "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000031"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0000058",
@@ -530,6 +521,11 @@
           "sub": "http://purl.obolibrary.org/obo/CARO_0030000"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000004",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/GO_0003674"
@@ -583,11 +579,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000019"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0000001"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
@@ -765,11 +756,6 @@
           "sub": "http://purl.obolibrary.org/obo/CARO_0010000"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000003",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CL_0000000"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/CARO_0000006",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CARO_0000003"
@@ -880,11 +866,6 @@
           "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/CL_0000000",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CL_0000540"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/CL_0000003",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CARO_0000013"
@@ -908,6 +889,11 @@
           "obj": "http://purl.obolibrary.org/obo/FBbt_10000000",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/FBbt_00007016"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBbt_10000000",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/GO_0003674",
@@ -4169,7 +4155,7 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "02:08:2021 15:40"
+            "val": "03:08:2021 10:41"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -4177,11 +4163,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-08-02"
+            "val": "2021-08-03"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2021-08-02/vfbext-full.json",
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2021-08-03/vfbext-full.json",
         "xrefs": []
       },
       "nodes": [
@@ -5594,12 +5580,6 @@
           "id": "http://purl.obolibrary.org/obo/CARO_0000003",
           "lbl": "connected anatomical structure",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/caro.owl"
-              }
-            ],
             "comments": [
               "Note that the definition does not say 'generated exclusively by the co-ordinated expression of the organism's own genome', so this is still valid for cases where normal morphogenesis requires the actions of a facultative symbiont, or some looser dependency such as the a requirement for the presence of gut flora for normal gut development."
             ],
@@ -5958,19 +5938,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/CL_0000000",
-          "lbl": "cell",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/cl.owl"
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/CL_0000003",
           "lbl": "native cell",
           "meta": {
@@ -5987,19 +5954,6 @@
               "val": "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment).",
               "xrefs": []
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CL_0000540",
-          "lbl": "neuron",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/cl.owl"
-              }
-            ]
           },
           "type": "CLASS"
         },
@@ -6135,18 +6089,6 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "biological process"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "physiological process"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/go.owl"
-              },
-              {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
                 "val": "jl"
               },
@@ -6172,7 +6114,6 @@
               }
             ],
             "comments": [
-              "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.",
               "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this."
             ],
             "definition": {
@@ -17960,14 +17901,6 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000589",
-                "val": "quality (PATO)"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
-                "val": "PATO:0000072"
-              },
-              {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "quality"
               }
@@ -18881,7 +18814,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002026",
-          "lbl": "in_register_with",
+          "lbl": "in register with",
           "meta": {
             "basicPropertyValues": [
               {
@@ -19827,7 +19760,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002350",
-          "lbl": "member_of",
+          "lbl": "member of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -19860,7 +19793,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002351",
-          "lbl": "has_member",
+          "lbl": "has member",
           "meta": {
             "basicPropertyValues": [
               {
@@ -20603,34 +20536,6 @@
               "val": "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size).",
               "xrefs": []
             }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/RO_0002573",
-          "lbl": "has modifier",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Chris Mungall"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "http://www.ncbi.nlm.nih.gov/pubmed/20064205"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "This relation is intended to be used in combination with PATO, to be able to refine PATO quality classes using modifiers such as 'abnormal' and 'normal'. It has yet to be formally aligned into an ontological framework; it's not clear what the ontological status of the \"modifiers\" are."
-              }
-            ],
-            "definition": {
-              "val": "A relation that holds between an attribute or a qualifier and another attribute.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
-            ]
           },
           "type": "PROPERTY"
         },
@@ -22536,12 +22441,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-03-04T10:55:59Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-03-04T10:55:59Z"
               }
             ],
             "comments": [
@@ -22556,12 +22461,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-05-15T15:53:38Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-05-15T15:53:38Z"
               }
             ],
             "comments": [
@@ -22576,12 +22481,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-09-26T07:48:55Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:48:55Z"
               }
             ],
             "definition": {
@@ -22599,12 +22504,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-09-26T07:49:10Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:49:10Z"
               }
             ],
             "definition": {
@@ -22623,12 +22528,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2018-09-26T07:54:17Z"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
               },
               {
-                "pred": "ttp://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "dos"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:54:17Z"
               }
             ]
           },
@@ -22718,7 +22623,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005",
-          "lbl": "cluster",
+          "lbl": "cell cluster",
           "type": "CLASS"
         },
         {
