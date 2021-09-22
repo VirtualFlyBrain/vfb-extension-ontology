@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2021-08-03
-date: 03:08:2021 12:45
+data-version: releases/2021-09-22
+date: 22:09:2021 15:11
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -28,30 +28,7 @@ subsetdef: synaptic_neuropil ""
 subsetdef: tract ""
 remark: VFB extension ontology
 ontology: vfbext
-property_value: owl:versionInfo "2021-08-03" xsd:string
-
-[Term]
-id: APOLLO_SV:00000008
-name: software development
-def: "A planned process that has specified output a software product and that involves the creation of source code." []
-is_a: OBI:0000011 ! planned process
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "William R. Hogan" xsd:string
-property_value: IAO:0000119 http://en.wikipedia.org/wiki/Software_development xsd:string
-property_value: IAO:0000600 "A planned process resulting in a software product involving the creation of source code." xsd:string
-
-[Term]
-id: APOLLO_SV:00000796
-name: dataset creating
-def: "A planned process that has a data set as its specified output." []
-is_a: OBI:0000011 ! planned process
-intersection_of: OBI:0000011 ! planned process
-intersection_of: OBI:0000299 IAO:0000100 ! has_specified_output data set
-relationship: OBI:0000299 IAO:0000100 ! has_specified_output data set
-property_value: IAO:0000111 "creating a data set" xsd:string
-property_value: IAO:0000117 "William R. Hogan" xsd:string
-property_value: IAO:0000118 "data set creation" xsd:string
-property_value: IAO:0000118 "dataset creation" xsd:string
+property_value: owl:versionInfo "2021-09-22" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -202,14 +179,12 @@ is_a: BFO:0000020 ! specifically dependent continuant
 relationship: part_of BFO:0000019 ! quality
 property_value: BFO:0000179 "quality" xsd:string
 property_value: BFO:0000180 "Quality" xsd:string
-property_value: IAO:0000111 "quality" xsd:string
 property_value: IAO:0000112 "the ambient temperature of this portion of air" xsd:string
 property_value: IAO:0000112 "the color of a tomato" xsd:string
 property_value: IAO:0000112 "the length of the circumference of your waist" xsd:string
 property_value: IAO:0000112 "the mass of this piece of gold." xsd:string
 property_value: IAO:0000112 "the shape of your nose" xsd:string
 property_value: IAO:0000112 "the shape of your nostril" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000600 "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/055-001"}
 property_value: IAO:0000601 "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
 property_value: IAO:0000602 "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
@@ -542,7 +517,6 @@ name: biological entity
 def: "Entity that is, is part of, or derived from an organism, virus, or viroid or a collection of them." []
 comment: Important for alignment with Darwin Core class "Organism".
 is_a: BFO:0000004 ! independent continuant
-relationship: part_of CARO:0010004 ! cellular organism
 
 [Term]
 id: CARO:0030002
@@ -597,6 +571,10 @@ subset: cur
 subset: EmbDevSlim
 subset: larval_OF
 synonym: "Drosophila" RELATED []
+is_a: CARO:0000000 ! anatomical entity
+intersection_of: CARO:0000000 ! anatomical entity
+intersection_of: part_of NCBITaxon:7227
+relationship: part_of NCBITaxon:7227
 
 [Term]
 id: GO:0003674
@@ -665,19 +643,6 @@ id: GO:0044464
 is_a: CARO:0000014 ! cell part
 
 [Term]
-id: IAO:0000003
-name: measurement unit label
-def: "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure." []
-is_a: IAO:0000009 ! datum label
-property_value: IAO:0000111 "measurement unit label" xsd:string
-property_value: IAO:0000112 "Examples of measurement unit labels are liters, inches, weight per volume." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "2009-03-16: provenance: a term measurement unit was\nproposed for OBI (OBI_0000176) , edited by Chris Stoeckert and\nCristian Cocos, and subsequently moved to IAO where the objective for\nwhich the original term was defined was satisfied with the definition\nof this, different, term." xsd:string
-property_value: IAO:0000116 "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-
-[Term]
 id: IAO:0000005
 name: objective specification
 def: "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved." []
@@ -705,47 +670,6 @@ property_value: IAO:0000112 "Pour the contents of flask 1 into flask 2" xsd:stri
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "OBI Plan and Planned Process branch" xsd:string
-
-[Term]
-id: IAO:0000009
-name: datum label
-def: "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" []
-is_a: IAO:0000030 ! information content entity
-property_value: IAO:0000111 "datum label" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000116 http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n xsd:string
-property_value: IAO:0000117 "GROUP: IAO" xsd:string
-property_value: IAO:0000232 "9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. \n" xsd:string
-
-[Term]
-id: IAO:0000010
-name: software
-def: "Software is a plan specification composed of a series of instructions that can be \ninterpreted by or directly executed by a processing unit." []
-is_a: IAO:0000104 ! plan specification
-property_value: IAO:0000111 "software" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000116 "see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&aid=1958818&group_id=177891&atid=886178" xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-property_value: IAO:0000119 "GROUP: OBI" xsd:string
-
-[Term]
-id: IAO:0000015
-name: information carrier
-def: "A quality of an information bearer that imparts the information content" []
-is_a: BFO:0000019 ! quality
-intersection_of: BFO:0000019 ! quality
-intersection_of: RO:0000059 IAO:0000030 ! concretizes information content entity
-relationship: RO:0000059 IAO:0000030 ! concretizes information content entity
-property_value: IAO:0000111 "information carrier" xsd:string
-property_value: IAO:0000112 "In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "12/15/09: There is a concern that some ways that carry information may be processes rather than qualities, such as in a 'delayed wave carrier'." xsd:string
-property_value: IAO:0000116 "2014-03-10: We are not certain that all information carriers are qualities. There was a discussion of dropping it." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
 
 [Term]
 id: IAO:0000027
@@ -794,45 +718,6 @@ property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 
 [Term]
-id: IAO:0000037
-name: dot plot
-def: "A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions." []
-is_a: IAO:0000038 ! graph
-property_value: IAO:0000111 "dot plot" xsd:string
-property_value: IAO:0000112 "Dot plot of SSC-H and FSC-H." xsd:string
-property_value: IAO:0000114 IAO:0000002
-property_value: IAO:0000117 "person:Allyson Lister" xsd:string
-property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
-property_value: IAO:0000119 group:OBI xsd:string
-property_value: IAO:0000119 "OBI_0000123" xsd:string
-
-[Term]
-id: IAO:0000038
-name: graph
-def: "A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way." []
-is_a: IAO:0000309 ! diagram
-property_value: IAO:0000111 "graph" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
-property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "person:Allyson Lister" xsd:string
-property_value: IAO:0000119 group:OBI xsd:string
-property_value: IAO:0000119 "OBI_0000240" xsd:string
-
-[Term]
-id: IAO:0000064
-name: algorithm
-def: "A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
-is_a: IAO:0000104 ! plan specification
-property_value: IAO:0000111 "algorithm" xsd:string
-property_value: IAO:0000112 "PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies." xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
-property_value: IAO:0000119 "adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)" xsd:string
-property_value: IAO:0000119 "OBI_0000270" xsd:string
-
-[Term]
 id: IAO:0000078
 name: curation status specification
 def: "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." []
@@ -843,60 +728,6 @@ property_value: IAO:0000116 "Better to represent curation as a process with part
 property_value: IAO:0000117 "PERSON:Bill Bug" xsd:string
 property_value: IAO:0000119 GROUP:OBI:<http://purl.obolibrary.org/obo/obi> xsd:string
 property_value: IAO:0000119 "OBI_0000266" xsd:string
-
-[Term]
-id: IAO:0000096
-name: source code module
-def: "A source code module is a directive information entity that specifies, using a programming language, some algorithm." []
-is_a: IAO:0000033 ! directive information entity
-property_value: IAO:0000111 "source code module" xsd:string
-property_value: IAO:0000112 "The written source code that implements part of an algorithm. Test - if you know that it was written in a specific language, then it can be source code module. We mean here, roughly, the wording of a document such as a perl script." xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
-property_value: IAO:0000119 group:OBI xsd:string
-property_value: IAO:0000119 "OBI_0000039" xsd:string
-
-[Term]
-id: IAO:0000098
-name: data format specification
-def: "A data format specification is the information content borne by the document published defining the specification.\nExample: The ISO document specifying what encompasses an XML document; The instructions in a XSD file" []
-is_a: IAO:0000033 ! directive information entity
-property_value: IAO:0000111 "data format specification" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000116 "2009-03-16: provenance: term imported from OBI_0000187, which had original definition \"A data format specification is a plan which organizes\ninformation. Example: The ISO document specifying what encompasses an\nXML document; The instructions in a XSD file\"" xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
-property_value: IAO:0000119 "OBI branch derived" xsd:string
-property_value: IAO:0000119 "OBI_0000187" xsd:string
-
-[Term]
-id: IAO:0000100
-name: data set
-def: "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets." []
-is_a: IAO:0000027 ! data item
-property_value: IAO:0000111 "data set" xsd:string
-property_value: IAO:0000112 "Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves)." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type" xsd:string
-property_value: IAO:0000116 "2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction." xsd:string
-property_value: IAO:0000117 "person:Allyson Lister" xsd:string
-property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
-property_value: IAO:0000119 group:OBI xsd:string
-property_value: IAO:0000119 "OBI_0000042" xsd:string
-
-[Term]
-id: IAO:0000101
-name: image
-def: "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface." []
-is_a: IAO:0000308 ! figure
-property_value: IAO:0000111 "image" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 person:Allyson xsd:string
-property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
-property_value: IAO:0000119 group:OBI xsd:string
-property_value: IAO:0000119 "OBI_0000030" xsd:string
 
 [Term]
 id: IAO:0000102
@@ -925,69 +756,6 @@ property_value: IAO:0000119 "OBI Plan and Planned Process branch" xsd:string
 property_value: IAO:0000119 "OBI_0000344" xsd:string
 
 [Term]
-id: IAO:0000178
-name: material information bearer
-def: "A material entity in which a concretization of an information content entity inheres." []
-is_a: BFO:0000040 ! material entity
-property_value: IAO:0000111 "material information bearer" xsd:string
-property_value: IAO:0000112 "a brain" xsd:string
-property_value: IAO:0000112 "a hard drive" xsd:string
-property_value: IAO:0000112 "A page of a paperback novel with writing on it. The paper itself is a material information bearer, the pattern of ink is the information carrier." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "GROUP: IAO" xsd:string
-
-[Term]
-id: IAO:0000179
-name: histogram
-def: "A histogram is a report graph which is a statistical description of a\ndistribution in terms of occurrence frequencies of different event classes." []
-is_a: IAO:0000038 ! graph
-property_value: IAO:0000111 "histogram" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
-property_value: IAO:0000117 "PERSON:James Malone" xsd:string
-property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
-property_value: IAO:0000119 GROUP:OBI xsd:string
-
-[Term]
-id: IAO:0000180
-name: heatmap
-def: "A heatmap is a report graph which is a graphical representation of data\nwhere the values taken by a variable(s) are shown as colors in a\ntwo-dimensional map." []
-is_a: IAO:0000038 ! graph
-property_value: IAO:0000111 "heatmap" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
-property_value: IAO:0000117 "PERSON:James Malone" xsd:string
-property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
-property_value: IAO:0000119 GROUP:OBI xsd:string
-
-[Term]
-id: IAO:0000183
-name: dendrogram
-def: "A dendrogram is a report graph which is a tree diagram\nfrequently used to illustrate the arrangement of the clusters produced by a\nclustering algorithm." []
-is_a: IAO:0000038 ! graph
-property_value: IAO:0000111 "dendrogram" xsd:string
-property_value: IAO:0000112 "Dendrograms are often used in computational biology to\nillustrate the clustering of genes." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
-property_value: IAO:0000117 "PERSON:James Malone" xsd:string
-property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
-property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Dendrogram" xsd:string
-
-[Term]
-id: IAO:0000184
-name: scatter plot
-def: "A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis." []
-is_a: IAO:0000038 ! graph
-property_value: IAO:0000111 "scatter plot" xsd:string
-property_value: IAO:0000112 "Comparison of gene expression values in two samples can be displayed in a scatter plot" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
-property_value: IAO:0000117 "PERSON:James Malone" xsd:string
-property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
-property_value: IAO:0000118 "scattergraph" xsd:string
-property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Scatterplot" xsd:string
-
-[Term]
 id: IAO:0000225
 name: obsolescence reason specification
 def: "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." []
@@ -997,36 +765,6 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology." xsd:string
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-
-[Term]
-id: IAO:0000308
-name: figure
-def: "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something." []
-is_a: IAO:0000030 ! information content entity
-property_value: IAO:0000111 "figure" xsd:string
-property_value: IAO:0000112 "Any picture, diagram or table" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
-
-[Term]
-id: IAO:0000309
-name: diagram
-def: "A figure that expresses one or more propositions" []
-is_a: IAO:0000308 ! figure
-property_value: IAO:0000111 "diagram" xsd:string
-property_value: IAO:0000112 "A molecular structure ribbon cartoon showing helices, turns and sheets and their relations to each other in space." xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
-
-[Term]
-id: IAO:0000310
-name: document
-def: "A collection of information content entities intended to be understood together as a whole" []
-is_a: IAO:0000030 ! information content entity
-property_value: IAO:0000111 "document" xsd:string
-property_value: IAO:0000112 "A journal article, patent application, laboratory notebook, or a book" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
 
 [Term]
 id: IAO:0000409
@@ -1042,15 +780,6 @@ property_value: IAO:0000119 "Barry Smith, Werner Ceusters" xsd:string
 id: NCBITaxon:10239
 name: Viruses
 is_a: GO:0019012
-property_value: IAO:0000111 "Viruses" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:117571
-name: Euteleostomi
-is_a: NCBITaxon:7742 ! Vertebrata <vertebrates>
-property_value: IAO:0000111 "Euteleostomi" xsd:string
-property_value: IAO:0000118 "bony vertebrates" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 
 [Term]
@@ -1063,94 +792,6 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 id: NCBITaxon:131567
 name: cellular organisms
 is_a: CARO:0010004 ! cellular organism
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:2
-name: Bacteria
-is_a: OBI:0100026 ! organism
-property_value: IAO:0000111 "Bacteria" xsd:string
-property_value: IAO:0000118 "eubacteria" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:2157
-name: Archaea
-is_a: OBI:0100026 ! organism
-property_value: IAO:0000111 "Archaea" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:2759
-name: Eukaryota
-is_a: OBI:0100026 ! organism
-property_value: IAO:0000111 "Eukaryota" xsd:string
-property_value: IAO:0000118 "eucaryotes" xsd:string
-property_value: IAO:0000118 "eukaryotes" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:314146
-name: Euarchontoglires
-is_a: NCBITaxon:40674 ! Mammalia
-property_value: IAO:0000111 "Euarchontoglires" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:32523
-name: Tetrapoda
-is_a: NCBITaxon:117571 ! Euteleostomi
-property_value: IAO:0000111 "Tetrapoda" xsd:string
-property_value: IAO:0000118 "tetrapods" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:32524
-name: Amniota
-is_a: NCBITaxon:32523 ! Tetrapoda
-property_value: IAO:0000111 "Amniota" xsd:string
-property_value: IAO:0000118 "amniotes" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:33154
-name: Opisthokonta
-is_a: NCBITaxon:2759 ! Eukaryota
-property_value: IAO:0000111 "Opisthokonta" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:33213
-name: Bilateria
-is_a: NCBITaxon:33154 ! Opisthokonta
-property_value: IAO:0000111 "Bilateria" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:40674
-name: Mammalia
-is_a: NCBITaxon:32524 ! Amniota
-property_value: IAO:0000111 "Mammalia" xsd:string
-property_value: IAO:0000118 "mammals" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:7742
-name: Vertebrata <vertebrates>
-is_a: NCBITaxon:33213 ! Bilateria
-property_value: IAO:0000111 "Vertebrata <vertebrates>" xsd:string
-property_value: IAO:0000118 "Vertebrata" xsd:string
-property_value: IAO:0000118 "vertebrates" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
-
-[Term]
-id: NCBITaxon:9606
-name: Homo sapiens
-is_a: NCBITaxon:314146 ! Euarchontoglires
-property_value: IAO:0000111 "Homo sapiens" xsd:string
-property_value: IAO:0000118 "human" xsd:string
-property_value: IAO:0000118 "human being" xsd:string
-property_value: IAO:0000118 "man" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 
 [Term]
@@ -1169,971 +810,6 @@ property_value: IAO:0000119 "branch derived" xsd:string
 property_value: IAO:0000232 "6/11/9: Edited at workshop. Used to include: is initiated by an agent" xsd:string
 property_value: IAO:0000232 "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-
-[Term]
-id: OBI:0000014
-name: regulator role
-def: "a regulatory role involved with making and/or enforcing relevant legislation and governmental orders" []
-is_a: OBI:0000017 ! regulatory role
-property_value: IAO:0000111 "regulator role" xsd:string
-property_value: IAO:0000112 "Fact sheet - Regulating the companies The role of the regulator. Ofwat is the economic regulator of the water and sewerage industry in England and Wales.  http://www.ofwat.gov.uk/aptrix/ofwat/publish.nsf/Content/roleofregulator_factsheet170805" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Person:Jennifer Fostel" xsd:string
-property_value: IAO:0000118 "regulator" xsd:string
-property_value: IAO:0000119 "OBI" xsd:string
-
-[Term]
-id: OBI:0000017
-name: regulatory role
-def: "a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000111 "regulatory role" xsd:string
-property_value: IAO:0000112 "Regulatory agency, Ethics committee, Approval letter; example:  Browse these EPA Regulatory Role subtopics  http://www.epa.gov/ebtpages/enviregulatoryrole.html  Feb 29, 2008" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "GROUP:  Role branch" xsd:string
-property_value: IAO:0000119 "OBI, CDISC" xsd:string
-property_value: IAO:0000232 "govt agents responsible for creating regulations; proxies for enforcing regulations.  CDISC definition:  regulatory authorities. Bodies having the power to regulate. NOTE: In the ICH GCP guideline the term includes the authorities that review submitted clinical data and those that conduct inspections. These bodies are sometimes referred to as competent" xsd:string
-
-[Term]
-id: OBI:0000018
-name: material supplier role
-def: "a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation." []
-is_a: OBI:0000947 ! service provider role
-property_value: IAO:0000111 "material supplier role" xsd:string
-property_value: IAO:0000112 "Jackson Labs is an organization which provide mice as experimental material" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000116 "Supplier role is a special kind of service, e.g. biobank" xsd:string
-property_value: IAO:0000117 "PERSON:Jennifer Fostel" xsd:string
-property_value: IAO:0000118 "material provider role" xsd:string
-property_value: IAO:0000118 "supplier" xsd:string
-
-[Term]
-id: OBI:0000023
-name: classified data set
-def: "A data set that is produced as the output of a class prediction data transformation and consists of a data set with assigned class labels." []
-is_a: IAO:0000100 ! data set
-relationship: OBI:0000312 OBI:0000663 ! is_specified_output_of class prediction data transformation
-property_value: IAO:0000111 "classified data set" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "PERSON: James Malone" xsd:string
-property_value: IAO:0000117 "PERSON: Monnie McGee" xsd:string
-property_value: IAO:0000118 "data set with assigned class labels" xsd:string
-
-[Term]
-id: OBI:0000047
-name: processed material
-def: "Is a material entity that is created or changed during material processing." []
-is_a: BFO:0000040 ! material entity
-intersection_of: BFO:0000040 ! material entity
-intersection_of: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
-relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
-property_value: IAO:0000111 "processed material" xsd:string
-property_value: IAO:0000112 "Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-
-[Term]
-id: OBI:0000094
-name: material processing
-def: "A planned process which results in physical changes in a specified input material" []
-is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
-relationship: OBI:0000299 OBI:0000047 ! has_specified_output processed material
-relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
-property_value: IAO:0000111 "material processing" xsd:string
-property_value: IAO:0000112 "A cell lysis, production of a cloning vector, creating a buffer." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Frank Gibson" xsd:string
-property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-property_value: IAO:0000117 "PERSON: Philippe Rocca Serra" xsd:string
-property_value: IAO:0000118 "material transformation" xsd:string
-property_value: IAO:0000119 "OBI branch derived" xsd:string
-
-[Term]
-id: OBI:0000112
-name: specimen role
-def: "a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation" []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000111 "specimen role" xsd:string
-property_value: IAO:0000112 "liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role." xsd:string
-property_value: IAO:0000116 "blood taken from animal: animal continues in study, whereas blood has role specimen.\nsomething taken from study subject, leaves the study and becomes the specimen." xsd:string
-property_value: IAO:0000116 "Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation." xsd:string
-property_value: IAO:0000116 "parasite example\n- when parasite in people we study people, people are subjects and parasites are specimen\n- when parasite extracted, they become subject in the following study\nspecimen can later be subject." xsd:string
-property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
-property_value: IAO:0000119 "OBI" xsd:string
-
-[Term]
-id: OBI:0000245
-name: organization
-def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
-is_a: BFO:0000040 ! material entity
-property_value: IAO:0000111 "organization" xsd:string
-property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:\n\n1) there are organization_member_roles (president, treasurer, branch\neditor), with individual persons as bearers\n\n2) there are organization_roles (employer, owner, vendor, patent holder)\n\n3) an organization has a charter / rules / bylaws, which specify what roles\nthere are, how they should be realized, and how to modify the\ncharter/rules/bylaws themselves.\n\nIt is debatable what the organization itself is (some kind of dependent\ncontinuant or an aggregate of people). This also determines who/what the\nbearer of organization_roles' are. My personal favorite is still to define\norganization as a kind of 'legal entity', but thinking it through leads to\nall kinds of questions that are clearly outside the scope of OBI.\n\nInterestingly enough, it does not seem to matter much where we place\norganization itself, as long as we can subclass it (University, Corporation,\nGovernment Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO,\nW3C, University of Oklahoma), and have it play roles.\n\nThis leads to my proposal: We define organization through the statements 1 -\n3 above, but without an 'is a' statement for now. We can leave it in its\ncurrent place in the is_a hierarchy (material entity) or move it up to\n'continuant'. We leave further clarifications to BFO, and close this issue\nfor now." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000117 "PERSON: Susanna Sansone" xsd:string
-property_value: IAO:0000119 "GROUP: OBI" xsd:string
-
-[Term]
-id: OBI:0000450
-name: regulatory agency
-def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
-is_a: OBI:0000245 ! organization
-intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000087 OBI:0000014 ! has role regulator role
-relationship: RO:0000087 OBI:0000014 ! has role regulator role
-property_value: IAO:0000111 "regulatory agency" xsd:string
-property_value: IAO:0000112 "The US Environmental Protection Agency" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "GROUP: OBI Biomaterial Branch" xsd:string
-property_value: IAO:0000119 "WEB: en.wikipedia.org/wiki/Regulator" xsd:string
-
-[Term]
-id: OBI:0000456
-name: material transformation objective
-def: "an objective specifiction that creates an specific output object from input materials." []
-is_a: IAO:0000005 ! objective specification
-property_value: IAO:0000111 "material transformation objective" xsd:string
-property_value: IAO:0000112 "The objective to create a mouse infected with LCM virus. The objective to create a defined solution of PBS." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Frank Gibson" xsd:string
-property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000118 "artifact  creation objective" xsd:string
-property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
-
-[Term]
-id: OBI:0000457
-name: manufacturing
-def: "Manufacturing is a process with the intent to produce a processed material which will have a function for future use. A person or organization (having manufacturer role) is a participant in this process" []
-is_a: OBI:0000094 ! material processing
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
-relationship: OBI:0000417 OBI:0000458 ! achieves_planned_objective manufacturing objective
-property_value: IAO:0000111 "manufacturing" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "Manufacturing implies reproducibility and responsibility AR" xsd:string
-property_value: IAO:0000116 "This includes a single scientist making a processed material for personal use." xsd:string
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Frank Gibson" xsd:string
-property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
-
-[Term]
-id: OBI:0000458
-name: manufacturing objective
-def: "is the objective to manufacture a material of a certain function (device)" []
-is_a: OBI:0000456 ! material transformation objective
-property_value: IAO:0000111 "manufacturing objective" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Frank Gibson" xsd:string
-property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
-
-[Term]
-id: OBI:0000571
-name: manufacturer role
-def: "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process." []
-is_a: BFO:0000023 ! role
-relationship: BFO:0000054 OBI:0000457 ! realized in manufacturing
-property_value: IAO:0000111 "manufacturer role" xsd:string
-property_value: IAO:0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
-property_value: IAO:0000119 "OBI" xsd:string
-
-[Term]
-id: OBI:0000648
-name: clustered data set
-def: "A data set that is produced as the output of a class discovery data transformation and consists of a data set with assigned discovered class labels." []
-is_a: IAO:0000100 ! data set
-relationship: OBI:0000312 OBI:0200175 ! is_specified_output_of class discovery data transformation
-property_value: IAO:0000111 "clustered data set" xsd:string
-property_value: IAO:0000112 "A clustered data set is the output of a K means clustering data transformation" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "PERSON: James Malone" xsd:string
-property_value: IAO:0000117 "PERSON: Monnie McGee" xsd:string
-property_value: IAO:0000118 "data set with assigned discovered class labels" xsd:string
-property_value: IAO:0000232 "AR thinks could be a data item instead" xsd:string
-
-[Term]
-id: OBI:0000659
-name: specimen collection process
-def: "A planned process with the objective of collecting a specimen." []
-is_a: OBI:0000011 ! planned process
-intersection_of: OBI:0000011 ! planned process
-intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
-relationship: OBI:0000299 OBI:0100051 ! has_specified_output specimen
-relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-property_value: IAO:0000111 "specimen collection process" xsd:string
-property_value: IAO:0000112 "drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "label  changed to 'specimen collection process' on 10/27/2014, details see tracker:\nhttp://sourceforge.net/p/obi/obi-terms/716/" xsd:string
-property_value: IAO:0000116 "Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation." xsd:string
-property_value: IAO:0000116 "Philly2013: A specimen collection can have as part a material entity acquisition, such as ordering from a bank. The distinction is that specimen collection necessarily involves the creation of a specimen role. However ordering cell lines cells from ATCC for use in an investigation is NOT a specimen collection, because the cell lines already have a specimen role." xsd:string
-property_value: IAO:0000116 "Philly2013: The specimen_role for the specimen is created during the specimen collection process." xsd:string
-property_value: IAO:0000117 "Bjoern Peters" xsd:string
-property_value: IAO:0000118 "specimen collection" xsd:string
-property_value: IAO:0000232 "5/31/2012: This process is not necessarily an acquisition, as specimens may be collected from materials already in posession" xsd:string
-property_value: IAO:0000232 "6/9/09: used at workshop" xsd:string
-
-[Term]
-id: OBI:0000663
-name: class prediction data transformation
-def: "A class prediction data transformation (sometimes called supervised classification) is a data transformation that has objective class prediction." []
-is_a: OBI:0200000 ! data transformation
-property_value: IAO:0000111 "class prediction data transformation" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000118 "supervised classification data transformation" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-
-[Term]
-id: OBI:0000684
-name: specimen collection objective
-def: "A objective specification to obtain a material entity for potential use as an input during an investigation." []
-is_a: IAO:0000005 ! objective specification
-property_value: IAO:0000111 "specimen collection objective" xsd:string
-property_value: IAO:0000112 "The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Bjoern Peters" xsd:string
-property_value: IAO:0000119 "Bjoern Peters" xsd:string
-
-[Term]
-id: OBI:0000700
-name: support vector machine
-def: "A support vector machine is a data transformation with a class prediction objective based on the construction of a separating hyperplane that maximizes the margin between two data sets of vectors in n-dimensional space." []
-is_a: OBI:0000663 ! class prediction data transformation
-relationship: OBI:0000417 OBI:0200179 ! achieves_planned_objective class prediction objective
-property_value: IAO:0000111 "support vector machine" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Ryan Brinkman" xsd:string
-property_value: IAO:0000118 "SVM" xsd:string
-property_value: IAO:0000119 "PERSON: Ryan Brinkman" xsd:string
-
-[Term]
-id: OBI:0000704
-name: decision tree induction objective
-def: "A decision tree induction objective is a data transformation objective in which a tree-like graph of edges and nodes is created and from which the selection of each branch requires that some type of logical decision is made." []
-is_a: OBI:0200166 ! data transformation objective
-property_value: IAO:0000111 "decision tree induction objective" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "James Malone" xsd:string
-
-[Term]
-id: OBI:0000707
-name: decision tree building data transformation
-def: "A decision tree building data transformation is a data transformation that has objective decision tree induction." []
-is_a: OBI:0200000 ! data transformation
-relationship: OBI:0000417 OBI:0000704 ! achieves_planned_objective decision tree induction objective
-property_value: IAO:0000111 "decision tree building data transformation" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-
-[Term]
-id: OBI:0000713
-name: GenePattern software
-def: "a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks." []
-is_a: IAO:0000010 ! software
-property_value: IAO:0000111 "GenePattern software" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Person:Helen Parkinson" xsd:string
-property_value: IAO:0000119 "WEB: http://www.broadinstitute.org/cancer/software/genepattern/" xsd:string
-
-[Term]
-id: OBI:0000726
-name: peak matching
-def: "Peak matching is a data transformation performed on a dataset of a graph of ordered data points (e.g. a spectrum) with the objective of pattern matching local maxima above a noise threshold" []
-is_a: OBI:0200000 ! data transformation
-property_value: IAO:0000111 "peak matching" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Ryan Brinkman" xsd:string
-property_value: IAO:0000119 "PERSON: Ryan Brinkman" xsd:string
-
-[Term]
-id: OBI:0000727
-name: k-nearest neighbors
-def: "A k-nearest neighbors is a data transformation which achieves a class discovery or partitioning objective, in which an input data object with vector y is assigned to a class label based upon the k closest training data set points to y; where k is the largest value that class label is assigned." []
-is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: OBI:0200171 ! partitioning data transformation
-is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
-relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
-property_value: IAO:0000111 "k-nearest neighbors" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000118 "k-NN" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-
-[Term]
-id: OBI:0000749
-name: CART
-def: "A CART (classification and regression trees) is a data transformation method for producing a classification or regression model with a tree-based structure." []
-is_a: OBI:0000707 ! decision tree building data transformation
-property_value: IAO:0000111 "CART" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000118 "classification and regression trees" xsd:string
-property_value: IAO:0000119 "BOOK: David J. Hand, Heikki Mannila and Padhraic Smyth (2001) Principles of Data Mining." xsd:string
-
-[Term]
-id: OBI:0000792
-name: statistical model validation
-def: "A data transformation which assesses how the results of a statistical analysis will generalize to an independent data set." []
-is_a: OBI:0200171 ! partitioning data transformation
-relationship: OBI:0000417 OBI:0200188 ! achieves_planned_objective cross validation objective
-property_value: IAO:0000111 "statistical model validation" xsd:string
-property_value: IAO:0000112 "Using the expression levels of 20 proteins to predict whether a cancer patient will respond to a drug. A practical goal would be to determine which subset of the 20 features should be used to produce the best predictive model. - wikipedia" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000119 http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29 xsd:string
-
-[Term]
-id: OBI:0000835
-name: manufacturer
-def: "A person or organization that has a manufacturer role" []
-is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
-property_value: IAO:0000111 "manufacturer" xsd:string
-property_value: IAO:0000114 IAO:0000123
-
-[Term]
-id: OBI:0000947
-name: service provider role
-def: "is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person" []
-is_a: BFO:0000023 ! role
-relationship: BFO:0000054 OBI:0000011 ! realized in planned process
-property_value: IAO:0000111 "service provider role" xsd:string
-property_value: IAO:0000112 "Jackson Lab provides experimental animals, EBI provides training on databases, a core facility provides access to a DNA sequencer." xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "PERSON:Helen Parkinson" xsd:string
-
-[Term]
-id: OBI:0000953
-name: processed specimen
-def: "A specimen that has been intentionally physically modified." []
-comment: A tissue sample that has been sliced and stained for a histology study.
-is_a: OBI:0000047 ! processed material
-is_a: OBI:0100051 ! specimen
-intersection_of: OBI:0000047 ! processed material
-intersection_of: OBI:0100051 ! specimen
-property_value: IAO:0000111 "processed specimen" xsd:string
-property_value: IAO:0000112 "A tissue sample that has been sliced and stained for a histology study.\nA blood specimen that has been centrifuged to obtain the white blood cells." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Bjoern Peters" xsd:string
-property_value: IAO:0000119 "Bjoern Peters" xsd:string
-
-[Term]
-id: OBI:0000963
-name: categorical label
-def: "A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale." []
-is_a: IAO:0000009 ! datum label
-property_value: IAO:0000111 "categorical label" xsd:string
-property_value: IAO:0000112 "The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. " xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Bjoern Peters" xsd:string
-property_value: IAO:0000119 "Bjoern Peters" xsd:string
-
-[Term]
-id: OBI:0001000
-name: questionnaire
-def: "A document with a set of printed or written questions with a choice of answers, devised for the purposes of a survey or statistical study." []
-is_a: IAO:0000310 ! document
-property_value: IAO:0000111 "questionnaire" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000116 "JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. \nJZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. " xsd:string
-property_value: IAO:0000116 "Need to clarify if this is a document or a directive information entity (or what their connection is))" xsd:string
-property_value: IAO:0000117 "PERSON: Jessica Turner" xsd:string
-property_value: IAO:0000119 "Merriam-Webster" xsd:string
-
-[Term]
-id: OBI:0001930
-name: categorical value specification
-def: "A value specification that is specifies one category out of a fixed number of nominal categories" []
-is_a: OBI:0001933 ! value specification
-property_value: IAO:0000111 "categorical value specification" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
-
-[Term]
-id: OBI:0001933
-name: value specification
-def: "An information content entity that specifies a value within a classification scheme or on a quantitative scale." []
-is_a: IAO:0000030 ! information content entity
-property_value: IAO:0000111 "value specification" xsd:string
-property_value: IAO:0000112 "The value of 'positive' in a classification scheme of \"positive or negative\"; the value of '20g' on the quantitative scale of mass." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "This term is currently a descendant of 'information content entity', which requires that it 'is about' something. A value specification of '20g' for a measurement data item of the mass of a particular mouse 'is about' the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change 'value specification' to remove the 'is about' requirement." xsd:string
-property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
-
-[Term]
-id: OBI:0002076
-name: collection of specimens
-def: "A material entity that has two or more specimens as its parts." []
-is_a: BFO:0000040 ! material entity
-intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0002351 OBI:0100051 {all_only="true"} ! has member specimen
-property_value: http://purl.org/dc/elements/1.1/source "Biobank" xsd:string
-property_value: IAO:0000111 "collection of specimens" xsd:string
-property_value: IAO:0000112 "Blood cells collected from multiple donors over the course of a study." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "Details see tracker: https://sourceforge.net/p/obi/obi-terms/778/" xsd:string
-property_value: IAO:0000117 "Person: Chris Stoeckert, Jie Zheng" xsd:string
-property_value: IAO:0000119 "OBIB, OBI" xsd:string
-
-[Term]
-id: OBI:0002205
-name: histologic grade according to AJCC 7th edition
-def: "A categorical value specification that is a histologic grade assigned to a tumor slide specimen according to the American Joint Committee on Cancer (AJCC) 7th Edition grading system." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "histologic grade according to AJCC 7th edition" xsd:string
-property_value: IAO:0000112 " G4: Undifferentiated" xsd:string
-property_value: IAO:0000112 "G1:Well differentiated " xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002210
-name: histologic grade according to the Fuhrman Nuclear Grading System
-def: "A categorical value specification that is a histologic grade assigned to a tumor slide specimen according to the Fuhrman Nuclear Grading System." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "histologic grade according to the Fuhrman Nuclear Grading System" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "Histologic Grade (Fuhrman Nuclear Grading System)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002215
-name: histologic grade for ovarian tumor
-def: "A categorical value specification that is a histologic grade assigned to a ovarian tumor." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "histologic grade for ovarian tumor" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002216
-name: histologic grade for ovarian tumor according to a two-tier grading system
-def: "A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. " []
-is_a: OBI:0002215 ! histologic grade for ovarian tumor
-property_value: IAO:0000111 "histologic grade for ovarian tumor according to a two-tier grading system" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002219
-name: histologic grade for ovarian tumor according to the World Health Organization
-def: "A histologic grade for ovarian tumor that is from a histological classification by the World Health Organization (WHO)." []
-is_a: OBI:0002215 ! histologic grade for ovarian tumor
-property_value: IAO:0000111 "histologic grade for ovarian tumor according to the World Health Organization" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002224
-name: pathologic primary tumor stage for colon and rectum according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of colorectal cancer following the rules of the TNM American Joint Committee on Cancer (AJCC) version 7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic primary tumor stage for colon and rectum according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "pT: Pathologic spread colorectal primary tumor (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002232
-name: pathologic primary tumor stage for lung according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM American Joint Committee on Cancer (AJCC) version 7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic primary tumor stage for lung according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "pT: Pathologic spread lung primary tumor (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002243
-name: pathologic primary tumor stage for kidney according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic primary tumor stage for kidney according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "pT: Pathologic spread kidney primary tumor (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002256
-name: pathologic primary tumor stage for ovary according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic primary tumor stage for ovary according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "pT: Pathologic spread ovarian primary tumor (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002270
-name: pathologic lymph node stage for colon and rectum according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of colorectal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic lymph node stage for colon and rectum according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002279
-name: pathologic lymph node stage for lung according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic lymph node stage for lung according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002284
-name: pathologic lymph node stage for kidney according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic lymph node stage for kidney according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "pN: Pathologic spread kidney lymph nodes (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002287
-name: pathologic lymph node stage for ovary according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic lymph node stage for ovary according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "pN: Pathologic spread ovarian lymph nodes (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002290
-name: pathologic distant metastases stage for colon according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of colon cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic distant metastases stage for colon according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "M: colon distant metastases (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002298
-name: pathologic distant metastases stage for lung according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic distant metastases stage for lung according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "M: lung distant metastases (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002306
-name: pathologic distant metastases stage for kidney according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic distant metastases stage for kidney according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "M: kidney distant Metastases (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002310
-name: pathologic distant metastases stage for ovary according to AJCC 7th edition
-def: "A categorical value specification that is a  pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "pathologic distant metastases stage for ovary according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "M: ovarian distant metastases (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002314
-name: clinical tumor stage group according to AJCC 7th edition
-def: "A categorical value specification that is an assessment of the stage of a cancer according to the American Joint Committee on Cancer (AJCC) v7 staging systems." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "clinical tumor stage group according to AJCC 7th edition" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "Clinical tumor stage group (AJCC 7th Edition)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002326
-name: International Federation of Gynecology and Obstetrics cervical cancer stage value specification
-def: "A categorical value specification that is an assessment of the stage of a gynecologic cancer according to the International Federation of Gynecology and Obstetrics (FIGO) staging systems." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "International Federation of Gynecology and Obstetrics cervical cancer stage value specification" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "Clinical FIGO stage" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002341
-name: International Federation of Gynecology and Obstetrics ovarian cancer stage value specification
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the FIGO classification system." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "International Federation of Gynecology and Obstetrics ovarian cancer stage value specification" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "Pathologic Tumor Stage Grouping for ovarian cancer (FIGO)" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002356
-name: performance status value specification
-def: "A categorical value specification that is an assessment of a participant's performance status (general well-being and activities of daily life)." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000111 "performance status value specification" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "Performance Status Scale" xsd:string
-property_value: IAO:0000119 https://en.wikipedia.org/wiki/Performance_status xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002357
-name: Eastern Cooperative Oncology Group score value specification
-def: "A performance status value specification designed by the Eastern Cooperative Oncology Group to assess disease progression and its affect on the daily living abilities of the patient." []
-is_a: OBI:0002356 ! performance status value specification
-property_value: IAO:0000111 "Eastern Cooperative Oncology Group score value specification" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "ECOG score" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002363
-name: Karnofsky score vaue specification
-def: "A performance status value specification designed for classifying patients 16 years of age or older by their functional impairment." []
-is_a: OBI:0002356 ! performance status value specification
-property_value: IAO:0000111 "Karnofsky score vaue specification" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Chris Stoeckert, Helena Ellis" xsd:string
-property_value: IAO:0000118 "Karnofsky Score" xsd:string
-property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
-property_value: IAO:0000234 "NCI BBRB" xsd:string
-
-[Term]
-id: OBI:0002989
-name: material supplier
-def: "A person or organization that provides material supplies to other people or organizations." []
-is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000018 ! has role material supplier role
-property_value: IAO:0000111 "material supplier" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "Rebecca Jackson" xsd:string
-property_value: IAO:0000233 https://github.com/obi-ontology/obi/issues/1289 xsd:string
-
-[Term]
-id: OBI:0100026
-name: organism
-def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
-is_a: BFO:0000040 ! material entity
-union_of: NCBITaxon:10239 ! Viruses
-union_of: NCBITaxon:2 ! Bacteria
-union_of: NCBITaxon:2157 ! Archaea
-union_of: NCBITaxon:2759 ! Eukaryota
-property_value: IAO:0000111 "organism" xsd:string
-property_value: IAO:0000112 "animal" xsd:string
-property_value: IAO:0000112 "fungus" xsd:string
-property_value: IAO:0000112 "plant" xsd:string
-property_value: IAO:0000112 "virus" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')" xsd:string
-property_value: IAO:0000116 "13-02-2009:\nOBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.\nThis issue is outside the scope of OBI." xsd:string
-property_value: IAO:0000117 "GROUP: OBI Biomaterial Branch" xsd:string
-property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Organism" xsd:string
-
-[Term]
-id: OBI:0100051
-name: specimen
-def: "A material entity that has the specimen role." []
-is_a: BFO:0000040 ! material entity
-intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
-relationship: RO:0000087 OBI:0000112 ! has role specimen role
-property_value: IAO:0000111 "specimen" xsd:string
-property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation." xsd:string
-property_value: IAO:0000117 "PERSON: James Malone" xsd:string
-property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000119 "GROUP: OBI Biomaterial Branch" xsd:string
-
-[Term]
-id: OBI:0200000
-name: data transformation
-def: "A planned process that produces output data from input data." []
-is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
-relationship: OBI:0000417 OBI:0200166 ! achieves_planned_objective data transformation objective
-property_value: IAO:0000111 "data transformation" xsd:string
-property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Melanie Courtot" xsd:string
-property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000117 "Richard Scheuermann" xsd:string
-property_value: IAO:0000117 "Ryan Brinkman" xsd:string
-property_value: IAO:0000117 "Tina Hernandez-Boussard" xsd:string
-property_value: IAO:0000118 "data analysis" xsd:string
-property_value: IAO:0000118 "data processing" xsd:string
-property_value: IAO:0000119 "Branch editors" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-
-[Term]
-id: OBI:0200033
-name: leave one out cross validation method
-def: "is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data" []
-is_a: OBI:0000792 ! statistical model validation
-property_value: IAO:0000111 "leave one out cross validation method" xsd:string
-property_value: IAO:0000112 "The authors conducted  leave-one-out cross validation to estimate the strength and accuracy of the differentially expressed filtered genes. http://bioinformatics.oxfordjournals.org/cgi/content/abstract/19/3/368" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000116 "2009-11-10. Tracker: https://sourceforge.net/tracker/?func=detail&aid=2893049&group_id=177891&atid=886178" xsd:string
-property_value: IAO:0000117 "Person:Helen Parkinson" xsd:string
-
-[Term]
-id: OBI:0200041
-name: k-means clustering
-def: "A k-means clustering is a data transformation which achieves a class discovery or partitioning objective, which takes as input a collection of objects (represented as points in multidimensional space) and which partitions them into a specified number k of clusters. The algorithm attempts to find the centers of natural clusters in the data. The most common form of the algorithm starts by partitioning the input points into k initial sets, either at random or using some heuristic data. It then calculates the mean point, or centroid, of each set. It constructs a new partition by associating each point with the closest centroid. Then the centroids are recalculated for the new clusters, and the algorithm repeated by alternate applications of these two steps until convergence, which is obtained when the points no longer switch clusters (or alternatively centroids are no longer changed)." []
-is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: OBI:0200171 ! partitioning data transformation
-is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
-relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
-property_value: IAO:0000111 "k-means clustering" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/K-means" xsd:string
-
-[Term]
-id: OBI:0200042
-name: hierarchical clustering
-def: "A hierarchical clustering is a data transformation which achieves a class discovery objective, which takes as input data item and builds a hierarchy of clusters. The traditional representation of this hierarchy is a tree (visualized by a dendrogram), with the individual input objects at one end (leaves) and a single cluster containing every object at the other (root)." []
-is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
-relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
-property_value: IAO:0000111 "hierarchical clustering" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Data_clustering#Hierarchical_clustering" xsd:string
-
-[Term]
-id: OBI:0200050
-name: dimensionality reduction
-def: "A dimensionality reduction is data partitioning which transforms each input m-dimensional vector (x_1, x_2, ..., x_m) into an output n-dimensional vector (y_1, y_2, ..., y_n), where n is smaller than m." []
-is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
-relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
-property_value: IAO:0000111 "dimensionality reduction" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Melanie Courtot" xsd:string
-property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000118 "data projection" xsd:string
-property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
-
-[Term]
-id: OBI:0200051
-name: principal components analysis dimensionality reduction
-def: "A principal components analysis dimensionality reduction is a dimensionality reduction achieved by applying principal components analysis and by keeping low-order principal components and excluding higher-order ones." []
-is_a: OBI:0200050 ! dimensionality reduction
-property_value: IAO:0000111 "principal components analysis dimensionality reduction" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Melanie Courtot" xsd:string
-property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000118 "pca data reduction" xsd:string
-property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
-
-[Term]
-id: OBI:0200111
-name: data visualization
-def: "An planned process that creates images, diagrams or animations from the input data." []
-is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
-relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
-property_value: IAO:0000111 "data visualization" xsd:string
-property_value: IAO:0000112 "Generation of a heatmap from a microarray dataset" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Melanie Courtot" xsd:string
-property_value: IAO:0000117 "Tina Boussard" xsd:string
-property_value: IAO:0000118 "data encoding as image" xsd:string
-property_value: IAO:0000118 "visualization" xsd:string
-property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
-property_value: IAO:0000119 "PERSON: Tina Boussard" xsd:string
-property_value: IAO:0000232 "Possible future hierarchy might include this:\ninformation_encoding\n>data_encoding\n>>image_encoding" xsd:string
-
-[Term]
-id: OBI:0200166
-name: data transformation objective
-def: "An objective specification to transformation input data into output data" []
-is_a: IAO:0000005 ! objective specification
-property_value: IAO:0000111 "data transformation objective" xsd:string
-property_value: IAO:0000112 "normalize objective" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "Modified definition in 2013 Philly OBI workshop" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-
-[Term]
-id: OBI:0200171
-name: partitioning data transformation
-def: "A partitioning data transformation is a data transformation that has objective partitioning." []
-is_a: OBI:0200000 ! data transformation
-relationship: OBI:0000417 OBI:0200172 ! achieves_planned_objective partitioning objective
-property_value: IAO:0000111 "partitioning data transformation" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-
-[Term]
-id: OBI:0200172
-name: partitioning objective
-def: "A partitioning objective is a data transformation objective where the aim is to generate a collection of disjoint non-empty subsets whose union equals a non-empty input set." []
-is_a: OBI:0200166 ! data transformation objective
-property_value: IAO:0000111 "partitioning objective" xsd:string
-property_value: IAO:0000112 "A k-means clustering which has partitioning objective is a data transformation in which the input data is partitioned into k output sets." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
-
-[Term]
-id: OBI:0200175
-name: class discovery data transformation
-def: "A class discovery data transformation (sometimes called unsupervised classification) is a data transformation that has objective class discovery." []
-is_a: OBI:0200000 ! data transformation
-property_value: IAO:0000111 "class discovery data transformation" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000118 "clustering data transformation" xsd:string
-property_value: IAO:0000118 "unsupervised classification data transformation" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-
-[Term]
-id: OBI:0200178
-name: class discovery objective
-def: "A class discovery objective (sometimes called unsupervised classification) is a data transformation objective where the aim is to organize input data  (typically vectors of attributes) into classes, where the number of classes and their specifications are not known a priori. Depending on usage, the class assignment can be definite or probabilistic." []
-is_a: OBI:0200166 ! data transformation objective
-property_value: IAO:0000111 "class discovery objective" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000118 "clustering objective" xsd:string
-property_value: IAO:0000118 "discriminant analysis objective" xsd:string
-property_value: IAO:0000118 "unsupervised classification objective" xsd:string
-property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-
-[Term]
-id: OBI:0200179
-name: class prediction objective
-def: "A class prediction objective (sometimes called supervised classification) is a data transformation objective where the aim is to create a predictor from training data through a machine learning technique. The training data consist of pairs of objects (typically vectors of attributes) and\nclass labels for these objects. The resulting predictor can be used to attach class labels to any valid novel input object. Depending on usage, the prediction can be definite or probabilistic. A classification is learned from the training data and can then be tested on test data." []
-is_a: OBI:0200166 ! data transformation objective
-property_value: IAO:0000111 "class prediction objective" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000118 "classification objective" xsd:string
-property_value: IAO:0000118 "supervised classification objective" xsd:string
-property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
-property_value: IAO:0000119 "PERSON: James Malone" xsd:string
-
-[Term]
-id: OBI:0200188
-name: cross validation objective
-def: "A cross validation objective is a data transformation objective in which the aim is to partition a sample of data into subsets such that the analysis is initially performed on a single subset, while the other subset(s) are retained for subsequent use in confirming and validating the initial analysis." []
-is_a: OBI:0200172 ! partitioning objective
-property_value: IAO:0000111 "cross validation objective" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000118 "rotation estimation objective" xsd:string
-property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Cross_validation" xsd:string
-
-[Term]
-id: OBI:0200190
-name: clustered data visualization
-def: "A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type." []
-is_a: OBI:0200111 ! data visualization
-relationship: OBI:0000293 OBI:0000648 ! has_specified_input clustered data set
-property_value: IAO:0000111 "clustered data visualization" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "James Malone" xsd:string
 
 [Term]
 id: PATO:0000001
@@ -2169,14 +845,6 @@ synonym: "relational structural quality" EXACT []
 is_a: PATO:0000051 ! morphology
 
 [Term]
-id: PATO:0000186
-name: behavioral quality
-def: "An organismal quality inhering in a bearer by virtue of the bearer's behavior aggregate of the responses or reactions or movements in a given situation." []
-is_a: PATO:0001995 ! organismal quality
-property_value: IAO:0000111 "behavioral quality" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
-
-[Term]
 id: PATO:0001018
 name: physical quality
 is_a: PATO:0001241 ! physical object quality
@@ -2194,10 +862,7 @@ synonym: "quality of a continuant" EXACT []
 synonym: "quality of a single physical entity" EXACT []
 synonym: "quality of an object" EXACT []
 synonym: "quality of continuant" EXACT []
-is_a: BFO:0000019 ! quality
 is_a: PATO:0000001 ! quality
-property_value: IAO:0000111 "physical object quality" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001992
@@ -2212,42 +877,7 @@ is_a: PATO:0001992 ! cellularity
 [Term]
 id: PATO:0001995
 name: organismal quality
-def: "A quality that inheres in an entire organism or part of an organism." []
 is_a: PATO:0001241 ! physical object quality
-property_value: IAO:0000111 "organismal quality" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
-
-[Term]
-id: PATO:0002201
-name: handedness
-def: "A behavioral quality inhering ina bearer by virtue of the bearer's unequal distribution of fine motor skill between its left and right hands or feet." []
-is_a: PATO:0000186 ! behavioral quality
-property_value: IAO:0000111 "handedness" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
-
-[Term]
-id: PATO:0002202
-name: left handedness
-def: "Handedness where the organism preferentially uses the left hand or foot for tasks requiring the use of a single hand or foot or a dominant hand or foot." []
-is_a: PATO:0002201 ! handedness
-property_value: IAO:0000111 "left handedness" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
-
-[Term]
-id: PATO:0002203
-name: right handedness
-def: "Handedness where the organism preferentially uses the right hand or foot for tasks requiring the use of a single hand or foot or a dominant hand or foot." []
-is_a: PATO:0002201 ! handedness
-property_value: IAO:0000111 "right handedness" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
-
-[Term]
-id: PATO:0002204
-name: ambidextrous handedness
-def: "Handedness where the organism exhibits no overall dominance in the use of right or left hand or foot in the performance of tasks that require one hand or foot or a dominant hand or foot." []
-is_a: PATO:0002201 ! handedness
-property_value: IAO:0000111 "ambidextrous handedness" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0002266
@@ -2263,79 +893,6 @@ is_a: PATO:0000141 ! structure
 id: PATO:0010001
 name: disconnected
 is_a: PATO:0000141 ! structure
-
-[Term]
-id: UO:0000001
-name: length unit
-def: "A unit which is a standard measure of the distance between two points." []
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "length unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000002
-name: mass unit
-def: "A unit which is a standard measure of the amount of matter/energy of a physical object." []
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "mass unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000003
-name: time unit
-def: "A unit which is a standard measure of the dimension in which events occur in sequence." []
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "time unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000005
-name: temperature unit
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "temperature unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000006
-name: substance unit
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "substance unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000051
-name: concentration unit
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "concentration unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000095
-name: volume unit
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "volume unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000105
-name: frequency unit
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "frequency unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000270
-name: volumetric flow rate unit
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "volumetric flow rate unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: UO:0000280
-name: rate unit
-is_a: IAO:0000003 ! measurement unit label
-property_value: IAO:0000111 "rate unit" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: VFB:10000005
@@ -2437,14 +994,6 @@ is_transitive: true
 is_a: RO:0002222 ! temporally related to
 
 [Typedef]
-id: BFO:0000067
-name: contains process
-def: "[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
-comment: Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant
-property_value: IAO:0000111 "site of" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Typedef]
 id: IAO:0000136
 name: is about
 def: "A (currently) primitive relation that relates an information artifact to an entity." []
@@ -2454,58 +1003,6 @@ property_value: IAO:0000116 "7/6/2009 Alan Ruttenberg. Following discussion with
 property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
 domain: IAO:0000030 ! information content entity
-
-[Typedef]
-id: IAO:0000219
-name: denotes
-def: "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically" []
-property_value: IAO:0000112 "A person's name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance \"Alan\" can denote different people. In each case of use, there is a case of the denotation relation obtaining, between \"Alan\" and the person that is being named." xsd:string
-property_value: IAO:0000116 "2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have 'specifically denotes', which would have been primitive, so make this relation primitive.\ng denotes r =def \nr is a portion of reality\nthere is some c that is a concretization of g \nevery c that is a concretization of g specifically denotes r" xsd:string
-property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
-property_value: IAO:0000119 "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan" xsd:string
-domain: IAO:0000030 ! information content entity
-range: BFO:0000001 ! entity
-is_a: IAO:0000136 ! is about
-inverse_of: IAO:0000235 ! denoted by
-
-[Typedef]
-id: IAO:0000235
-name: denoted by
-def: "inverse of the relation 'denotes'" []
-property_value: IAO:0000117 "Person: Jie Zheng, Chris Stoeckert, Mike Conlon" xsd:string
-property_value: IAO:0000233 https://github.com/information-artifact-ontology/IAO/issues/206
-domain: BFO:0000001 ! entity
-range: IAO:0000030 ! information content entity
-
-[Typedef]
-id: OBI:0000293
-name: has_specified_input
-def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
-property_value: IAO:0000111 "has_specified_input" xsd:string
-property_value: IAO:0000111 "has_specified_input" xsd:string
-property_value: IAO:0000112 "see is_input_of example_of_usage" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Coutot" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-domain: OBI:0000011 ! planned process
-is_a: RO:0000057 ! has participant
-inverse_of: OBI:0000295 ! is_specified_input_of
-
-[Typedef]
-id: OBI:0000295
-name: is_specified_input_of
-def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
-property_value: IAO:0000111 "is_specified_input_of" xsd:string
-property_value: IAO:0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
-range: OBI:0000011 ! planned process
-is_a: RO:0000056 ! participates in
 
 [Typedef]
 id: OBI:0000299
@@ -2535,31 +1032,6 @@ property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 range: OBI:0000011 ! planned process
 is_a: RO:0000056 ! participates in
-
-[Typedef]
-id: OBI:0000417
-name: achieves_planned_objective
-def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: IAO:0000111 "achieves_planned_objective" xsd:string
-property_value: IAO:0000112 "A cell sorting process achieves the objective specification 'material separation objective'" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "BP, AR, PPPB branch" xsd:string
-property_value: IAO:0000119 "PPPB branch derived" xsd:string
-property_value: IAO:0000232 "modified according to email thread from 1/23/09 in accordince with DT and PPPB branch" xsd:string
-domain: OBI:0000011 ! planned process
-range: IAO:0000005 ! objective specification
-inverse_of: OBI:0000833 ! objective_achieved_by
-
-[Typedef]
-id: OBI:0000833
-name: objective_achieved_by
-def: "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: IAO:0000111 "objective_achieved_by" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "OBI" xsd:string
-property_value: IAO:0000119 "OBI" xsd:string
-domain: IAO:0000005 ! objective specification
-range: OBI:0000011 ! planned process
 
 [Typedef]
 id: RO:0000056
@@ -3172,18 +1644,6 @@ is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
 
 [Typedef]
-id: RO:0002432
-name: is active in
-def: "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure." [GOC:cjm, GOC:dos]
-synonym: "enables activity in" EXACT []
-property_value: IAO:0000112 "A protein that enables activity in a cytosol." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "executes activity in" xsd:string
-holds_over_chain: RO:0002327 occurs_in {http://purl.obolibrary.org/obo/RO_0002581="true"}
-is_a: overlaps ! overlaps
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
 id: RO:0002434
 name: interacts with
 def: "A relationship that holds between two entities in which the processes executed by the two entities are causally connected." []
@@ -3260,16 +1720,6 @@ id: RO:0002464
 name: helper property (not for use in curation)
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000232 "This property or its subproperties is not to be used directly. These properties exist as helper properties that are used to support OWL reasoning." xsd:string
-
-[Typedef]
-id: RO:0002479
-name: has part that occurs in
-def: "p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c." []
-subset: ro-eco
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-domain: BFO:0000003 ! occurrent
-range: BFO:0000004 ! independent continuant
-holds_over_chain: has_part occurs_in {http://purl.obolibrary.org/obo/RO_0002581="true"}
 
 [Typedef]
 id: RO:0002481
@@ -3591,18 +2041,13 @@ is_a: RO:0002500 ! causal agent in process
 id: characteristic_of
 name: characteristic of
 name: characteristic_of
-name: inheres in
 namespace: fly_anatomy.ontology
 def: "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence." []
-def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
 comment: Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.
 xref: RO:0000052
 property_value: IAO:0000111 "inheres in" xsd:string
-property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
 property_value: IAO:0000112 "this fragility is a characteristic of this vase" xsd:string
-property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
 property_value: IAO:0000112 "this red color is a characteristic of this apple" xsd:string
-property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
 property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: RO:0001900 RO:0001901
 is_functional: true
@@ -3626,7 +2071,6 @@ name: has characteristic
 name: has_characteristic
 namespace: fly_anatomy.ontology
 namespace: uberon
-def: "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence" []
 def: "Inverse of characteristic_of" []
 xref: RO:0000053
 property_value: IAO:0000111 "bearer of" xsd:string
@@ -3643,27 +2087,41 @@ is_inverse_functional: true
 id: has_part
 name: has part
 name: has_part
+namespace: chebi_ontology
 namespace: external
+namespace: protein
 namespace: quality
 namespace: relationship
 namespace: uberon
 def: "a core relation that holds between a whole and its part" []
+def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." []
+comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: BFO:0000051
 xref: OBO_REL:has_part
 property_value: IAO:0000111 "has part" xsd:string
+property_value: IAO:0000111 "has part" xsd:string
+property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
+property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
+property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
 property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
 property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
+property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
+property_value: IAO:0000118 "has_part" xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/BFO
 property_value: RO:0001900 RO:0001901
+is_cyclic: false
 is_transitive: true
 is_a: overlaps ! overlaps
 
@@ -3698,27 +2156,6 @@ is_a: RO:0002305 ! causally upstream of, negative effect
 inverse_of: RO:0002335 ! negatively regulated by
 
 [Typedef]
-id: occurs_in
-name: occurs in
-namespace: external
-def: "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
-comment: Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-xref: BFO:0000066
-property_value: IAO:0000111 "occurs in" xsd:string
-property_value: IAO:0000118 "occurs_in" xsd:string
-property_value: IAO:0000118 "unfolds in" xsd:string
-property_value: IAO:0000118 "unfolds_in" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-domain: BFO:0000003 ! occurrent
-range: BFO:0000004 ! independent continuant
-holds_over_chain: part_of occurs_in
-inverse_of: BFO:0000067 ! contains process
-transitive_over: part_of ! part_of
-
-[Typedef]
 id: overlaps
 name: overlaps
 namespace: fly_anatomy.ontology
@@ -3741,6 +2178,7 @@ id: part_of
 name: part of
 name: part_of
 namespace: external
+namespace: protein
 namespace: quality
 namespace: relationship
 namespace: uberon
@@ -3752,13 +2190,22 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: BFO:0000050
 xref: OBO_REL:part_of
 property_value: IAO:0000111 "is part of" xsd:string
+property_value: IAO:0000111 "is part of" xsd:string
+property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
 property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
 property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
+property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
+property_value: IAO:0000118 "part_of" xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/BFO
 property_value: RO:0001900 RO:0001901

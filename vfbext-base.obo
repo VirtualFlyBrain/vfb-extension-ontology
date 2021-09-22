@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2021-08-03/vfbext-base.owl
-date: 03:08:2021 12:45
+data-version: vfbext/releases/2021-09-22/vfbext-base.owl
+date: 22:09:2021 15:11
 subsetdef: clone ""
 subsetdef: neuron ""
 subsetdef: ns_part ""
@@ -9,7 +9,7 @@ subsetdef: tract ""
 remark: VFB extension ontology
 ontology: vfbext/vfbext-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: owl:versionInfo "2021-08-03" xsd:string
+property_value: owl:versionInfo "2021-09-22" xsd:string
 
 [Term]
 id: VFB:10000005
