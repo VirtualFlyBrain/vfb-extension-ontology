@@ -1,0 +1,278 @@
+{
+  "graphs": [
+    {
+      "domainRangeAxioms": [
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/CARO_0030002"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000009"
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"
+        }
+      ],
+      "edges": [
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000004",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/FBbt_10000000",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002292",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000009"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002350",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000002"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000003"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/image",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/image",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014"
+        }
+      ],
+      "equivalentNodesSets": [],
+      "id": "http://purl.obolibrary.org/obo/vfbext/vfbext-base.json",
+      "logicalDefinitionAxioms": [
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/FBbt_00100313"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/CARO_0030002",
+              "propertyId": "http://purl.obolibrary.org/obo/BFO_0000050"
+            }
+          ]
+        }
+      ],
+      "meta": {
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.org/dc/elements/1.1/type",
+            "val": "http://purl.obolibrary.org/obo/IAO_8000001"
+          },
+          {
+            "pred": "http://www.geneontology.org/formats/oboInOwl#date",
+            "val": "22:09:2021 15:11"
+          },
+          {
+            "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "val": "VFB extension ontology"
+          },
+          {
+            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
+            "val": "2021-09-22"
+          }
+        ],
+        "subsets": [],
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2021-09-22/vfbext-base.json",
+        "xrefs": []
+      },
+      "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004",
+          "lbl": "expression pattern fragment",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-03-04T10:55:59Z"
+              }
+            ],
+            "comments": [
+              "A multicellular structure that is part of an expression pattern."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007",
+          "lbl": "template image",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-05-15T15:53:38Z"
+              }
+            ],
+            "comments": [
+              "A single channel image that is used as a template for image registration."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008",
+          "lbl": "has hemidriver",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:48:55Z"
+              }
+            ],
+            "definition": {
+              "val": "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.",
+              "xrefs": [
+                "PMID:17088209"
+              ]
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000009",
+          "lbl": "has driver",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:49:10Z"
+              }
+            ],
+            "definition": {
+              "val": "A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements.",
+              "xrefs": [
+                "PMID:8223268",
+                "Wikipedia:GAL4/UAS_system"
+              ]
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010",
+          "lbl": "intersectional expression pattern",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "dos"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2018-09-26T07:54:17Z"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7",
+          "lbl": "has_exemplar",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0",
+          "lbl": "exemplar_of",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005",
+          "lbl": "cell cluster",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001",
+          "lbl": "has_channel",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000002",
+          "lbl": "has_background_channel",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000003",
+          "lbl": "has_signal_channel",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005",
+          "lbl": "source_data_link",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006",
+          "lbl": "multi channel image",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014",
+          "lbl": "channel",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "has_license",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/references",
+          "lbl": "has_reference",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/source",
+          "lbl": "has_source",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://xmlns.com/foaf/0.1/depicts",
+          "lbl": "depicts",
+          "type": "PROPERTY"
+        }
+      ],
+      "propertyChainAxioms": []
+    }
+  ]
+}

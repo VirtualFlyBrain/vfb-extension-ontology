@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vfbext.owl#"
-     xml:base="http://purl.obolibrary.org/obo/vfbext.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vfbext/vfbext-full.owl#"
+     xml:base="http://purl.obolibrary.org/obo/vfbext/vfbext-full.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -21,8 +21,8 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboInOwl2="ttp://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-09-22/vfbext.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-full.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-09-22/vfbext-full.owl"/>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22:09:2021 15:11</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-22</owl:versionInfo>
@@ -1344,6 +1344,10 @@ Examples include: the relationship between two channels collected simultaneously
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">

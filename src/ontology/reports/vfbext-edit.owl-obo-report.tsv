@@ -1,0 +1,21 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/fbbt/vfb/vfb_ext.owl	dc11:description	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/fbbt/vfb/vfb_ext.owl	has_license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/fbbt/vfb/vfb_ext.owl	dc11:title	
+WARN	missing_definition	has_exemplar	definition	
+WARN	missing_definition	exemplar_of	definition	
+WARN	missing_definition	cell cluster	definition	
+WARN	missing_definition	has_channel	definition	
+WARN	missing_definition	has_background_channel	definition	
+WARN	missing_definition	has_signal_channel	definition	
+WARN	missing_definition	expression pattern fragment	definition	
+WARN	missing_definition	source_data_link	definition	
+WARN	missing_definition	multi channel image	definition	
+WARN	missing_definition	template image	definition	
+WARN	missing_definition	intersectional expression pattern	definition	
+WARN	missing_definition	channel	definition	
+WARN	missing_definition	has_license	definition	
+WARN	missing_definition	has_reference	definition	
+WARN	missing_definition	has_source	definition	
+WARN	missing_definition	depicts	definition	
+INFO	missing_superclass	expression pattern fragment	rdfs:subClassOf	
