@@ -1,4 +1,4 @@
 # Running release pipeline for TRAVIS
 set -e
 
-sh run.sh make IMP=false repare_release -B
+sh run.sh make IMP=false prepare_release -B
