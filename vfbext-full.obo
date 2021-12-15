@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2021-12-14/vfbext-full.owl
-date: 14:12:2021 14:02
+data-version: vfbext/releases/2021-12-15/vfbext-full.owl
+date: 15:12:2021 16:06
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -31,7 +31,7 @@ ontology: vfbext/vfbext-full
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/</terms:license> xsd:string
-property_value: owl:versionInfo "2021-12-14" xsd:string
+property_value: owl:versionInfo "2021-12-15" xsd:string
 
 [Term]
 id: BFO:0000001
