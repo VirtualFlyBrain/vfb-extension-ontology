@@ -1,7 +1,7 @@
 id: vfbext
-title: "Drosophila Anatomy Ontology"
-github_org: FlyBase
-repo: drosophila-anatomy-ontology
+title: "VFB Extension Ontology"
+github_org: VirtualFlyBrain
+repo: vfb-extension-ontology
 report_fail_on: none
 use_dosdps: FALSE
 namespaces: 

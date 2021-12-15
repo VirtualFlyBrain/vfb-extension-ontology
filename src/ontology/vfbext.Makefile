@@ -11,3 +11,8 @@ imports/obi_import.owl: mirror/obi.owl imports/obi_terms_combined.txt
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
 		mv $@.tmp.owl $@ && rm imports/obi_terms_combined.txt; fi
 
+
+$(ONT).owl: $(ONT)-full.owl
+	grep -v owl:versionIRI $< > $@.tmp.owl
+	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfbext.owl \
+		convert -o $@.tmp.owl && mv $@.tmp.owl $@
