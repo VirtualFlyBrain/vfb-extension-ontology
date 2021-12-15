@@ -1716,7 +1716,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "14:12:2021 14:02"
+            "val": "15:12:2021 16:06"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -1724,11 +1724,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-12-14"
+            "val": "2021-12-15"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2021-12-14/vfbext.json",
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2021-12-15/vfbext.json",
         "xrefs": []
       },
       "nodes": [
