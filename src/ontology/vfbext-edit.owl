@@ -11,7 +11,7 @@ Prefix(terms:=<http://purl.org/dc/terms/>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/fbbt/vfb/vfb_ext.owl>
+Ontology(<http://virtualflybrain.org/data/VFB/OWL/vfbext.owl>
 Import(<http://purl.obolibrary.org/obo/vfbext/imports/caro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vfbext/imports/fbbt_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vfbext/imports/obi_import.owl>)
