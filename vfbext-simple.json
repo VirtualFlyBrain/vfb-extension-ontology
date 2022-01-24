@@ -60,7 +60,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "15:12:2021 16:07"
+            "val": "24:01:2022 13:14"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -68,11 +68,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-12-15"
+            "val": "2022-01-24"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2021-12-15/vfbext-simple.json",
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2022-01-24/vfbext-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -104,10 +104,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -205,42 +201,14 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "definition"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "definition"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "textual definition"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
                 "val": "http://purl.obolibrary.org/obo/IAO_0000122"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "PERSON:Daniel Schober"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
                 "val": "http://purl.obolibrary.org/obo/iao.owl"
               }
-            ],
-            "definition": {
-              "val": "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.",
-              "xrefs": []
-            }
+            ]
           },
           "type": "PROPERTY"
         },
@@ -416,63 +384,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.org/dc/elements/1.1/description",
-          "lbl": "Description",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": "Description may include but is not limited to: an abstract,\n         table of contents, reference to a graphical representation\n         of content or a free-text account of the content."
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.org/dc/elements/1.1/"
-              }
-            ],
-            "comments": [
-              "An account of the content of the resource."
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/elements/1.1/title",
-          "lbl": "Title",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": "\n        Typically, a Title will be a name by which the resource is\n         formally known.\n    "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.org/dc/elements/1.1/"
-              }
-            ],
-            "comments": [
-              "A name given to the resource."
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/license",
-          "lbl": "has_license",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Mark Miller"
-              },
-              {
-                "pred": "http://purl.org/dc/elements/1.1/date",
-                "val": "2018-05-11T13:47:29Z"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7",
           "lbl": "has_exemplar",
           "type": "PROPERTY"
@@ -516,6 +427,11 @@
           "id": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014",
           "lbl": "channel",
           "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "has_license",
+          "type": "PROPERTY"
         },
         {
           "id": "http://purl.org/dc/terms/references",

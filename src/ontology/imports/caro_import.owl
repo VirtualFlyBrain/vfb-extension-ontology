@@ -11,12 +11,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/imports/caro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2021-12-15/imports/caro_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2022-01-24/imports/caro_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/caro/2.0/beta/caro.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-15</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -157,6 +158,12 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/caro#plus">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -1216,7 +1223,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000013">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0005623"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000014"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
@@ -1236,7 +1242,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
     <!-- http://purl.obolibrary.org/obo/CARO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000014">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1560,26 +1565,6 @@ MH: sexual subtypes should probably be logically defined based on sexual process
         <rdfs:comment>To accommodate unicellular organisms better, &apos;cell in vivo&apos; has been re-labeled &apos;native cell&apos; to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. &apos;Native&apos; is intended to contrast with &apos;in vitro&apos;, which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12).</rdfs:comment>
         <rdfs:label>native cell</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0005623 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005623"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0019012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019012">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044464 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044464"/>
     
 
 
