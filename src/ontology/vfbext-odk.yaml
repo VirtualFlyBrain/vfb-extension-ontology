@@ -23,6 +23,7 @@ import_group:
     - id: caro
     - id: fbbt
     - id: obi
+      module_type: minimal
 edit_format: owl
 robot_java_args: '-Xmx8G'
 allow_equivalents: all
