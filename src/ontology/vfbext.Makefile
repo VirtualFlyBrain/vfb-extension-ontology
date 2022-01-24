@@ -17,5 +17,5 @@ prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
 	rsync -R $(IMPORT_FILES) $(RELEASEDIR) &&\
   rm -f $(CLEANFILES) &&\
-	rm imports/*_terms_combined.txt &&\
+	rm -f imports/*_terms_combined.txt &&\
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
