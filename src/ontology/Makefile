@@ -262,6 +262,10 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: caro
+
+$(IMPORTDIR)/caro_import.owl: $(MIRRORDIR)/caro.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in vfbext.Makefile!" && false
 ## Module for ontology: obi
 
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms_combined.txt

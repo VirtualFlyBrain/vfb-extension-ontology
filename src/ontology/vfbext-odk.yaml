@@ -21,6 +21,7 @@ import_group:
   products:
     - id: ro
     - id: caro
+      module_type: custom
     - id: fbbt
     - id: obi
       module_type: minimal
