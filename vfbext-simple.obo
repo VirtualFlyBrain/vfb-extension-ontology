@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2022-01-24/vfbext-simple.owl
-date: 24:01:2022 13:14
+data-version: vfbext/releases/2022-02-25/vfbext-simple.owl
+date: 25:02:2022 15:22
 subsetdef: clone ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -14,8 +14,8 @@ remark: VFB extension ontology
 ontology: vfbext/vfbext-simple
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/</terms:license> xsd:string
-property_value: owl:versionInfo "2022-01-24" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/</terms:license> xsd:string
+property_value: owl:versionInfo "2022-02-25" xsd:string
 
 [Term]
 id: VFB:10000005
@@ -134,7 +134,6 @@ property_value: IAO:0000116 "Everything is part of itself. Any part of any part 
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/BFO
 property_value: RO:0001900 RO:0001901
 property_value: RO:0040042 BFO:0000002
 property_value: RO:0040042 BFO:0000003

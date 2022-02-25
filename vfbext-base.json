@@ -94,11 +94,11 @@
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/by/3.0/</terms:license>"
+            "val": "https://creativecommons.org/licenses/by/4.0/</terms:license>"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "24:01:2022 13:13"
+            "val": "25:02:2022 15:21"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -106,11 +106,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-01-24"
+            "val": "2022-02-25"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2022-01-24/vfbext-base.json",
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2022-02-25/vfbext-base.json",
         "xrefs": []
       },
       "nodes": [
