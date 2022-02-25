@@ -338,11 +338,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000004",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/BFO_0000141"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000004",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CARO_0030000"
         },
         {
@@ -396,11 +391,6 @@
           "sub": "http://purl.obolibrary.org/obo/CARO_0000006"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0001010"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000050",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002350"
@@ -446,11 +436,6 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002411"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000141",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000007"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/CARO_0000000",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CARO_0000006"
@@ -458,127 +443,12 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CARO_0000000",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000007"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000000",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/FBbt_10000000"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000003",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002180",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0020000"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000003",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000014"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000003",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000040"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000003",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000042"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000003",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0010000"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000006",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000003"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000006",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0001008"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000006",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0020000"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CARO_0000006",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CARO_0020003"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000012",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0001008"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000013",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000014"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000013",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0030002"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0000013",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CL_0000003"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0001008",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000004"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0001008",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000040"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0001008",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000042"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0001008",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0001000"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0001008",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0010000"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0001010",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/NCBITaxon_10239"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0001010",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/NCBITaxon_12884"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0010000",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000032"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0010004",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000012"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CARO_0010004",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/NCBITaxon_131567"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CARO_0020003",
@@ -594,11 +464,6 @@
           "obj": "http://purl.obolibrary.org/obo/CARO_0030002",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CL_0000003",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000013"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBbt_00007001",
@@ -646,104 +511,9 @@
           "sub": "http://purl.obolibrary.org/obo/GO_0016301"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/NCBITaxon_131567",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000012"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/NCBITaxon_131567",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0010004"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/NCBITaxon_7227",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://purl.obolibrary.org/obo/FBbt_10000000"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0000001",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0001241"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0000051",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0000052"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0000051",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0000141"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0000052",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0002266"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0000125",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000006"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0000141",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0010000"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0000141",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0010001"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0001018",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0000125"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0001241",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0000051"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0001241",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0001018"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0001241",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0001995"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0001992",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0001993"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0001993",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0010000"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0001995",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0001992"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0002266",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000003"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0010000",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0000003"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/PATO_0010001",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
-          "sub": "http://purl.obolibrary.org/obo/CARO_0020000"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000052",
@@ -1461,9 +1231,9 @@
           "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007"
         },
         {
-          "obj": "http://www.w3.org/2002/07/owl#topObjectProperty",
-          "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002131"
+          "obj": "http://www.w3.org/2002/07/owl#Thing",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/BFO_0000001"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/image",
@@ -1476,62 +1246,9 @@
           "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014"
         }
       ],
-      "equivalentNodesSets": [
-        {
-          "nodeIds": [
-            "http://purl.obolibrary.org/obo/CARO_0000013",
-            "http://purl.obolibrary.org/obo/CL_0000003"
-          ]
-        },
-        {
-          "nodeIds": [
-            "http://purl.obolibrary.org/obo/CARO_0010004",
-            "http://purl.obolibrary.org/obo/NCBITaxon_131567"
-          ]
-        }
-      ],
+      "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/vfbext.json",
       "logicalDefinitionAxioms": [
-        {
-          "definedClassId": "http://purl.obolibrary.org/obo/CARO_0000003",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/CARO_0000006"
-          ],
-          "restrictions": [
-            {
-              "fillerId": "http://purl.obolibrary.org/obo/PATO_0002266",
-              "propertyId": "http://purl.obolibrary.org/obo/RO_0000053"
-            },
-            {
-              "fillerId": "http://purl.obolibrary.org/obo/PATO_0010000",
-              "propertyId": "http://purl.obolibrary.org/obo/RO_0000053"
-            }
-          ]
-        },
-        {
-          "definedClassId": "http://purl.obolibrary.org/obo/CARO_0000006",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/CARO_0000000"
-          ],
-          "restrictions": [
-            {
-              "fillerId": "http://purl.obolibrary.org/obo/PATO_0000125",
-              "propertyId": "http://purl.obolibrary.org/obo/RO_0000053"
-            }
-          ]
-        },
-        {
-          "definedClassId": "http://purl.obolibrary.org/obo/CARO_0010000",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/CARO_0000003"
-          ],
-          "restrictions": [
-            {
-              "fillerId": "http://purl.obolibrary.org/obo/PATO_0001993",
-              "propertyId": "http://purl.obolibrary.org/obo/RO_0000053"
-            }
-          ]
-        },
         {
           "definedClassId": "http://purl.obolibrary.org/obo/FBbt_10000000",
           "genusIds": [
@@ -1569,11 +1286,11 @@
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/by/3.0/</terms:license>"
+            "val": "https://creativecommons.org/licenses/by/4.0/</terms:license>"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "24:01:2022 13:12"
+            "val": "25:02:2022 15:21"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -1581,11 +1298,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-01-24"
+            "val": "2022-02-25"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2022-01-24/vfbext.json",
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2022-02-25/vfbext.json",
         "xrefs": []
       },
       "nodes": [
@@ -1811,116 +1528,9 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000016",
-          "lbl": "disposition",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "disposition"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "Disposition"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "an atom of element X has the disposition to decay to an atom of element Y"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "certain people have a predisposition to colon cancer"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "children are innately disposed to categorize objects in certain ways."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the cell wall is disposed to filter chemicals in endocytosis and exocytosis"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000601",
-                "val": "If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] "
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/BFO_0000017",
           "lbl": "realizable entity",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "realizable"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "RealizableEntity"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the disposition of this piece of metal to conduct electricity."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the disposition of your blood to coagulate"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the function of your reproductive organs"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the role of being a doctor"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the role of this boundary to delineate where Utah and Colorado meet"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000601",
-                "val": "All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] "
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ],
             "definition": {
               "val": "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.",
               "xrefs": []
@@ -1929,142 +1539,11 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000019",
-          "lbl": "quality",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "quality"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "Quality"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the ambient temperature of this portion of air"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the color of a tomato"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the length of the circumference of your waist"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the mass of this piece of gold."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the shape of your nose"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the shape of your nostril"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000601",
-                "val": "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] "
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/BFO_0000020",
           "lbl": "specifically dependent continuant",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "sdc"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "SpecificallyDependentContinuant"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "of one-sided specifically dependent continuants: the mass of this tomato"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the disposition of this fish to decay"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the function of this heart: to pump blood"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the mutual dependence of proton donors and acceptors in chemical reactions [79"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the pink color of a medium rare piece of grilled filet mignon at its center"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the role of being a doctor"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the shape of this hole."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the smell of this portion of mozzarella"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] "
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ],
             "definition": {
-              "val": "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])",
+              "val": "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.",
               "xrefs": []
             }
           },
@@ -2074,60 +1553,6 @@
           "id": "http://purl.obolibrary.org/obo/BFO_0000023",
           "lbl": "role",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "role"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "Role"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the priest role"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the role of a boundary to demarcate two neighboring administrative territories"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the role of a building in serving as a military target"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the role of a stone in marking a property boundary"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the role of subject in a clinical trial"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the student role"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ],
             "definition": {
               "val": "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.",
               "xrefs": []
@@ -2139,36 +1564,6 @@
           "id": "http://purl.obolibrary.org/obo/BFO_0000031",
           "lbl": "generically dependent continuant",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "gdc"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "GenericallyDependentContinuant"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ],
             "definition": {
               "val": "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.",
               "xrefs": []
@@ -2177,152 +1572,9 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000034",
-          "lbl": "function",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "function"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "Function"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the function of a hammer to drive in nails"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the function of a heart pacemaker to regulate the beating of a heart through electricity"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the function of amylase in saliva to break down starch into sugar"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "BFO 2 Reference: In the past, we have distinguished two varieties of function, artifactual function and biological function. These are not asserted subtypes of BFO:function however, since the same function – for example: to pump, to transport – can exist both in artifacts and in biological entities. The asserted subtypes of function that would be needed in order to yield a separate monoheirarchy are not artifactual function, biological function, etc., but rather transporting function, pumping function, etc."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/BFO_0000040",
           "lbl": "material entity",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "material"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "MaterialEntity"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a flame"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a forest fire"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a human being"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a hurricane"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a photon"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a puff of smoke"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a sea wave"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a tornado"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "an aggregate of human beings."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "an energy wave"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "an epidemic"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the undetached arm of a human being"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000601",
-                "val": "Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000601",
-                "val": "every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] "
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] "
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] "
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ],
             "definition": {
               "val": "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.",
               "xrefs": []
@@ -2366,10 +1618,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "part_of"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/BFO"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/RO_0001900",
@@ -2487,10 +1735,6 @@
                 "val": "has_part"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/BFO"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/RO_0001900",
                 "val": "http://purl.obolibrary.org/obo/RO_0001901"
               },
@@ -2584,31 +1828,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000141",
-          "lbl": "immaterial entity",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
-                "val": "immaterial"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/BFO_0000180",
-                "val": "ImmaterialEntity"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth) [38, 7, 10"
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/CARO_0000000",
           "lbl": "anatomical entity",
           "meta": {
@@ -2631,50 +1850,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000003",
-          "lbl": "connected anatomical structure",
-          "meta": {
-            "comments": [
-              "Note that the definition does not say 'generated exclusively by the co-ordinated expression of the organism's own genome', so this is still valid for cases where normal morphogenesis requires the actions of a facultative symbiont, or some looser dependency such as the a requirement for the presence of gut flora for normal gut development."
-            ],
-            "definition": {
-              "val": "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/caro#core"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000004",
-          "lbl": "organism substance",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "Examples include feces, urine, blood, blood plasma, lymph, hemolymph, cerbro-spinal fluid.  This class does not encompass anatomical entities with inherent 3D structure such as dentine and arthropod cuticle."
-              }
-            ],
-            "comments": [
-              "Note - CARO explicitly declares organisms substances to be part of (some) organism."
-            ],
-            "definition": {
-              "val": "Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body and that does not have inherent 3D shape generated by coordinated expression of the organism's own genome.",
-              "xrefs": []
-            },
-            "synonyms": [
-              {
-                "pred": "hasExactSynonym",
-                "val": "portion of organism substance",
-                "xrefs": []
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/CARO_0000006",
           "lbl": "material anatomical entity",
           "meta": {
@@ -2686,257 +1861,6 @@
             ],
             "definition": {
               "val": "An anatomical entity that has mass.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/caro#core"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000007",
-          "lbl": "immaterial anatomical entity",
-          "meta": {
-            "definition": {
-              "val": "Anatomical entity that has no mass.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/caro#core"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000012",
-          "lbl": "multicellular organism",
-          "meta": {
-            "comments": [
-              "MH: Can't define this class based on 2 or more cells because most multi cellular organisms (if not all) have only a single cell at some point in life history. \n\nMH: sexual subtypes should probably be logically defined based on sexual processes or sex qualities."
-            ],
-            "definition": {
-              "val": "Anatomical structure that is an individual member of a clade and, at some point in its life-cycle, consists of more than one cell.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000013",
-          "lbl": "cell",
-          "meta": {
-            "comments": [
-              "deprecate and replace with CL or GO term?"
-            ],
-            "definition": {
-              "val": "An anatomical structure that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.",
-              "xrefs": []
-            },
-            "xrefs": [
-              {
-                "val": "CL:0000000"
-              },
-              {
-                "val": "GO:0005623"
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000014",
-          "lbl": "cell part",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "cell component"
-              }
-            ],
-            "comments": [
-              "This is declared equivalent with GO:0044464. The definition should be co-ordinated with GO. We could obsolete the CARO class and just use the GO class."
-            ],
-            "definition": {
-              "val": "Anatomical structure that is part of a cell and that has a granularity level equal to that of a protein complex or higher.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000032",
-          "lbl": "organism subdivision",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Old definition: Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism."
-              }
-            ],
-            "definition": {
-              "val": "Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/caro#core"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000040",
-          "lbl": "acellular anatomical structure",
-          "meta": {
-            "comments": [
-              "Example.  Insect cuticle, eggshell, hair."
-            ],
-            "definition": {
-              "val": "An anatomical structure that has no cells or cell parts as a part.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0000042",
-          "lbl": "extraembryonic structure",
-          "meta": {
-            "comments": [
-              "MH: define as not part of embryo, or will not develop into embryo? MH: changed def to exclude cells so this class could be included in gross anatomical part. DOS: Changed to something that I think works for both vertebrates and invertebrates and that keeps the restriction to multicellular structures.  Old def: \"Anatomical structure that is contiguous with the embryo and is comprised of portions of tissue that will not contribute to the embryo.\".  One remaining question - perhaps zygote is too restrictive given that some organisms have parthenogenesis e.g. aphids?\n"
-            ],
-            "definition": {
-              "val": "A multicellular anatomical structure that is associated with an embryo and derived from the zygote from which it develops, but which does not contribute to the embryo proper or to structures that are part of the same organism after embryogenesis.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/caro#plus"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0001000",
-          "lbl": "multi-cell-part structure",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "multi-cell-component structure"
-              }
-            ],
-            "comments": [
-              "Examples: a bundle of neuron projections in the brain; a region neuropil in an arthropod central nervous system; a region of cortex (preikaryal rind) in an arthropod brain."
-            ],
-            "definition": {
-              "val": "A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/caro#core"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0001008",
-          "lbl": "gross anatomical part",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "mah"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_creation_date",
-                "val": "10.7.2011"
-              }
-            ],
-            "definition": {
-              "val": "Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells. ",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/caro#plus"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0001010",
-          "lbl": "organism or virus or viroid",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Melissa Haendel"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_creation_date",
-                "val": "9/18/11"
-              }
-            ],
-            "definition": {
-              "val": "Material anatomical entity that is a member of an individual species or is a viral or viroid particle.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0010000",
-          "lbl": "multicellular anatomical structure",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "djs93"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_creation_date",
-                "val": "Sun Feb 27 10:53:00 GMT 2011"
-              }
-            ],
-            "definition": {
-              "val": "An anatomical structure that has more than one cell as a part.",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/caro#core"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0010004",
-          "lbl": "cellular organism",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "mah"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_creation_date",
-                "val": "7.16.2011"
-              }
-            ],
-            "comments": [
-              "A general term for organism that is agnostic about single cell vs multi-cellular.  Note that this is a subclass of 'anatomical structure', meaning that an organism must be a connected structure. For example, if I take one plant and make a rooted cutting from a it, I now have two (clonally related) organisms. "
-            ],
-            "definition": {
-              "val": "An individual member of a clade of cellular organisms.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CARO_0020000",
-          "lbl": "disconnected anatomical group",
-          "meta": {
-            "definition": {
-              "val": "Material anatomical entity consisting of multiple anatomical structures that are not connected to each other.",
               "xrefs": []
             },
             "subsets": [
@@ -2986,26 +1910,6 @@
           "meta": {
             "definition": {
               "val": "The mereological sum of all cells in a single organism in which expression of some specified gene occurs.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/CL_0000003",
-          "lbl": "native cell",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/cl.owl"
-              }
-            ],
-            "comments": [
-              "To accommodate unicellular organisms better, 'cell in vivo' has been re-labeled 'native cell' to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. 'Native' is intended to contrast with 'in vitro', which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12)."
-            ],
-            "definition": {
-              "val": "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment).",
               "xrefs": []
             }
           },
@@ -3233,6 +2137,36 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000112",
+          "lbl": "example of usage",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "example_of_usage"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.obolibrary.org/obo/iao.owl"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "IAO:0000112"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/IAO_0000115",
           "lbl": "definition",
           "meta": {
@@ -3250,43 +2184,47 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/NCBITaxon_10239",
-          "lbl": "Viruses",
+          "id": "http://purl.obolibrary.org/obo/IAO_0000116",
+          "lbl": "editor note",
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ncbitaxon.owl"
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "editor_note"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.obolibrary.org/obo/iao.owl"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "IAO:0000116"
               }
             ]
           },
-          "type": "CLASS"
+          "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/NCBITaxon_12884",
-          "lbl": "Viroids",
+          "id": "http://purl.obolibrary.org/obo/IAO_0000600",
+          "lbl": "elucidation",
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ncbitaxon.owl"
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.obolibrary.org/obo/iao.owl"
               }
             ]
           },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/NCBITaxon_131567",
-          "lbl": "cellular organisms",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
-                "val": "http://purl.obolibrary.org/obo/ncbitaxon.owl"
-              }
-            ]
-          },
-          "type": "CLASS"
+          "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/OBI_0000293",
@@ -3373,135 +2311,11 @@
               }
             ],
             "definition": {
-              "val": "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.",
-              "xrefs": [
-                "PATOC:GVG"
-              ]
-            },
-            "synonyms": [
-              {
-                "pred": "hasExactSynonym",
-                "val": "trait",
-                "xrefs": []
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0000051",
-          "lbl": "morphology",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "quality"
-              }
-            ],
-            "definition": {
-              "val": "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure.",
+              "val": "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities",
               "xrefs": [
                 "PATOC:GVG"
               ]
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0000125",
-          "lbl": "mass",
-          "meta": {
-            "definition": {
-              "val": "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0000141",
-          "lbl": "structure",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "quality"
-              }
-            ],
-            "definition": {
-              "val": "A morphology quality inhering in a bearer by virtue of the bearer's relative position, shape, arrangements and connectivity of an organism's various parts; the pattern underlying its form.",
-              "xrefs": [
-                "PATOC:GVG"
-              ]
-            },
-            "synonyms": [
-              {
-                "pred": "hasExactSynonym",
-                "val": "relational structural quality",
-                "xrefs": []
-              }
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0001241",
-          "lbl": "physical object quality",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "quality"
-              }
-            ],
-            "definition": {
-              "val": "A quality which inheres in a continuant.",
-              "xrefs": [
-                "PATOC:GVG"
-              ]
-            },
-            "synonyms": [
-              {
-                "pred": "hasExactSynonym",
-                "val": "monadic quality of a continuant",
-                "xrefs": []
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "multiply inhering quality of a physical entity ",
-                "xrefs": []
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "quality of a continuant",
-                "xrefs": []
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "quality of a single physical entity",
-                "xrefs": []
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "quality of an object",
-                "xrefs": []
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "quality of continuant",
-                "xrefs": []
-              },
-              {
-                "pred": "hasNarrowSynonym",
-                "val": "monadic quality of an object",
-                "xrefs": []
-              },
-              {
-                "pred": "hasNarrowSynonym",
-                "val": "monadic quality of continuant",
-                "xrefs": []
-              }
-            ]
           },
           "type": "CLASS"
         },
@@ -3556,7 +2370,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0000053",
-          "lbl": "has_characteristic",
+          "lbl": "has characteristic",
           "meta": {
             "basicPropertyValues": [
               {
@@ -4245,10 +3059,6 @@
                 "val": "http://ontologydesignpatterns.org/wiki/Submissions:Componency"
               }
             ],
-            "comments": [
-              "For use in recording has_part with a cardinality constraint.",
-              "Use: http://purl.obolibrary.org/obo/BFO_0000073 'has cardinal part' ?"
-            ],
             "definition": {
               "val": "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.",
               "xrefs": []
@@ -4451,7 +3261,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002215",
-          "lbl": "capable of",
+          "lbl": "capable_of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6375,6 +5185,21 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000016",
+          "lbl": "disposition",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000019",
+          "lbl": "quality",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000034",
+          "lbl": "function",
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7",
           "lbl": "has_exemplar",
           "type": "PROPERTY"
@@ -6397,46 +5222,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/GO_0016772",
           "lbl": "transferase activity, transferring phosphorus-containing groups",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0000052",
-          "lbl": "shape",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0001018",
-          "lbl": "physical quality",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0001992",
-          "lbl": "cellularity",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0001993",
-          "lbl": "multicellular",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0001995",
-          "lbl": "organismal quality",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0002266",
-          "lbl": "3-D shape",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0010000",
-          "lbl": "maximally connected",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PATO_0010001",
-          "lbl": "disconnected",
           "type": "CLASS"
         },
         {
@@ -6502,6 +5287,11 @@
         {
           "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
           "lbl": "database_cross_reference",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "lbl": "has_obo_namespace",
           "type": "PROPERTY"
         },
         {

@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2022-01-24/vfbext-base.owl
-date: 24:01:2022 13:13
+data-version: vfbext/releases/2022-02-25/vfbext-base.owl
+date: 25:02:2022 15:21
 subsetdef: clone ""
 subsetdef: neuron ""
 subsetdef: ns_part ""
@@ -11,8 +11,8 @@ ontology: vfbext/vfbext-base
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/</terms:license> xsd:string
-property_value: owl:versionInfo "2022-01-24" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/</terms:license> xsd:string
+property_value: owl:versionInfo "2022-02-25" xsd:string
 
 [Term]
 id: VFB:10000005
