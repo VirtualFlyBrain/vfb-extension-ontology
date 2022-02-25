@@ -7,13 +7,13 @@
 # Add VFB iri
 $(ONT).owl: $(ONT)-full.owl
 	grep -v owl:versionIRI $< > $@.tmp.owl
-	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfbext.owl \
+	$(ROBOT) annotate --input $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfbext.owl \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
 
 # Include copying import files
 .PHONY: prepare_release
-prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
+prepare_release: $(ASSETS)
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
 	rsync -R $(IMPORT_FILES) $(RELEASEDIR) &&\
   rm -f $(CLEANFILES) &&\
