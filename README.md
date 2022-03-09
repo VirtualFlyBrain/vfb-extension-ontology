@@ -24,4 +24,4 @@ Please use this GitHub repository's [Issue tracker](https://github.com/VirtualFl
 
 ## Acknowledgements
 
-This ontology repository was created using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit)
+This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
