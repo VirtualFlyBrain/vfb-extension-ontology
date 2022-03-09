@@ -1,9 +1,8 @@
-[![Build Status](https://travis-ci.org/VirtualFlyBrain/vfb-extension-ontology.svg?branch=master)](https://travis-ci.org/VirtualFlyBrain/vfb-extension-ontology)
-[![DOI](https://zenodo.org/badge/13996/VirtualFlyBrain/vfb-extension-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/VirtualFlyBrain/vfb-extension-ontology)
-
 # vfb-extension-ontology
 
-This ontology... YOUR DESCRIPTION HERE
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+An ontology of miscellaneous terms for data annotation in VFB.
 
 ## Versions
 
