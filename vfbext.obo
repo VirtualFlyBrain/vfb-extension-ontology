@@ -1,9 +1,8 @@
 format-version: 1.2
-date: 25:02:2022 15:21
+date: 24:10:2022 12:05
 subsetdef: clone ""
 subsetdef: cur ""
 subsetdef: EmbDevSlim ""
-subsetdef: goslim_aspergillus ""
 subsetdef: goslim_candida ""
 subsetdef: goslim_chembl ""
 subsetdef: goslim_metagenomics ""
@@ -27,7 +26,7 @@ ontology: http://virtualflybrain.org/data/VFB/OWL/vfbext.owl
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/</terms:license> xsd:string
-property_value: owl:versionInfo "2022-02-25" xsd:string
+property_value: owl:versionInfo "2022-10-24" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -222,8 +221,8 @@ namespace: fly_anatomy.ontology
 def: "Anatomical structure that has multiple cells as parts." [FBC:DOS]
 xref: UBERON:0010000
 is_a: FBbt:00007001 ! anatomical structure
-created_by: djs93
-creation_date: 2010-11-02T02:25:04Z
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-7073-9172
+property_value: http://purl.org/dc/terms/date 2010-11-02T02:25:04Z xsd:dateTime
 
 [Term]
 id: FBbt:10000000
@@ -262,7 +261,6 @@ alt_id: GO:0007582
 alt_id: GO:0044699
 def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
-subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
 subset: goslim_metagenomics
@@ -481,7 +479,7 @@ property_value: example_of_usage "this enzyme has function this catalysis functi
 property_value: IAO:0000118 "has_function" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000034 ! function
-is_a: has_characteristic ! has characteristic
+is_a: has_characteristic ! has_characteristic
 
 [Typedef]
 id: RO:0000086
@@ -491,7 +489,7 @@ property_value: editor_note "A bearer can have many qualities, and its qualities
 property_value: example_of_usage "this apple has quality this red color" xsd:string
 property_value: IAO:0000118 "has_quality" xsd:string
 range: BFO:0000019 ! quality
-is_a: has_characteristic ! has characteristic
+is_a: has_characteristic ! has_characteristic
 
 [Typedef]
 id: RO:0000087
@@ -502,7 +500,7 @@ property_value: example_of_usage "this person has role this investigator role (m
 property_value: IAO:0000118 "has_role" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000023 ! role
-is_a: has_characteristic ! has characteristic
+is_a: has_characteristic ! has_characteristic
 
 [Typedef]
 id: RO:0000091
@@ -510,7 +508,7 @@ name: has disposition
 def: "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence" []
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000016 ! disposition
-is_a: has_characteristic ! has characteristic
+is_a: has_characteristic ! has_characteristic
 inverse_of: RO:0000092 ! disposition of
 
 [Typedef]
@@ -1327,15 +1325,16 @@ is_a: RO:0002566 ! causally influences
 
 [Typedef]
 id: RO:0017001
-name: utilizes
-def: "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y." []
+name: device utilizes material
+def: "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y." []
+synonym: "utilizes" BROAD []
 property_value: example_of_usage "A diagnostic testing device utilizes a specimen." xsd:string
-property_value: IAO:0000117 "Asiyah Lin" xsd:string
-property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899 Bill Duncan" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-9625-1899 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0003-2620-0345 xsd:string
 property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
 property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 holds_over_chain: capable_of RO:0002233
-creation_date: 2021-11-08
+creation_date: 2021-11-08T12:00:00Z
 
 [Typedef]
 id: RO:0019000
@@ -1443,7 +1442,7 @@ property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: RO:0001900 RO:0001901
 is_functional: true
 is_a: RO:0002314 ! characteristic of part of
-inverse_of: has_characteristic ! has characteristic
+inverse_of: has_characteristic ! has_characteristic
 
 [Typedef]
 id: editor_note
@@ -1556,6 +1555,7 @@ property_value: RO:0001900 RO:0001901
 holds_over_chain: has_part overlaps
 holds_over_chain: has_part part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
 holds_over_chain: part_of part_of
+is_symmetric: true
 is_a: RO:0002323 ! mereotopologically related to
 transitive_over: part_of ! part_of
 expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []

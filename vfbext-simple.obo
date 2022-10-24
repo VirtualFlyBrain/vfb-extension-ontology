@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2022-02-25/vfbext-simple.owl
-date: 25:02:2022 15:22
+data-version: vfbext/releases/2022-10-24/vfbext-simple.owl
+date: 24:10:2022 12:05
 subsetdef: clone ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -15,7 +15,7 @@ ontology: vfbext/vfbext-simple
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/</terms:license> xsd:string
-property_value: owl:versionInfo "2022-02-25" xsd:string
+property_value: owl:versionInfo "2022-10-24" xsd:string
 
 [Term]
 id: VFB:10000005

@@ -1,6 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	has_exemplar	IAO:0000115	
-WARN	missing_definition	exemplar_of	IAO:0000115	
 WARN	missing_definition	cell cluster	IAO:0000115	
 WARN	missing_definition	has_channel	IAO:0000115	
 WARN	missing_definition	has_background_channel	IAO:0000115	
@@ -11,8 +9,4 @@ WARN	missing_definition	multi channel image	IAO:0000115
 WARN	missing_definition	template image	IAO:0000115	
 WARN	missing_definition	intersectional expression pattern	IAO:0000115	
 WARN	missing_definition	channel	IAO:0000115	
-WARN	missing_definition	has_license	IAO:0000115	
-WARN	missing_definition	has_reference	IAO:0000115	
-WARN	missing_definition	has_source	IAO:0000115	
-WARN	missing_definition	depicts	IAO:0000115	
 INFO	missing_superclass	expression pattern fragment	rdfs:subClassOf	
