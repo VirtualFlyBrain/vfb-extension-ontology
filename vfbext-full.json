@@ -1246,7 +1246,6 @@
           "sub": "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014"
         }
       ],
-      "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/vfbext/vfbext-full.json",
       "logicalDefinitionAxioms": [
         {
@@ -1290,7 +1289,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "25:02:2022 15:21"
+            "val": "24:10:2022 12:05"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -1298,12 +1297,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-02-25"
+            "val": "2022-10-24"
           }
         ],
-        "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2022-02-25/vfbext-full.json",
-        "xrefs": []
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2022-10-24/vfbext-full.json"
       },
       "nodes": [
         {
@@ -1414,8 +1411,7 @@
               }
             ],
             "definition": {
-              "val": "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.",
-              "xrefs": []
+              "val": "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."
             }
           },
           "type": "CLASS"
@@ -1425,8 +1421,7 @@
           "lbl": "occurrent",
           "meta": {
             "definition": {
-              "val": "An entity that has temporal parts and that happens, unfolds or develops through time.",
-              "xrefs": []
+              "val": "An entity that has temporal parts and that happens, unfolds or develops through time."
             }
           },
           "type": "CLASS"
@@ -1510,8 +1505,7 @@
               }
             ],
             "definition": {
-              "val": "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])",
-              "xrefs": []
+              "val": "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"
             }
           },
           "type": "CLASS"
@@ -1521,8 +1515,7 @@
           "lbl": "process",
           "meta": {
             "definition": {
-              "val": "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.",
-              "xrefs": []
+              "val": "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."
             }
           },
           "type": "CLASS"
@@ -1532,8 +1525,7 @@
           "lbl": "realizable entity",
           "meta": {
             "definition": {
-              "val": "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.",
-              "xrefs": []
+              "val": "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."
             }
           },
           "type": "CLASS"
@@ -1543,8 +1535,7 @@
           "lbl": "specifically dependent continuant",
           "meta": {
             "definition": {
-              "val": "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.",
-              "xrefs": []
+              "val": "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."
             }
           },
           "type": "CLASS"
@@ -1554,8 +1545,7 @@
           "lbl": "role",
           "meta": {
             "definition": {
-              "val": "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.",
-              "xrefs": []
+              "val": "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts."
             }
           },
           "type": "CLASS"
@@ -1565,8 +1555,7 @@
           "lbl": "generically dependent continuant",
           "meta": {
             "definition": {
-              "val": "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.",
-              "xrefs": []
+              "val": "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time."
             }
           },
           "type": "CLASS"
@@ -1576,8 +1565,7 @@
           "lbl": "material entity",
           "meta": {
             "definition": {
-              "val": "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.",
-              "xrefs": []
+              "val": "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."
             }
           },
           "type": "CLASS"
@@ -1677,8 +1665,7 @@
               }
             ],
             "definition": {
-              "val": "a core relation that holds between a part and its whole",
-              "xrefs": []
+              "val": "a core relation that holds between a part and its whole"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -1752,8 +1739,7 @@
               }
             ],
             "definition": {
-              "val": "a core relation that holds between a whole and its part",
-              "xrefs": []
+              "val": "a core relation that holds between a whole and its part"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -1798,8 +1784,7 @@
               }
             ],
             "definition": {
-              "val": "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.",
-              "xrefs": []
+              "val": "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
@@ -1818,8 +1803,7 @@
               }
             ],
             "definition": {
-              "val": "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.",
-              "xrefs": []
+              "val": "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
@@ -1860,8 +1844,7 @@
               }
             ],
             "definition": {
-              "val": "An anatomical entity that has mass.",
-              "xrefs": []
+              "val": "An anatomical entity that has mass."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/caro#core"
@@ -1884,8 +1867,7 @@
               }
             ],
             "definition": {
-              "val": "An anatomical structure consisting of one or more cells.",
-              "xrefs": []
+              "val": "An anatomical structure consisting of one or more cells."
             }
           },
           "type": "CLASS"
@@ -1898,8 +1880,7 @@
               "Important for alignment with Darwin Core class \"Organism\"."
             ],
             "definition": {
-              "val": "Entity that is, is part of, or derived from an organism, virus, or viroid or a collection of them.",
-              "xrefs": []
+              "val": "Entity that is, is part of, or derived from an organism, virus, or viroid or a collection of them."
             }
           },
           "type": "CLASS"
@@ -1909,8 +1890,7 @@
           "lbl": "expression pattern",
           "meta": {
             "definition": {
-              "val": "The mereological sum of all cells in a single organism in which expression of some specified gene occurs.",
-              "xrefs": []
+              "val": "The mereological sum of all cells in a single organism in which expression of some specified gene occurs."
             }
           },
           "type": "CLASS"
@@ -1978,11 +1958,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "http://orcid.org/0000-0002-7073-9172"
               },
               {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "pred": "http://purl.org/dc/terms/date",
                 "val": "2010-11-02T02:25:04Z"
               },
               {
@@ -2032,8 +2012,7 @@
             "synonyms": [
               {
                 "pred": "hasRelatedSynonym",
-                "val": "Drosophila",
-                "xrefs": []
+                "val": "Drosophila"
               }
             ],
             "xrefs": [
@@ -2097,7 +2076,6 @@
               ]
             },
             "subsets": [
-              "http://purl.obolibrary.org/obo/go#goslim_aspergillus",
               "http://purl.obolibrary.org/obo/go#goslim_candida",
               "http://purl.obolibrary.org/obo/go#goslim_chembl",
               "http://purl.obolibrary.org/obo/go#goslim_metagenomics",
@@ -2109,23 +2087,19 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "biological process",
-                "xrefs": []
+                "val": "biological process"
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "physiological process",
-                "xrefs": []
+                "val": "physiological process"
               },
               {
                 "pred": "hasRelatedSynonym",
-                "val": "single organism process",
-                "xrefs": []
+                "val": "single organism process"
               },
               {
                 "pred": "hasRelatedSynonym",
-                "val": "single-organism process",
-                "xrefs": []
+                "val": "single-organism process"
               }
             ],
             "xrefs": [
@@ -2231,8 +2205,7 @@
           "lbl": "has_specified_input",
           "meta": {
             "definition": {
-              "val": "The inverse property of is_specified_input_of",
-              "xrefs": []
+              "val": "The inverse property of is_specified_input_of"
             }
           },
           "type": "PROPERTY"
@@ -2242,8 +2215,7 @@
           "lbl": "is_specified_input_of",
           "meta": {
             "definition": {
-              "val": "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.",
-              "xrefs": []
+              "val": "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."
             }
           },
           "type": "PROPERTY"
@@ -2253,8 +2225,7 @@
           "lbl": "has_specified_output",
           "meta": {
             "definition": {
-              "val": "The inverse property of is_specified_output_of",
-              "xrefs": []
+              "val": "The inverse property of is_specified_output_of"
             }
           },
           "type": "PROPERTY"
@@ -2264,8 +2235,7 @@
           "lbl": "is_specified_output_of",
           "meta": {
             "definition": {
-              "val": "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.",
-              "xrefs": []
+              "val": "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."
             }
           },
           "type": "PROPERTY"
@@ -2275,8 +2245,7 @@
           "lbl": "achieves_planned_objective",
           "meta": {
             "definition": {
-              "val": "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.",
-              "xrefs": []
+              "val": "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process."
             }
           },
           "type": "PROPERTY"
@@ -2286,8 +2255,7 @@
           "lbl": "objective_achieved_by",
           "meta": {
             "definition": {
-              "val": "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.",
-              "xrefs": []
+              "val": "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process."
             }
           },
           "type": "PROPERTY"
@@ -2321,7 +2289,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0000052",
-          "lbl": "characteristic of",
+          "lbl": "characteristic_of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -2357,8 +2325,7 @@
               "Note that this relation was previously called \"inheres in\", but was changed to be called \"characteristic of\" because BFO2 uses \"inheres in\" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing."
             ],
             "definition": {
-              "val": "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.",
-              "xrefs": []
+              "val": "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."
             },
             "xrefs": [
               {
@@ -2370,7 +2337,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0000053",
-          "lbl": "has characteristic",
+          "lbl": "has_characteristic",
           "meta": {
             "basicPropertyValues": [
               {
@@ -2411,8 +2378,7 @@
               }
             ],
             "definition": {
-              "val": "Inverse of characteristic_of",
-              "xrefs": []
+              "val": "Inverse of characteristic_of"
             },
             "xrefs": [
               {
@@ -2449,8 +2415,7 @@
               }
             ],
             "definition": {
-              "val": "a relation between a continuant and a process, in which the continuant is somehow involved in the process",
-              "xrefs": []
+              "val": "a relation between a continuant and a process, in which the continuant is somehow involved in the process"
             }
           },
           "type": "PROPERTY"
@@ -2490,8 +2455,7 @@
               }
             ],
             "definition": {
-              "val": "a relation between a process and a continuant, in which the continuant is somehow involved in the process",
-              "xrefs": []
+              "val": "a relation between a process and a continuant, in which the continuant is somehow involved in the process"
             }
           },
           "type": "PROPERTY"
@@ -2522,8 +2486,7 @@
               "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
             ],
             "definition": {
-              "val": "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence",
-              "xrefs": []
+              "val": "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence"
             }
           },
           "type": "PROPERTY"
@@ -2554,8 +2517,7 @@
               "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
             ],
             "definition": {
-              "val": "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence",
-              "xrefs": []
+              "val": "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"
             }
           },
           "type": "PROPERTY"
@@ -2586,8 +2548,7 @@
               "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
             ],
             "definition": {
-              "val": "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence",
-              "xrefs": []
+              "val": "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence"
             }
           },
           "type": "PROPERTY"
@@ -2611,8 +2572,7 @@
               }
             ],
             "definition": {
-              "val": "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence",
-              "xrefs": []
+              "val": "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence"
             }
           },
           "type": "PROPERTY"
@@ -2636,8 +2596,7 @@
               }
             ],
             "definition": {
-              "val": "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence",
-              "xrefs": []
+              "val": "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence"
             }
           },
           "type": "PROPERTY"
@@ -2661,8 +2620,7 @@
               }
             ],
             "definition": {
-              "val": "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence",
-              "xrefs": []
+              "val": "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"
             }
           },
           "type": "PROPERTY"
@@ -2672,8 +2630,7 @@
           "lbl": "has disposition",
           "meta": {
             "definition": {
-              "val": "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence",
-              "xrefs": []
+              "val": "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence"
             }
           },
           "type": "PROPERTY"
@@ -2686,8 +2643,7 @@
               "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
             ],
             "definition": {
-              "val": "inverse of has disposition",
-              "xrefs": []
+              "val": "inverse of has disposition"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/RO_0002259"
@@ -2710,8 +2666,7 @@
               }
             ],
             "definition": {
-              "val": "A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B.",
-              "xrefs": []
+              "val": "A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B."
             }
           },
           "type": "PROPERTY"
@@ -2734,8 +2689,7 @@
               "By convention GO molecular functions are classified by their effector function.  Internal regulatory functions are treated as components.  For example, NMDA glutmate receptor activity is a cation channel activity with positive regulatory component 'glutamate binding' and negative regulatory components including 'zinc binding' and 'magnesium binding'."
             ],
             "definition": {
-              "val": "A relationship that holds between a GO molecular function and a component of that molecular function that negatively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is negatively regulated by B.",
-              "xrefs": []
+              "val": "A relationship that holds between a GO molecular function and a component of that molecular function that negatively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is negatively regulated by B."
             }
           },
           "type": "PROPERTY"
@@ -2758,8 +2712,7 @@
               "By convention GO molecular functions are classified by their effector function and internal regulatory functions are treated as components.  So, for example calmodulin has a protein binding activity that has positive regulatory component activity calcium binding activity. Receptor tyrosine kinase activity is a tyrosine kinase activity that has positive regulatory component 'ligand binding'."
             ],
             "definition": {
-              "val": "A relationship that holds between a GO molecular function and a component of that molecular function that positively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is positively regulated by B.",
-              "xrefs": []
+              "val": "A relationship that holds between a GO molecular function and a component of that molecular function that positively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is positively regulated by B."
             }
           },
           "type": "PROPERTY"
@@ -2799,8 +2752,7 @@
               }
             ],
             "definition": {
-              "val": "w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.",
-              "xrefs": []
+              "val": "w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type."
             }
           },
           "type": "PROPERTY"
@@ -3017,8 +2969,7 @@
               }
             ],
             "definition": {
-              "val": "x overlaps y if and only if there exists some z such that x has part z and z part of y",
-              "xrefs": []
+              "val": "x overlaps y if and only if there exists some z such that x has part z and z part of y"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco",
@@ -3060,8 +3011,7 @@
               }
             ],
             "definition": {
-              "val": "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.",
-              "xrefs": []
+              "val": "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
@@ -3088,8 +3038,7 @@
               }
             ],
             "definition": {
-              "val": "x expressed in y if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and the transcription of x is part of the gene expression process (iii) x is a mature gene product such as a protein, and x was translated or otherwise processes from a transcript that was transcribed as part of this gene expression process",
-              "xrefs": []
+              "val": "x expressed in y if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and the transcription of x is part of the gene expression process (iii) x is a mature gene product such as a protein, and x was translated or otherwise processes from a transcript that was transcribed as part of this gene expression process"
             }
           },
           "type": "PROPERTY"
@@ -3149,8 +3098,7 @@
               }
             ],
             "definition": {
-              "val": "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.",
-              "xrefs": []
+              "val": "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -3196,8 +3144,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) negatively regulates process(P2) iff: P1 terminates P2, or P1 descreases the the frequency of initiation of P2 or the magnitude or rate of output of P2.",
-              "xrefs": []
+              "val": "Process(P1) negatively regulates process(P2) iff: P1 terminates P2, or P1 descreases the the frequency of initiation of P2 or the magnitude or rate of output of P2."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -3243,8 +3190,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2.",
-              "xrefs": []
+              "val": "Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -3302,8 +3248,7 @@
               }
             ],
             "definition": {
-              "val": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. ",
-              "xrefs": []
+              "val": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. "
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
@@ -3318,7 +3263,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002216",
-          "lbl": "capable of part of",
+          "lbl": "capable_of_part_of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -3343,8 +3288,7 @@
               }
             ],
             "definition": {
-              "val": "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.",
-              "xrefs": []
+              "val": "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p."
             },
             "xrefs": [
               {
@@ -3408,8 +3352,7 @@
               }
             ],
             "definition": {
-              "val": "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.",
-              "xrefs": []
+              "val": "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco",
@@ -3435,8 +3378,7 @@
               }
             ],
             "definition": {
-              "val": "c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.",
-              "xrefs": []
+              "val": "c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_gp2term"
@@ -3459,8 +3401,7 @@
               }
             ],
             "definition": {
-              "val": "c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.",
-              "xrefs": []
+              "val": "c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_gp2term"
@@ -3468,8 +3409,7 @@
             "synonyms": [
               {
                 "pred": "hasRelatedSynonym",
-                "val": "affects",
-                "xrefs": []
+                "val": "affects"
               }
             ]
           },
@@ -3498,8 +3438,7 @@
               }
             ],
             "definition": {
-              "val": "Inverse of 'expressed in'",
-              "xrefs": []
+              "val": "Inverse of 'expressed in'"
             },
             "xrefs": [
               {
@@ -3584,8 +3523,7 @@
               }
             ],
             "definition": {
-              "val": "q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.",
-              "xrefs": []
+              "val": "q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w."
             }
           },
           "type": "PROPERTY"
@@ -3609,8 +3547,7 @@
               }
             ],
             "definition": {
-              "val": "A mereological relationship or a topological relationship",
-              "xrefs": []
+              "val": "A mereological relationship or a topological relationship"
             }
           },
           "type": "PROPERTY"
@@ -3674,8 +3611,7 @@
               }
             ],
             "definition": {
-              "val": "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.",
-              "xrefs": []
+              "val": "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities."
             }
           },
           "type": "PROPERTY"
@@ -3695,8 +3631,7 @@
               }
             ],
             "definition": {
-              "val": "this relation holds between c and p when c is part of some c', and c' is capable of p.",
-              "xrefs": []
+              "val": "this relation holds between c and p when c is part of some c', and c' is capable of p."
             }
           },
           "type": "PROPERTY"
@@ -3716,8 +3651,7 @@
               }
             ],
             "definition": {
-              "val": "holds between two entities when some genome-level process such as gene expression is involved. This includes transcriptional, spliceosomal events. These relations can be used between either macromolecule entities (such as regions of nucleic acid) or between their abstract informational counterparts.",
-              "xrefs": []
+              "val": "holds between two entities when some genome-level process such as gene expression is involved. This includes transcriptional, spliceosomal events. These relations can be used between either macromolecule entities (such as regions of nucleic acid) or between their abstract informational counterparts."
             }
           },
           "type": "PROPERTY"
@@ -3745,8 +3679,7 @@
               }
             ],
             "definition": {
-              "val": "c involved_in p if and only if c enables some process p', and p' is part of p",
-              "xrefs": []
+              "val": "c involved_in p if and only if c enables some process p', and p' is part of p"
             }
           },
           "type": "PROPERTY"
@@ -3762,8 +3695,7 @@
               }
             ],
             "definition": {
-              "val": "inverse of enables",
-              "xrefs": []
+              "val": "inverse of enables"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_gocam"
@@ -3786,8 +3718,7 @@
               }
             ],
             "definition": {
-              "val": "inverse of regulates",
-              "xrefs": []
+              "val": "inverse of regulates"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/RO_0002259"
@@ -3806,8 +3737,7 @@
               }
             ],
             "definition": {
-              "val": "inverse of negatively regulates",
-              "xrefs": []
+              "val": "inverse of negatively regulates"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/RO_0002259"
@@ -3826,8 +3756,7 @@
               }
             ],
             "definition": {
-              "val": "inverse of positively regulates",
-              "xrefs": []
+              "val": "inverse of positively regulates"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/RO_0002259"
@@ -3862,8 +3791,7 @@
               }
             ],
             "definition": {
-              "val": "is member of is a mereological relation between a item and a collection.",
-              "xrefs": []
+              "val": "is member of is a mereological relation between a item and a collection."
             }
           },
           "type": "PROPERTY"
@@ -3883,8 +3811,7 @@
               }
             ],
             "definition": {
-              "val": "has member is a mereological relation between a collection and an item.",
-              "xrefs": []
+              "val": "has member is a mereological relation between a collection and an item."
             }
           },
           "type": "PROPERTY"
@@ -3900,8 +3827,7 @@
               }
             ],
             "definition": {
-              "val": "inverse of has input",
-              "xrefs": []
+              "val": "inverse of has input"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/RO_0002259",
@@ -3925,8 +3851,7 @@
               }
             ],
             "definition": {
-              "val": "inverse of upstream of",
-              "xrefs": []
+              "val": "inverse of upstream of"
             }
           },
           "type": "PROPERTY"
@@ -3971,8 +3896,7 @@
               }
             ],
             "definition": {
-              "val": "This relation groups causal relations between material entities and causal relations between processes",
-              "xrefs": []
+              "val": "This relation groups causal relations between material entities and causal relations between processes"
             }
           },
           "type": "PROPERTY"
@@ -3992,8 +3916,7 @@
               }
             ],
             "definition": {
-              "val": "p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain",
-              "xrefs": []
+              "val": "p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -4021,8 +3944,7 @@
               }
             ],
             "definition": {
-              "val": "p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q.",
-              "xrefs": []
+              "val": "p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q."
             }
           },
           "type": "PROPERTY"
@@ -4046,14 +3968,12 @@
               }
             ],
             "definition": {
-              "val": "p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.",
-              "xrefs": []
+              "val": "p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q."
             },
             "synonyms": [
               {
                 "pred": "hasRelatedSynonym",
-                "val": "affects",
-                "xrefs": []
+                "val": "affects"
               }
             ]
           },
@@ -4074,8 +3994,7 @@
               }
             ],
             "definition": {
-              "val": "inverse of causally upstream of or within",
-              "xrefs": []
+              "val": "inverse of causally upstream of or within"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/RO_0002259"
@@ -4094,8 +4013,7 @@
               }
             ],
             "definition": {
-              "val": "c involved in regulation of p if c is involved in some p' and p' regulates some p",
-              "xrefs": []
+              "val": "c involved in regulation of p if c is involved in some p' and p' regulates some p"
             }
           },
           "type": "PROPERTY"
@@ -4115,8 +4033,7 @@
               }
             ],
             "definition": {
-              "val": "c involved in regulation of p if c is involved in some p' and p' positively regulates some p",
-              "xrefs": []
+              "val": "c involved in regulation of p if c is involved in some p' and p' positively regulates some p"
             }
           },
           "type": "PROPERTY"
@@ -4136,8 +4053,7 @@
               }
             ],
             "definition": {
-              "val": "c involved in regulation of p if c is involved in some p' and p' negatively regulates some p",
-              "xrefs": []
+              "val": "c involved in regulation of p if c is involved in some p' and p' negatively regulates some p"
             }
           },
           "type": "PROPERTY"
@@ -4161,8 +4077,7 @@
               }
             ],
             "definition": {
-              "val": "c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p",
-              "xrefs": []
+              "val": "c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p"
             }
           },
           "type": "PROPERTY"
@@ -4198,8 +4113,7 @@
               }
             ],
             "definition": {
-              "val": "A relationship that holds between two entities in which the processes executed by the two entities are causally connected.",
-              "xrefs": []
+              "val": "A relationship that holds between two entities in which the processes executed by the two entities are causally connected."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
@@ -4207,8 +4121,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "in pairwise interaction with",
-                "xrefs": []
+                "val": "in pairwise interaction with"
               }
             ]
           },
@@ -4241,8 +4154,7 @@
               }
             ],
             "definition": {
-              "val": "An interaction relationship in which the two partners are molecular entities that directly physically interact with each other for example via a stable binding interaction or a brief interaction during which one modifies the other.",
-              "xrefs": []
+              "val": "An interaction relationship in which the two partners are molecular entities that directly physically interact with each other for example via a stable binding interaction or a brief interaction during which one modifies the other."
             }
           },
           "type": "PROPERTY"
@@ -4283,14 +4195,12 @@
               }
             ],
             "definition": {
-              "val": "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B.",
-              "xrefs": []
+              "val": "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B."
             },
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "molecularly controls",
-                "xrefs": []
+                "val": "molecularly controls"
               }
             ]
           },
@@ -4315,14 +4225,12 @@
               }
             ],
             "definition": {
-              "val": "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B.",
-              "xrefs": []
+              "val": "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B."
             },
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "molecularly decreases activity of",
-                "xrefs": []
+                "val": "molecularly decreases activity of"
               }
             ]
           },
@@ -4347,14 +4255,12 @@
               }
             ],
             "definition": {
-              "val": "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B.",
-              "xrefs": []
+              "val": "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B."
             },
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "molecularly increases activity of",
-                "xrefs": []
+                "val": "molecularly increases activity of"
               }
             ]
           },
@@ -4401,8 +4307,7 @@
               }
             ],
             "definition": {
-              "val": "A relationship between a material entity and a process where the material entity has some causal role that influences the process",
-              "xrefs": []
+              "val": "A relationship between a material entity and a process where the material entity has some causal role that influences the process"
             }
           },
           "type": "PROPERTY"
@@ -4426,8 +4331,7 @@
               }
             ],
             "definition": {
-              "val": "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.",
-              "xrefs": []
+              "val": "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q."
             }
           },
           "type": "PROPERTY"
@@ -4552,8 +4456,7 @@
               }
             ],
             "definition": {
-              "val": "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size).",
-              "xrefs": []
+              "val": "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size)."
             }
           },
           "type": "PROPERTY"
@@ -4581,8 +4484,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2.",
-              "xrefs": []
+              "val": "Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -4597,8 +4499,7 @@
           "lbl": "is a defining property chain axiom",
           "meta": {
             "definition": {
-              "val": "If R <- P o Q is a defining property chain axiom, then it also holds that R -> P o Q. Note that this cannot be expressed directly in OWL",
-              "xrefs": []
+              "val": "If R <- P o Q is a defining property chain axiom, then it also holds that R -> P o Q. Note that this cannot be expressed directly in OWL"
             }
           },
           "type": "PROPERTY"
@@ -4608,8 +4509,7 @@
           "lbl": "is a defining property chain axiom where second argument is reflexive",
           "meta": {
             "definition": {
-              "val": "If R <- P o Q is a defining property chain axiom, then (1) R -> P o Q holds and (2) Q is either reflexive or locally reflexive. A corollary of this is that P SubPropertyOf R.",
-              "xrefs": []
+              "val": "If R <- P o Q is a defining property chain axiom, then (1) R -> P o Q holds and (2) Q is either reflexive or locally reflexive. A corollary of this is that P SubPropertyOf R."
             }
           },
           "type": "PROPERTY"
@@ -4629,8 +4529,7 @@
               }
             ],
             "definition": {
-              "val": "s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p",
-              "xrefs": []
+              "val": "s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p"
             }
           },
           "type": "PROPERTY"
@@ -4654,8 +4553,7 @@
               }
             ],
             "definition": {
-              "val": "A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity.",
-              "xrefs": []
+              "val": "A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity."
             }
           },
           "type": "PROPERTY"
@@ -4675,8 +4573,7 @@
               }
             ],
             "definition": {
-              "val": "Holds between c and p if and only if c is capable of some activity a, and a regulates p.",
-              "xrefs": []
+              "val": "Holds between c and p if and only if c is capable of some activity a, and a regulates p."
             }
           },
           "type": "PROPERTY"
@@ -4692,8 +4589,7 @@
               }
             ],
             "definition": {
-              "val": "Holds between c and p if and only if c is capable of some activity a, and a negatively regulates p.",
-              "xrefs": []
+              "val": "Holds between c and p if and only if c is capable of some activity a, and a negatively regulates p."
             }
           },
           "type": "PROPERTY"
@@ -4713,8 +4609,7 @@
               }
             ],
             "definition": {
-              "val": "Holds between c and p if and only if c is capable of some activity a, and a positively regulates p.",
-              "xrefs": []
+              "val": "Holds between c and p if and only if c is capable of some activity a, and a positively regulates p."
             }
           },
           "type": "PROPERTY"
@@ -4730,8 +4625,7 @@
               }
             ],
             "definition": {
-              "val": "Inverse of 'causal agent in process'",
-              "xrefs": []
+              "val": "Inverse of 'causal agent in process'"
             }
           },
           "type": "PROPERTY"
@@ -4755,8 +4649,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly postively regulates process(P2) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P1 directly positively regulates P2.",
-              "xrefs": []
+              "val": "Process(P1) directly postively regulates process(P2) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P1 directly positively regulates P2."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -4785,8 +4678,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly negatively regulates process(P2) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P1 directly negatively regulates P2.",
-              "xrefs": []
+              "val": "Process(P1) directly negatively regulates process(P2) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P1 directly negatively regulates P2."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -4811,8 +4703,7 @@
               }
             ],
             "definition": {
-              "val": "Holds between an entity and an process P where the entity enables some larger compound process, and that larger process has-part P.",
-              "xrefs": []
+              "val": "Holds between an entity and an process P where the entity enables some larger compound process, and that larger process has-part P."
             }
           },
           "type": "PROPERTY"
@@ -4892,8 +4783,7 @@
               }
             ],
             "definition": {
-              "val": "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive",
-              "xrefs": []
+              "val": "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_gp2term"
@@ -4924,8 +4814,7 @@
               }
             ],
             "definition": {
-              "val": "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative",
-              "xrefs": []
+              "val": "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_gp2term"
@@ -4986,15 +4875,14 @@
               }
             ],
             "definition": {
-              "val": "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B.",
-              "xrefs": []
+              "val": "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B."
             }
           },
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0017001",
-          "lbl": "utilizes",
+          "lbl": "device utilizes material",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5003,11 +4891,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Asiyah Lin"
+                "val": "https://orcid.org/0000-0001-9625-1899"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "https://orcid.org/0000-0001-9625-1899 Bill Duncan"
+                "val": "https://orcid.org/0000-0003-2620-0345"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
@@ -5019,13 +4907,18 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2021-11-08"
+                "val": "2021-11-08T12:00:00Z"
               }
             ],
             "definition": {
-              "val": "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y.",
-              "xrefs": []
-            }
+              "val": "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y."
+            },
+            "synonyms": [
+              {
+                "pred": "hasBroadSynonym",
+                "val": "utilizes"
+              }
+            ]
           },
           "type": "PROPERTY"
         },
@@ -5040,8 +4933,7 @@
               }
             ],
             "definition": {
-              "val": "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C.",
-              "xrefs": []
+              "val": "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C."
             }
           },
           "type": "PROPERTY"
@@ -5057,8 +4949,7 @@
               }
             ],
             "definition": {
-              "val": "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C.",
-              "xrefs": []
+              "val": "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C."
             }
           },
           "type": "PROPERTY"
@@ -5074,8 +4965,7 @@
               }
             ],
             "definition": {
-              "val": "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C.",
-              "xrefs": []
+              "val": "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C."
             }
           },
           "type": "PROPERTY"
