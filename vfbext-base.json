@@ -97,7 +97,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "24:10:2022 12:05"
+            "val": "09:01:2023 14:46"
           },
           {
             "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -105,10 +105,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-10-24"
+            "val": "2023-01-09"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2022-10-24/vfbext-base.json"
+        "version": "http://purl.obolibrary.org/obo/vfbext/releases/2023-01-09/vfbext-base.json"
       },
       "nodes": [
         {
