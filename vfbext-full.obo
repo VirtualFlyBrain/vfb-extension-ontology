@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2023-01-09/vfbext-full.owl
-date: 09:01:2023 14:46
+data-version: vfbext/releases/2023-02-17/vfbext-full.owl
+date: 17:02:2023 13:39
 subsetdef: clone ""
 subsetdef: cur ""
 subsetdef: EmbDevSlim ""
@@ -27,7 +27,7 @@ ontology: vfbext/vfbext-full
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/</terms:license> xsd:string
-property_value: owl:versionInfo "2023-01-09" xsd:string
+property_value: owl:versionInfo "2023-02-17" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -480,7 +480,7 @@ property_value: example_of_usage "this enzyme has function this catalysis functi
 property_value: IAO:0000118 "has_function" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000034 ! function
-is_a: has_characteristic ! has_characteristic
+is_a: has_characteristic ! has characteristic
 
 [Typedef]
 id: RO:0000086
@@ -490,7 +490,7 @@ property_value: editor_note "A bearer can have many qualities, and its qualities
 property_value: example_of_usage "this apple has quality this red color" xsd:string
 property_value: IAO:0000118 "has_quality" xsd:string
 range: BFO:0000019 ! quality
-is_a: has_characteristic ! has_characteristic
+is_a: has_characteristic ! has characteristic
 
 [Typedef]
 id: RO:0000087
@@ -501,7 +501,7 @@ property_value: example_of_usage "this person has role this investigator role (m
 property_value: IAO:0000118 "has_role" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000023 ! role
-is_a: has_characteristic ! has_characteristic
+is_a: has_characteristic ! has characteristic
 
 [Typedef]
 id: RO:0000091
@@ -509,7 +509,7 @@ name: has disposition
 def: "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence" []
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000016 ! disposition
-is_a: has_characteristic ! has_characteristic
+is_a: has_characteristic ! has characteristic
 inverse_of: RO:0000092 ! disposition of
 
 [Typedef]
@@ -1490,7 +1490,7 @@ property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: RO:0001900 RO:0001901
 is_functional: true
 is_a: RO:0002314 ! characteristic of part of
-inverse_of: has_characteristic ! has_characteristic
+inverse_of: has_characteristic ! has characteristic
 
 [Typedef]
 id: editor_note
