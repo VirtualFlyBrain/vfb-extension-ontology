@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:01:2023 14:46
+date: 17:02:2023 13:39
 subsetdef: clone ""
 subsetdef: cur ""
 subsetdef: EmbDevSlim ""
@@ -26,7 +26,7 @@ ontology: http://virtualflybrain.org/data/VFB/OWL/vfbext.owl
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/</terms:license> xsd:string
-property_value: owl:versionInfo "2023-01-09" xsd:string
+property_value: owl:versionInfo "2023-02-17" xsd:string
 
 [Term]
 id: BFO:0000001
