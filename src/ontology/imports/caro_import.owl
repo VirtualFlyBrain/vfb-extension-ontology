@@ -9,17 +9,16 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/imports/caro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2023-02-17/imports/caro_import.owl"/>
-        <dc:description>None</dc:description>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/caro/releases/2022-02-18/caro.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2023-08-15/imports/caro_import.owl"/>
+        <dc:description>The Common Anatomy Reference Ontology (CARO) is being developed to facilitate interoperability between existing anatomy ontologies for different species, and will provide a template for building new anatomy ontologies.</dc:description>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/caro/releases/2023-03-15/caro.owl"/>
         <dc:title>Common Anatomy Reference Ontology</dc:title>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <rdfs:comment>Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendal.</rdfs:comment>
-        <owl:versionInfo>2022-02-18</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-17</owl:versionInfo>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <rdfs:comment>Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendel.</rdfs:comment>
+        <owl:versionInfo>2023-03-15</owl:versionInfo>
+        <owl:versionInfo>2023-08-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -55,9 +54,7 @@
         <oboInOwl:id>example_of_usage</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>example_of_usage</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>example of usage</rdfs:label>
-        <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -65,9 +62,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>definition</rdfs:label>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -80,19 +75,14 @@
         <oboInOwl:id>editor_note</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>editor_note</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>editor note</rdfs:label>
-        <rdfs:label xml:lang="en">editor note</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">elucidation</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
     
 
 
@@ -111,6 +101,36 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
     
 
 
@@ -175,12 +195,6 @@
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-    
-
-
-    <!-- ttp://www.geneontology.org/formats/oboInOwl#created_by -->
-
-    <owl:AnnotationProperty rdf:about="ttp://www.geneontology.org/formats/oboInOwl#created_by"/>
     
 
 
@@ -405,9 +419,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0020003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
         <obo:IAO_0000115>An anatomical structure consisting of one or more cells.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-28T14:20:19Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">cellular anatomical structure</rdfs:label>
-        <oboInOwl1:created_by>dos</oboInOwl1:created_by>
     </owl:Class>
     
 
@@ -434,5 +448,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 

@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2023-02-17/vfbext-simple.owl
-date: 17:02:2023 13:39
+data-version: vfbext/releases/2023-08-15/vfbext-simple.owl
+date: 15:08:2023 10:37
 subsetdef: clone ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -14,8 +14,8 @@ remark: VFB extension ontology
 ontology: vfbext/vfbext-simple
 property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/</terms:license> xsd:string
-property_value: owl:versionInfo "2023-02-17" xsd:string
+property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
+property_value: owl:versionInfo "2023-08-15" xsd:string
 
 [Term]
 id: VFB:10000005
@@ -95,10 +95,10 @@ creation_date: 2018-09-26T07:49:10Z
 id: expresses
 name: expresses
 namespace: fly_anatomy.ontology
-def: "Inverse of 'expressed in'" []
+def: "y expresses x if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and x was transcribed from a gene as part of the gene expression process (iii) x is a mature gene product (protein or RNA), and x was translated or otherwise processed from a transcript that was transcribed as part of the gene expression process." []
 xref: RO:0002292
 property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7
@@ -117,7 +117,7 @@ name: depicts
 id: part_of
 name: part of
 name: part_of
-namespace: external
+namespace: quality
 namespace: relationship
 def: "a core relation that holds between a part and its whole" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
@@ -144,6 +144,7 @@ property_value: RO:0040042 BFO:0000020
 property_value: RO:0040042 BFO:0000031
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
-property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
+property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
 is_transitive: true
 
