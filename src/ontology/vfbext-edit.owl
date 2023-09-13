@@ -21,6 +21,7 @@ Annotation(<http://purl.org/dc/elements/1.1/title> "VFB Extension Ontology")
 Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>")
 Annotation(rdfs:comment "VFB extension ontology")
 
+Declaration(Class(obo:SO_0000110))
 Declaration(Class(vfb:VFB_10000005))
 Declaration(Class(vfb:VFBext_0000004))
 Declaration(Class(vfb:VFBext_0000006))
@@ -124,7 +125,7 @@ SubObjectPropertyOf(vfb:VFBext_0000003 vfb:VFBext_0000001)
 # Object Property: vfb:VFBext_0000008 (has hemidriver)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:17088209") obo:IAO_0000115 vfb:VFBext_0000008 "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.")
-AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000008 "dos"^^xsd:string)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000008 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000008 "2018-09-26T07:48:55Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000008 "has hemidriver"@en)
 ObjectPropertyDomain(vfb:VFBext_0000008 vfb:VFBext_0000010)
@@ -132,7 +133,7 @@ ObjectPropertyDomain(vfb:VFBext_0000008 vfb:VFBext_0000010)
 # Object Property: vfb:VFBext_0000009 (has driver)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:8223268") Annotation(oboInOwl:hasDbXref "Wikipedia:GAL4/UAS_system") obo:IAO_0000115 vfb:VFBext_0000009 "A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements.")
-AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000009 "dos"^^xsd:string)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000009 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000009 "2018-09-26T07:49:10Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000009 "has driver"@en)
 SubObjectPropertyOf(vfb:VFBext_0000009 obo:RO_0002292)
@@ -148,6 +149,10 @@ AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/depicts> "depicts")
 #   Classes
 ############################
 
+# Class: obo:SO_0000110 (obo:SO_0000110)
+
+SubClassOf(obo:SO_0000110 obo:BFO_0000040)
+
 # Class: vfb:VFB_10000005 (cell cluster)
 
 AnnotationAssertion(rdfs:label vfb:VFB_10000005 "cell cluster")
@@ -155,7 +160,7 @@ SubClassOf(vfb:VFB_10000005 obo:BFO_0000004)
 
 # Class: vfb:VFBext_0000004 (expression pattern fragment)
 
-AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000004 "dos"^^xsd:string)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000004 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000004 "2018-03-04T10:55:59Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment vfb:VFBext_0000004 "A multicellular structure that is part of an expression pattern.")
 AnnotationAssertion(rdfs:label vfb:VFBext_0000004 "expression pattern fragment"@en)
@@ -168,7 +173,7 @@ SubClassOf(vfb:VFBext_0000006 <http://xmlns.com/foaf/0.1/image>)
 
 # Class: vfb:VFBext_0000007 (template image)
 
-AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000007 "dos"^^xsd:string)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000007 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000007 "2018-05-15T15:53:38Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment vfb:VFBext_0000007 "A single channel image that is used as a template for image registration.")
 AnnotationAssertion(rdfs:label vfb:VFBext_0000007 "template image"@en)
@@ -176,7 +181,7 @@ SubClassOf(vfb:VFBext_0000007 vfb:VFBext_0000014)
 
 # Class: vfb:VFBext_0000010 (intersectional expression pattern)
 
-AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000010 "dos"^^xsd:string)
+AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000010 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000010 "2018-09-26T07:54:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000010 "intersectional expression pattern"@en)
 SubClassOf(vfb:VFBext_0000010 obo:FBbt_10000000)
