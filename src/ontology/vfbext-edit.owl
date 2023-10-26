@@ -12,10 +12,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://virtualflybrain.org/data/VFB/OWL/vfbext.owl>
-Import(<http://purl.obolibrary.org/obo/vfbext/imports/caro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/vfbext/imports/fbbt_import.owl>)
-Import(<http://purl.obolibrary.org/obo/vfbext/imports/obi_import.owl>)
-Import(<http://purl.obolibrary.org/obo/vfbext/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/vfbext/imports/merged_import.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of miscellaneous terms for data annotation in VFB.")
 Annotation(<http://purl.org/dc/elements/1.1/title> "VFB Extension Ontology")
 Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>")

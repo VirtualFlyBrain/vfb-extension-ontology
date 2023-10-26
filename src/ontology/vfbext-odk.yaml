@@ -18,13 +18,22 @@ export_formats:
   - obo
   - json
 import_group:
+  use_base_merging: TRUE
+  slme_individuals: exclude
+  release_imports: TRUE
   products:
     - id: ro
+      use_base: TRUE
     - id: caro
-      module_type: custom
+      make_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/CARO_
     - id: fbbt
+      use_base: TRUE
     - id: obi
-      module_type: minimal
+      make_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/OBI_
 edit_format: owl
 robot_java_args: '-Xmx8G'
 allow_equivalents: all
