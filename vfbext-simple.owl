@@ -11,16 +11,15 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vfb1="http://purl.obolibrary.org/obo/fbbt/vfb/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2023-08-15/vfbext-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2023-10-26/vfbext-simple.owl"/>
         <dc:description>An ontology of miscellaneous terms for data annotation in VFB.</dc:description>
         <dc:title>VFB Extension Ontology</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/&lt;/terms:license&gt;</terms:license>
-        <oboInOwl:date>15:08:2023 10:37</oboInOwl:date>
+        <oboInOwl:date>26:10:2023 13:58</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
-        <owl:versionInfo>2023-08-15</owl:versionInfo>
+        <owl:versionInfo>2023-10-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -33,12 +32,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
-
-    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
     
 
 
@@ -63,32 +56,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
-Barry Smith
-
-The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
-
-Can you fix to something like:
-
-A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
-
-Alan Ruttenberg
-
-Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
-
-On the specifics of the proposed definition:
-
-We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
-
-Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
-
-We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -210,39 +177,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/date -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/format -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/subject -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
     
 
 
@@ -276,23 +213,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
         <rdfs:label>subset_property</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     
 
 
@@ -322,29 +247,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <rdfs:label>in_subset</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
     
 
 
@@ -382,18 +289,11 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OBO_REL:part_of</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>part_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">part of</rdfs:label>
-        <rdfs:label>part_of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Part_of</rdfs:seeAlso>
@@ -416,12 +316,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>y expresses x if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and x was transcribed from a gene as part of the gene expression process (iii) x is a mature gene product (protein or RNA), and x was translated or otherwise processed from a transcript that was transcribed as part of the gene expression process.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <oboInOwl:hasDbXref>RO:0002292</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>expresses</oboInOwl:id>
-        <oboInOwl:shorthand>expresses</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">expresses</rdfs:label>
-        <rdfs:label>expresses</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -590,5 +485,5 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 
 
 
-<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 

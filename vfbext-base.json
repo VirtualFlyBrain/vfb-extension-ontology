@@ -16,15 +16,15 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/</terms:license>"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "15:08:2023 10:37"
+        "val" : "26:10:2023 13:58"
       }, {
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "VFB extension ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-08-15"
+        "val" : "2023-10-26"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/vfbext/releases/2023-08-15/vfbext-base.json"
+      "version" : "http://purl.obolibrary.org/obo/vfbext/releases/2023-10-26/vfbext-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7",
@@ -155,6 +155,10 @@
       "type" : "PROPERTY"
     } ],
     "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/SO_0000110",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
