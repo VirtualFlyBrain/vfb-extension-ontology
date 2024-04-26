@@ -2,6 +2,7 @@ id: vfbext
 title: "VFB Extension Ontology"
 github_org: VirtualFlyBrain
 repo: vfb-extension-ontology
+git_main_branch: master
 report_fail_on: none
 use_dosdps: FALSE
 namespaces: 
