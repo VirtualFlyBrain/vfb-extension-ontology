@@ -1,0 +1,50 @@
+?cls	?pred	?val	?synType
+<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014>	<http://www.w3.org/2000/01/rdf-schema#label>	"channel"	
+<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>	<http://www.w3.org/2000/01/rdf-schema#label>	"intersectional expression pattern"@en	
+<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007>	<http://www.w3.org/2000/01/rdf-schema#label>	"template image"@en	
+<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"multi channel image"	
+<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"expression pattern fragment"@en	
+<http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"cell cluster"	
+<http://purl.obolibrary.org/obo/CARO_0000040>	<http://www.w3.org/2000/01/rdf-schema#label>	"acellular anatomical structure"	
+<http://purl.obolibrary.org/obo/OBI_0000112>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen role"@en	
+<http://purl.obolibrary.org/obo/BFO_0000141>	<http://www.w3.org/2000/01/rdf-schema#label>	"immaterial entity"@en	
+<http://purl.obolibrary.org/obo/CARO_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"material anatomical entity"	
+<http://purl.obolibrary.org/obo/CARO_0001000>	<http://www.w3.org/2000/01/rdf-schema#label>	"multi-cell-part structure"	
+<http://purl.obolibrary.org/obo/BFO_0000020>	<http://www.w3.org/2000/01/rdf-schema#label>	"specifically dependent continuant"@en	
+<http://purl.obolibrary.org/obo/BFO_0000015>	<http://www.w3.org/2000/01/rdf-schema#label>	"process"@en	
+<http://purl.obolibrary.org/obo/BFO_0000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"quality"@en	
+<http://purl.obolibrary.org/obo/CARO_0030000>	<http://www.w3.org/2000/01/rdf-schema#label>	"biological entity"	
+<http://purl.obolibrary.org/obo/BFO_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"independent continuant"@en	
+<http://purl.obolibrary.org/obo/CARO_0000013>	<http://www.w3.org/2000/01/rdf-schema#label>	"cell"	
+<http://purl.obolibrary.org/obo/CARO_0000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"connected anatomical structure"	
+<http://purl.obolibrary.org/obo/BFO_0000040>	<http://www.w3.org/2000/01/rdf-schema#label>	"material entity"@en	
+<http://purl.obolibrary.org/obo/CARO_0020003>	<http://www.w3.org/2000/01/rdf-schema#label>	"cellular anatomical structure"@en	
+<http://purl.obolibrary.org/obo/FBbt_10000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"anatomical entity"	
+<http://purl.obolibrary.org/obo/CARO_0000007>	<http://www.w3.org/2000/01/rdf-schema#label>	"immaterial anatomical entity"	
+<http://purl.obolibrary.org/obo/BFO_0000034>	<http://www.w3.org/2000/01/rdf-schema#label>	"function"@en	
+<http://purl.obolibrary.org/obo/FBbt_00007001>	<http://www.w3.org/2000/01/rdf-schema#label>	"anatomical structure"	
+<http://purl.obolibrary.org/obo/BFO_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"realizable entity"@en	
+<http://purl.obolibrary.org/obo/BFO_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"continuant"@en	
+<http://purl.obolibrary.org/obo/CARO_0000014>	<http://www.w3.org/2000/01/rdf-schema#label>	"cell part"@en	
+<http://purl.obolibrary.org/obo/BFO_0000031>	<http://www.w3.org/2000/01/rdf-schema#label>	"generically dependent continuant"@en	
+<http://purl.obolibrary.org/obo/CARO_0010000>	<http://www.w3.org/2000/01/rdf-schema#label>	"multicellular anatomical structure"	
+<http://purl.obolibrary.org/obo/CARO_0030002>	<http://www.w3.org/2000/01/rdf-schema#label>	"expression pattern"	
+<http://purl.obolibrary.org/obo/CARO_0000042>	<http://www.w3.org/2000/01/rdf-schema#label>	"extraembryonic structure"	
+<http://purl.obolibrary.org/obo/CARO_0000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"anatomical entity"	
+<http://purl.obolibrary.org/obo/CARO_0000032>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism subdivision"	
+<http://purl.obolibrary.org/obo/BFO_0000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"occurrent"@en	
+<http://purl.obolibrary.org/obo/CARO_0000012>	<http://www.w3.org/2000/01/rdf-schema#label>	"multicellular organism"	
+<http://purl.obolibrary.org/obo/OBI_0000659>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen collection process"	
+<http://purl.obolibrary.org/obo/CARO_0010004>	<http://www.w3.org/2000/01/rdf-schema#label>	"cellular organism"	
+<http://purl.obolibrary.org/obo/OBI_0100051>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen"@en	
+<http://purl.obolibrary.org/obo/OBI_0000011>	<http://www.w3.org/2000/01/rdf-schema#label>	"planned process"@en	
+<http://purl.obolibrary.org/obo/CARO_0020000>	<http://www.w3.org/2000/01/rdf-schema#label>	"disconnected anatomical group"	
+<http://purl.obolibrary.org/obo/FBbt_00007016>	<http://www.w3.org/2000/01/rdf-schema#label>	"material anatomical entity"	
+<http://purl.obolibrary.org/obo/CARO_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism substance"	
+<http://purl.obolibrary.org/obo/CARO_0001010>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism"	
+<http://purl.obolibrary.org/obo/BFO_0000023>	<http://www.w3.org/2000/01/rdf-schema#label>	"role"@en	
+<http://purl.obolibrary.org/obo/OBI_0000684>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen collection objective"	
+<http://purl.obolibrary.org/obo/OBI_0002076>	<http://www.w3.org/2000/01/rdf-schema#label>	"collection of specimens"@en	
+<http://purl.obolibrary.org/obo/CARO_0001008>	<http://www.w3.org/2000/01/rdf-schema#label>	"gross anatomical part"@en	
+<http://purl.obolibrary.org/obo/BFO_0000016>	<http://www.w3.org/2000/01/rdf-schema#label>	"disposition"@en	
+<http://purl.obolibrary.org/obo/FBbt_00100313>	<http://www.w3.org/2000/01/rdf-schema#label>	"multicellular structure"	
