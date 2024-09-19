@@ -1,13 +1,16 @@
 format-version: 1.2
-data-version: vfbext/releases/2024-04-26/vfbext-base.owl
-date: 26:04:2024 11:54
+data-version: vfbext/releases/2024-09-19/vfbext-base.owl
+date: 19:09:2024 09:19
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: terms http://purl.org/dc/terms/ 
 remark: VFB extension ontology
 ontology: vfbext/vfbext-base
-property_value: http://purl.org/dc/elements/1.1/description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "VFB Extension Ontology" xsd:string
-property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
-property_value: owl:versionInfo "2024-04-26" xsd:string
+property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
+property_value: dc:title "VFB Extension Ontology" xsd:string
+property_value: dc:type IAO:8000001
+property_value: owl:versionInfo "2024-09-19" xsd:string
+property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
 id: VFB:10000005
@@ -68,6 +71,7 @@ is_a: VFBext:0000001 ! has_channel
 id: VFBext:0000008
 name: has hemidriver
 def: "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements." [PMID:17088209]
+domain: VFBext:0000010 ! intersectional expression pattern
 created_by: dos
 creation_date: 2018-09-26T07:48:55Z
 
@@ -75,6 +79,7 @@ creation_date: 2018-09-26T07:48:55Z
 id: VFBext:0000009
 name: has driver
 def: "A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements." [PMID:8223268, Wikipedia:GAL4/UAS_system]
+domain: CARO:0030002
 is_a: RO:0002292
 created_by: dos
 creation_date: 2018-09-26T07:49:10Z

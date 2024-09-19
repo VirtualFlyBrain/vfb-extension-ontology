@@ -28,6 +28,10 @@ import_group:
     - rdfs:label
     - IAO:0000115
   products:
+    - id: bfo
+      make_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/BFO_
     - id: ro
       use_base: TRUE
     - id: caro
