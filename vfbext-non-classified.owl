@@ -17,13 +17,13 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-non-classified.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2024-09-19/vfbext-non-classified.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2024-10-29/vfbext-non-classified.owl"/>
         <dc:description>An ontology of miscellaneous terms for data annotation in VFB.</dc:description>
         <dc:title>VFB Extension Ontology</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/&lt;/terms:license&gt;</terms:license>
-        <oboInOwl:date>19:09:2024 09:19</oboInOwl:date>
+        <oboInOwl:date>29:10:2024 10:21</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
-        <owl:versionInfo>2024-09-19</owl:versionInfo>
+        <owl:versionInfo>2024-10-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -400,7 +400,7 @@
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <obo:IAO_0000115>This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <rdfs:label>achieves_planned_objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -411,7 +411,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <rdfs:label>objective_achieved_by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1573,7 +1573,7 @@ Examples include: the relationship between two channels collected simultaneously
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
         <rdfs:label>specimen collection process</rdfs:label>
     </owl:Class>
     
@@ -1583,7 +1583,7 @@ Examples include: the relationship between two channels collected simultaneously
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000684">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <obo:IAO_0000115>A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
         <rdfs:label>specimen collection objective</rdfs:label>
     </owl:Class>
     

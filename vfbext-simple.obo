@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2024-09-19/vfbext-simple.owl
-date: 19:09:2024 09:19
+data-version: vfbext/releases/2024-10-29/vfbext-simple.owl
+date: 29:10:2024 10:21
 subsetdef: clone ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -17,7 +17,7 @@ remark: VFB extension ontology
 ontology: vfbext/vfbext-simple
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2024-09-19" xsd:string
+property_value: owl:versionInfo "2024-10-29" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
