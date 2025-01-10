@@ -1,13 +1,13 @@
 ?prefix	?numberOfClasses
-"OBI"	6
+"OBI"	9
 "CARO"	20
 "FBbt"	4
 "IAO"	2
 "BFO"	11
 "fbbt/vfb/VFBext"	5
-"NCBITaxon"	1
+"NCBITaxon"	5
 "fbbt/vfb/VFB"	1
 "SO"	1
-"UBERON"	1
+"UBERON"	2
 "PATO"	5
 ""	1
