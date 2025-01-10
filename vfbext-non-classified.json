@@ -13,15 +13,15 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/</terms:license>"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "29:10:2024 10:21"
+        "val" : "10:01:2025 10:50"
       }, {
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "VFB extension ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-10-29"
+        "val" : "2025-01-10"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/vfbext/releases/2024-10-29/vfbext-non-classified.json"
+      "version" : "http://purl.obolibrary.org/obo/vfbext/releases/2025-01-10/vfbext-non-classified.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -331,6 +331,18 @@
       "id" : "http://purl.obolibrary.org/obo/IAO_0000104",
       "type" : "CLASS"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_10239",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2157",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2759",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_7227",
       "type" : "CLASS"
     }, {
@@ -348,7 +360,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation"
+          "val" : "A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen."
         }
       }
     }, {
@@ -357,7 +369,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A planned process with the objective of collecting a specimen."
+          "val" : "A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed."
         }
       }
     }, {
@@ -366,7 +378,16 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A objective specification to obtain a material entity for potential use as an input during an investigation."
+          "val" : "A objective specification that is fulfilled by obtaining a material entity for potential use as an input upon which measurements or observations are performed."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0001479",
+      "lbl" : "specimen from organism",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm)."
         }
       }
     }, {
@@ -379,12 +400,30 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0002648",
+      "lbl" : "individual organism specimen",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A specimen composed of an individual organism to be studied in an investigation."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0100026",
+      "lbl" : "organism",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0100051",
       "lbl" : "specimen",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A material entity that has the specimen role."
+          "val" : "A material entity that is collected for potential use as an input upon which measurements or observations are performed."
         }
       }
     }, {
@@ -407,6 +446,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/UBERON_0000465",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000477",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005",
@@ -1209,7 +1251,19 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000005"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0001479",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0100051"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0002076",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0002648",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0100051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0100026",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
     }, {
@@ -1404,6 +1458,9 @@
         "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000417",
         "fillerId" : "http://purl.obolibrary.org/obo/OBI_0000684"
       } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OBI_0001479",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OBI_0100051" ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OBI_0100051",
       "genusIds" : [ "http://purl.obolibrary.org/obo/BFO_0000040" ],

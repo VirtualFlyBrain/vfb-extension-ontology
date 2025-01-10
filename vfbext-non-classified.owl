@@ -17,13 +17,13 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-non-classified.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2024-10-29/vfbext-non-classified.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2025-01-10/vfbext-non-classified.owl"/>
         <dc:description>An ontology of miscellaneous terms for data annotation in VFB.</dc:description>
         <dc:title>VFB Extension Ontology</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/&lt;/terms:license&gt;</terms:license>
-        <oboInOwl:date>29:10:2024 10:21</oboInOwl:date>
+        <oboInOwl:date>10:01:2025 10:50</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
-        <owl:versionInfo>2024-10-29</owl:versionInfo>
+        <owl:versionInfo>2025-01-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1493,6 +1493,30 @@ Examples include: the relationship between two channels collected simultaneously
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_7227 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7227"/>
@@ -1540,7 +1564,7 @@ Examples include: the relationship between two channels collected simultaneously
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">specimen role</rdfs:label>
     </owl:Class>
     
@@ -1573,7 +1597,7 @@ Examples include: the relationship between two channels collected simultaneously
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed.</obo:IAO_0000115>
         <rdfs:label>specimen collection process</rdfs:label>
     </owl:Class>
     
@@ -1583,8 +1607,47 @@ Examples include: the relationship between two channels collected simultaneously
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000684">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <obo:IAO_0000115 xml:lang="en">A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A objective specification that is fulfilled by obtaining a material entity for potential use as an input upon which measurements or observations are performed.</obo:IAO_0000115>
         <rdfs:label>specimen collection objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000659"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000477"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
+        <rdfs:label>specimen from organism</rdfs:label>
     </owl:Class>
     
 
@@ -1610,6 +1673,48 @@ Examples include: the relationship between two channels collected simultaneously
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0002648 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002648">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen composed of an individual organism to be studied in an investigation.</obo:IAO_0000115>
+        <rdfs:label>individual organism specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100051">
@@ -1625,7 +1730,7 @@ Examples include: the relationship between two channels collected simultaneously
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity that has the specimen role.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is collected for potential use as an input upon which measurements or observations are performed.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
     </owl:Class>
     
@@ -1672,6 +1777,12 @@ Examples include: the relationship between two channels collected simultaneously
     <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000477"/>
     
 
 

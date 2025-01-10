@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2024-10-29/vfbext-full.owl
-date: 29:10:2024 10:21
+data-version: vfbext/releases/2025-01-10/vfbext-full.owl
+date: 10:01:2025 10:49
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -24,7 +24,7 @@ remark: VFB extension ontology
 ontology: vfbext/vfbext-full
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2024-10-29" xsd:string
+property_value: owl:versionInfo "2025-01-10" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
@@ -308,6 +308,22 @@ intersection_of: BFO:0000050 NCBITaxon:7227 ! part of
 relationship: BFO:0000050 NCBITaxon:7227 ! part of
 
 [Term]
+id: NCBITaxon:10239
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2157
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2759
+is_a: OBI:0100026 ! organism
+
+[Term]
 id: OBI:0000011
 name: planned process
 def: "A process that realizes a plan which is the concretization of a plan specification." []
@@ -316,13 +332,13 @@ is_a: BFO:0000015 ! process
 [Term]
 id: OBI:0000112
 name: specimen role
-def: "a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation" []
+def: "A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen." []
 is_a: BFO:0000023 ! role
 
 [Term]
 id: OBI:0000659
 name: specimen collection process
-def: "A planned process with the objective of collecting a specimen." []
+def: "A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed." []
 is_a: OBI:0000011 ! planned process
 intersection_of: OBI:0000011 ! planned process
 intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
@@ -333,8 +349,14 @@ relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen coll
 [Term]
 id: OBI:0000684
 name: specimen collection objective
-def: "A objective specification to obtain a material entity for potential use as an input during an investigation." []
+def: "A objective specification that is fulfilled by obtaining a material entity for potential use as an input upon which measurements or observations are performed." []
 is_a: IAO:0000005
+
+[Term]
+id: OBI:0001479
+name: specimen from organism
+def: "A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm)." []
+is_a: OBI:0100051 ! specimen
 
 [Term]
 id: OBI:0002076
@@ -345,9 +367,28 @@ intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0002351 OBI:0100051 {all_only="true"} ! has member specimen
 
 [Term]
+id: OBI:0002648
+name: individual organism specimen
+def: "A specimen composed of an individual organism to be studied in an investigation." []
+is_a: OBI:0100051 ! specimen
+intersection_of: OBI:0100051 ! specimen
+intersection_of: RO:0002180 OBI:0100026 {cardinality="1"} ! has component organism
+relationship: RO:0002180 OBI:0100026 ! has component organism
+
+[Term]
+id: OBI:0100026
+name: organism
+def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
+is_a: BFO:0000040 ! material entity
+union_of: NCBITaxon:10239
+union_of: NCBITaxon:2
+union_of: NCBITaxon:2157
+union_of: NCBITaxon:2759
+
+[Term]
 id: OBI:0100051
 name: specimen
-def: "A material entity that has the specimen role." []
+def: "A material entity that is collected for potential use as an input upon which measurements or observations are performed." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
