@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2025-01-10/vfbext-non-classified.owl
-date: 10:01:2025 10:50
+data-version: vfbext/releases/2025-03-17/vfbext-non-classified.owl
+date: 17:03:2025 09:41
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -24,7 +24,7 @@ remark: VFB extension ontology
 ontology: vfbext/vfbext-non-classified
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2025-01-10" xsd:string
+property_value: owl:versionInfo "2025-03-17" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
@@ -326,8 +326,8 @@ def: "A planned process with the objective to obtain a material entity for poten
 is_a: OBI:0000011 ! planned process
 intersection_of: OBI:0000011 ! planned process
 intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
-relationship: OBI:0000299 OBI:0100051 ! has_specified_output specimen
+relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
+relationship: OBI:0000299 OBI:0100051 ! has specified output specimen
 
 [Term]
 id: OBI:0000684
@@ -450,35 +450,36 @@ inverse_of: BFO:0000055 ! realizes
 [Typedef]
 id: BFO:0000055
 name: realizes
+def: "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" []
 domain: BFO:0000015 ! process
 range: BFO:0000017 ! realizable entity
 
 [Typedef]
 id: OBI:0000293
-name: has_specified_input
-def: "The inverse property of is_specified_input_of" []
+name: has specified input
+def: "The inverse property of is specified input of" []
 domain: OBI:0000011 ! planned process
 is_a: RO:0000057 ! has participant
-inverse_of: OBI:0000295 ! is_specified_input_of
+inverse_of: OBI:0000295 ! is specified input of
 
 [Typedef]
 id: OBI:0000295
-name: is_specified_input_of
+name: is specified input of
 def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
 range: OBI:0000011 ! planned process
 is_a: RO:0000056 ! participates in
 
 [Typedef]
 id: OBI:0000299
-name: has_specified_output
-def: "The inverse property of is_specified_output_of" []
+name: has specified output
+def: "The inverse property of is specified output of" []
 domain: OBI:0000011 ! planned process
 is_a: RO:0000057 ! has participant
-inverse_of: OBI:0000312 ! is_specified_output_of
+inverse_of: OBI:0000312 ! is specified output of
 
 [Typedef]
 id: OBI:0000312
-name: is_specified_output_of
+name: is specified output of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
 range: OBI:0000011 ! planned process
 is_a: RO:0000056 ! participates in
@@ -533,16 +534,14 @@ holds_over_chain: BFO:0000051 RO:0000057
 [Typedef]
 id: RO:0000058
 name: is concretized as
-def: "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants." []
+def: "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes." []
 domain: BFO:0000031 ! generically dependent continuant
-range: BFO:0000020 ! specifically dependent continuant
 inverse_of: RO:0000059 ! concretizes
 
 [Typedef]
 id: RO:0000059
 name: concretizes
-def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
-domain: BFO:0000020 ! specifically dependent continuant
+def: "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant." []
 range: BFO:0000031 ! generically dependent continuant
 
 [Typedef]
