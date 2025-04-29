@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2025-03-17/vfbext-non-classified.owl
-date: 17:03:2025 09:41
+data-version: vfbext/releases/2025-04-29/vfbext-non-classified.owl
+date: 29:04:2025 13:44
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -24,7 +24,7 @@ remark: VFB extension ontology
 ontology: vfbext/vfbext-non-classified
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2025-03-17" xsd:string
+property_value: owl:versionInfo "2025-04-29" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
