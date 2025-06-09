@@ -10,7 +10,6 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:caro="http://purl.obolibrary.org/obo/caro#"
      xmlns:fbbt="http://purl.obolibrary.org/obo/fbbt#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vfb2="http://purl.obolibrary.org/obo/fbbt/vfb#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -20,9 +19,9 @@
         <dc:description>An ontology of miscellaneous terms for data annotation in VFB.</dc:description>
         <dc:title>VFB Extension Ontology</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/&lt;/terms:license&gt;</terms:license>
-        <oboInOwl:date>29:04:2025 13:44</oboInOwl:date>
+        <oboInOwl:date>09:06:2025 09:02</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
-        <owl:versionInfo>2025-04-29</owl:versionInfo>
+        <owl:versionInfo>2025-06-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -41,12 +40,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
@@ -187,12 +180,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
@@ -262,18 +249,6 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/homepage -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/mbox -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
     
 
 
@@ -1218,6 +1193,7 @@ Examples include: the relationship between two channels collected simultaneously
     <!-- http://purl.obolibrary.org/obo/CARO_0001000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1238,6 +1214,12 @@ Examples include: the relationship between two channels collected simultaneously
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000014"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
         <obo:IAO_0000115>A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.</obo:IAO_0000115>
@@ -1357,14 +1339,14 @@ Examples include: the relationship between two channels collected simultaneously
     <!-- http://purl.obolibrary.org/obo/CARO_0020003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0020003">
-        <owl:equivalentClass rdf:nodeID="genid94"/>
+        <owl:equivalentClass rdf:nodeID="genid95"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
         <obo:IAO_0000115>An anatomical structure consisting of one or more cells.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-28T14:20:19Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">cellular anatomical structure</rdfs:label>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid94">
+    <owl:Class rdf:nodeID="genid95">
         <owl:unionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000013"/>
             <owl:Restriction>
@@ -1376,7 +1358,7 @@ Examples include: the relationship between two channels collected simultaneously
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0020003"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid94"/>
+        <owl:annotatedTarget rdf:nodeID="genid95"/>
         <obo:IAO_0000115>With a reflexive part_of relation this might safely be defined as &apos;anatomical structure&apos; that has_part some cell</obo:IAO_0000115>
     </owl:Axiom>
     

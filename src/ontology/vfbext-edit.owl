@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/fbbt/vfb/vfb_ext.owl#>)
+Prefix(:=<http://virtualflybrain.org/data/VFB/OWL/vfbext.owl#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)

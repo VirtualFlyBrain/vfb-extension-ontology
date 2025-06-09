@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:04:2025 13:44
+date: 09:06:2025 09:02
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -16,14 +16,13 @@ subsetdef: ro-eco ""
 subsetdef: synaptic_neuropil ""
 subsetdef: tract ""
 idspace: dc http://purl.org/dc/elements/1.1/ 
-idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: terms http://purl.org/dc/terms/ 
 remark: VFB extension ontology
 ontology: http://virtualflybrain.org/data/VFB/OWL/vfbext.owl
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2025-04-29" xsd:string
+property_value: owl:versionInfo "2025-06-09" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
@@ -195,8 +194,10 @@ id: CARO:0001000
 name: multi-cell-part structure
 def: "A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part." []
 subset: core
+is_a: CARO:0000003 ! connected anatomical structure
 is_a: CARO:0001008 ! gross anatomical part
 disjoint_from: CARO:0010000 ! multicellular anatomical structure
+relationship: RO:0002180 CARO:0000014 ! has component cell part
 
 [Term]
 id: CARO:0001008
@@ -416,7 +417,7 @@ creation_date: 2018-03-04T10:55:59Z
 [Term]
 id: VFBext:0000006
 name: multi channel image
-is_a: foaf:image
+is_a: http://xmlns.com/foaf/0.1/image
 
 [Term]
 id: VFBext:0000007
@@ -436,7 +437,7 @@ creation_date: 2018-09-26T07:54:17Z
 [Term]
 id: VFBext:0000014
 name: channel
-is_a: foaf:image
+is_a: http://xmlns.com/foaf/0.1/image
 
 [Typedef]
 id: BFO:0000050
@@ -583,8 +584,8 @@ is_a: RO:0000053 ! has characteristic
 id: RO:0002026
 name: in register with
 def: "A relationship that holds between two images, A and B, where:\nA depicts X;\nB depicts Y;\nX and Y are both of type T'\nC is a 2 layer image consiting of layers A and B;\nA and B are aligned in C according to a shared co-ordinate framework so that common features of X and Y are co-incident with each other.\nNote: A and B may be 2D or 3D.\nExamples include: the relationship between two channels collected simultaneously from a confocal microscope; the relationship between an image dpeicting X and a painted annotation layer that delineates regions of X; the relationship between the tracing of a neuron on an EM stack and the co-ordinate space of the stack; the relationship between two separately collected images that have been brought into register via some image registration software." [https://orcid.org/0000-0002-7073-9172]
-domain: foaf:image
-range: foaf:image
+domain: http://xmlns.com/foaf/0.1/image
+range: http://xmlns.com/foaf/0.1/image
 is_a: RO:0002323 ! mereotopologically related to
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-12-07T12:58:06Z
@@ -712,10 +713,6 @@ created_by: dos
 creation_date: 2018-09-26T07:49:10Z
 
 [Typedef]
-id: foaf:depicts
-name: depicts
-
-[Typedef]
 id: http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7
 name: has_exemplar
 
@@ -723,4 +720,8 @@ name: has_exemplar
 id: http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0
 name: exemplar_of
 is_a: RO:0002350 ! member of
+
+[Typedef]
+id: http://xmlns.com/foaf/0.1/depicts
+name: depicts
 
