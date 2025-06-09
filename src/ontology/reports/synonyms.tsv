@@ -5,6 +5,7 @@
 <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"multi channel image"	
 <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"expression pattern fragment"@en	
 <http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"cell cluster"	
+<http://purl.obolibrary.org/obo/OBI_0002648>	<http://www.w3.org/2000/01/rdf-schema#label>	"individual organism specimen"	
 <http://purl.obolibrary.org/obo/CARO_0000040>	<http://www.w3.org/2000/01/rdf-schema#label>	"acellular anatomical structure"	
 <http://purl.obolibrary.org/obo/OBI_0000112>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen role"@en	
 <http://purl.obolibrary.org/obo/BFO_0000141>	<http://www.w3.org/2000/01/rdf-schema#label>	"immaterial entity"@en	
@@ -48,4 +49,3 @@
 <http://purl.obolibrary.org/obo/OBI_0002076>	<http://www.w3.org/2000/01/rdf-schema#label>	"collection of specimens"@en	
 <http://purl.obolibrary.org/obo/CARO_0001008>	<http://www.w3.org/2000/01/rdf-schema#label>	"gross anatomical part"@en	
 <http://purl.obolibrary.org/obo/FBbt_00100313>	<http://www.w3.org/2000/01/rdf-schema#label>	"multicellular structure"	
-<http://purl.obolibrary.org/obo/OBI_0002648>	<http://www.w3.org/2000/01/rdf-schema#label>	"individual organism specimen"	
