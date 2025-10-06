@@ -16,13 +16,13 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vfbext/vfbext-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2025-07-29/vfbext-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vfbext/releases/2025-10-06/vfbext-full.owl"/>
         <dc:description>An ontology of miscellaneous terms for data annotation in VFB.</dc:description>
         <dc:title>VFB Extension Ontology</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/&lt;/terms:license&gt;</terms:license>
-        <oboInOwl:date>29:07:2025 14:19</oboInOwl:date>
+        <oboInOwl:date>06:10:2025 13:28</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
-        <owl:versionInfo>2025-07-29</owl:versionInfo>
+        <owl:versionInfo>2025-10-06</owl:versionInfo>
     </owl:Ontology>
     
 

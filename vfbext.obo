@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:07:2025 14:19
+date: 06:10:2025 13:28
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -22,7 +22,7 @@ remark: VFB extension ontology
 ontology: http://virtualflybrain.org/data/VFB/OWL/vfbext.owl
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2025-07-29" xsd:string
+property_value: owl:versionInfo "2025-10-06" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
