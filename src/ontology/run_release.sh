@@ -1,2 +1,2 @@
 #!/bin/sh
-./run.sh make prepare_release -B
+./run.sh make clean prepare_release

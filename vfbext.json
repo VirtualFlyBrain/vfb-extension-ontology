@@ -13,15 +13,15 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/</terms:license>"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "12:12:2025 09:25"
+        "val" : "17:04:2026 06:22"
       }, {
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "VFB extension ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-12-12"
+        "val" : "2026-04-17"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/vfbext/releases/2025-12-12/vfbext.json"
+      "version" : "http://purl.obolibrary.org/obo/vfbext/releases/2026-04-17/vfbext.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -38,10 +38,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000004",
       "lbl" : "independent continuant",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
-      "lbl" : "process",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000017",
@@ -270,6 +266,12 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/COB_0000022",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/COB_0000035",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBbt_00007001",
       "lbl" : "anatomical structure",
       "type" : "CLASS",
@@ -328,32 +330,8 @@
       "id" : "http://purl.obolibrary.org/obo/IAO_0000005",
       "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000104",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_10239",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2157",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2759",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_7227",
       "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0000011",
-      "lbl" : "planned process",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A process that realizes a plan which is the concretization of a plan specification."
-        }
-      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000112",
       "lbl" : "specimen role",
@@ -397,24 +375,6 @@
       "meta" : {
         "definition" : {
           "val" : "A material entity that has two or more specimens as its parts."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0002648",
-      "lbl" : "individual organism specimen",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A specimen composed of an individual organism to be studied in an investigation."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0100026",
-      "lbl" : "organism",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."
         }
       }
     }, {
@@ -529,21 +489,6 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000054",
-      "lbl" : "realized in",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000055",
-      "lbl" : "realizes",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"
-        }
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7",
       "lbl" : "has_exemplar",
       "type" : "PROPERTY",
@@ -565,7 +510,7 @@
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."
+          "val" : "A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."
         }
       }
     }, {
@@ -585,7 +530,7 @@
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."
+          "val" : "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."
         }
       }
     }, {
@@ -651,26 +596,6 @@
           "pred" : "http://purl.org/dc/terms/source",
           "val" : "http://www.obofoundry.org/ro/#OBO_REL:has_participant"
         } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0000058",
-      "lbl" : "is concretized as",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0000059",
-      "lbl" : "concretizes",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant."
-        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000081",
@@ -807,26 +732,6 @@
       "lbl" : "depends on",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0010001",
-      "lbl" : "generically depends on",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0010002",
-      "lbl" : "is carrier of",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*"
-        }
-      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0",
       "lbl" : "exemplar_of",
@@ -1028,10 +933,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000002"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/BFO_0000015",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000003"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000017",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
@@ -1224,33 +1125,17 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_7227"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_10239",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_2",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_2157",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_2759",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OBI_0000011",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000112",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000659",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000659",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000659",
       "pred" : "http://purl.obolibrary.org/obo/OBI_0000293",
@@ -1273,18 +1158,6 @@
       "obj" : "http://purl.obolibrary.org/obo/OBI_0100051"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0002076",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OBI_0002648",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100051"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OBI_0002648",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OBI_0100026",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
     }, {
@@ -1416,10 +1289,6 @@
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/BFO_0000054",
-      "pred" : "inverseOf",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000055"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000293",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000295"
@@ -1440,10 +1309,6 @@
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0000058",
-      "pred" : "inverseOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0000059"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000081",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000087"
@@ -1455,10 +1320,6 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002350",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002351"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0010001",
-      "pred" : "inverseOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0010002"
     } ],
     "logicalDefinitionAxioms" : [ {
       "definedClassId" : "http://purl.obolibrary.org/obo/CARO_0000003",
@@ -1486,7 +1347,7 @@
       } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OBI_0000659",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/COB_0000035" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000417",
         "fillerId" : "http://purl.obolibrary.org/obo/OBI_0000684"
@@ -1537,27 +1398,19 @@
         "obj" : "http://purl.obolibrary.org/obo/BFO_0000031"
       } ]
     }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000054",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000017" ],
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000055",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ],
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000017" ]
-    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000293",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/COB_0000035" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000299",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/COB_0000035" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000417",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ],
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/COB_0000035" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000005" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000833",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000005" ],
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/COB_0000035" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000056",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ],
@@ -1566,9 +1419,6 @@
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000057",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000058",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000031" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000087",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ],
@@ -1586,14 +1436,6 @@
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ]
     }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0010001",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000031" ],
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0010002",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ],
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000031" ]
-    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010" ]
     }, {
@@ -1601,16 +1443,13 @@
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/CARO_0030002" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000295",
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/COB_0000035" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000312",
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/COB_0000035" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000053",
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000020" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000059",
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000031" ]
     } ],
     "propertyChainAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002131",
@@ -1620,9 +1459,6 @@
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000051", "http://purl.obolibrary.org/obo/BFO_0000050" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000057",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000051", "http://purl.obolibrary.org/obo/BFO_0000055", "http://purl.obolibrary.org/obo/RO_0000052" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000057",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000051", "http://purl.obolibrary.org/obo/RO_0000057" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002131",
@@ -1630,12 +1466,6 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002314",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0000052", "http://purl.obolibrary.org/obo/BFO_0000050" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0010001",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0000052", "http://purl.obolibrary.org/obo/RO_0000058" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0010002",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0000059", "http://purl.obolibrary.org/obo/RO_0000053" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002131",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002131", "http://purl.obolibrary.org/obo/BFO_0000050" ]

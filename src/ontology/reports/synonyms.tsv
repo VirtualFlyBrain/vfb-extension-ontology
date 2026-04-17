@@ -5,14 +5,12 @@
 <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"multi channel image"	
 <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"expression pattern fragment"@en	
 <http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"cell cluster"	
-<http://purl.obolibrary.org/obo/OBI_0002648>	<http://www.w3.org/2000/01/rdf-schema#label>	"individual organism specimen"	
 <http://purl.obolibrary.org/obo/CARO_0000040>	<http://www.w3.org/2000/01/rdf-schema#label>	"acellular anatomical structure"	
 <http://purl.obolibrary.org/obo/OBI_0000112>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen role"@en	
 <http://purl.obolibrary.org/obo/BFO_0000141>	<http://www.w3.org/2000/01/rdf-schema#label>	"immaterial entity"@en	
 <http://purl.obolibrary.org/obo/CARO_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"material anatomical entity"	
 <http://purl.obolibrary.org/obo/CARO_0001000>	<http://www.w3.org/2000/01/rdf-schema#label>	"multi-cell-part structure"	
 <http://purl.obolibrary.org/obo/BFO_0000020>	<http://www.w3.org/2000/01/rdf-schema#label>	"specifically dependent continuant"@en	
-<http://purl.obolibrary.org/obo/BFO_0000015>	<http://www.w3.org/2000/01/rdf-schema#label>	"process"@en	
 <http://purl.obolibrary.org/obo/CARO_0030000>	<http://www.w3.org/2000/01/rdf-schema#label>	"biological entity"	
 <http://purl.obolibrary.org/obo/BFO_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"independent continuant"@en	
 <http://purl.obolibrary.org/obo/CARO_0000013>	<http://www.w3.org/2000/01/rdf-schema#label>	"cell"	
@@ -37,13 +35,11 @@
 <http://purl.obolibrary.org/obo/CARO_0010004>	<http://www.w3.org/2000/01/rdf-schema#label>	"cellular organism"	
 <http://purl.obolibrary.org/obo/OBI_0100051>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen"@en	
 <http://purl.obolibrary.org/obo/BFO_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"entity"@en	
-<http://purl.obolibrary.org/obo/OBI_0000011>	<http://www.w3.org/2000/01/rdf-schema#label>	"planned process"@en	
 <http://purl.obolibrary.org/obo/CARO_0020000>	<http://www.w3.org/2000/01/rdf-schema#label>	"disconnected anatomical group"	
 <http://purl.obolibrary.org/obo/FBbt_00007016>	<http://www.w3.org/2000/01/rdf-schema#label>	"material anatomical entity"	
 <http://purl.obolibrary.org/obo/CARO_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism substance"	
 <http://purl.obolibrary.org/obo/CARO_0001010>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism"	
 <http://purl.obolibrary.org/obo/BFO_0000023>	<http://www.w3.org/2000/01/rdf-schema#label>	"role"@en	
-<http://purl.obolibrary.org/obo/OBI_0100026>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism"@en	
 <http://purl.obolibrary.org/obo/OBI_0001479>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen from organism"	
 <http://purl.obolibrary.org/obo/OBI_0000684>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen collection objective"	
 <http://purl.obolibrary.org/obo/OBI_0002076>	<http://www.w3.org/2000/01/rdf-schema#label>	"collection of specimens"@en	
