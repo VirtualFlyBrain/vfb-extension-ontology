@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:12:2025 09:25
+date: 17:04:2026 06:22
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -22,7 +22,7 @@ remark: VFB extension ontology
 ontology: http://virtualflybrain.org/data/VFB/OWL/vfbext.owl
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2025-12-12" xsd:string
+property_value: owl:versionInfo "2026-04-17" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
@@ -49,11 +49,6 @@ is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: BFO:0000050 BFO:0000004 {all_only="true"} ! part of independent continuant
-
-[Term]
-id: BFO:0000015
-name: process
-is_a: BFO:0000003 ! occurrent
 
 [Term]
 id: BFO:0000017
@@ -314,28 +309,6 @@ intersection_of: BFO:0000050 NCBITaxon:7227 ! part of
 relationship: BFO:0000050 NCBITaxon:7227 ! part of
 
 [Term]
-id: NCBITaxon:10239
-is_a: OBI:0100026 ! organism
-
-[Term]
-id: NCBITaxon:2
-is_a: OBI:0100026 ! organism
-
-[Term]
-id: NCBITaxon:2157
-is_a: OBI:0100026 ! organism
-
-[Term]
-id: NCBITaxon:2759
-is_a: OBI:0100026 ! organism
-
-[Term]
-id: OBI:0000011
-name: planned process
-def: "A process that realizes a plan which is the concretization of a plan specification." []
-is_a: BFO:0000015 ! process
-
-[Term]
 id: OBI:0000112
 name: specimen role
 def: "A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen." []
@@ -345,8 +318,9 @@ is_a: BFO:0000023 ! role
 id: OBI:0000659
 name: specimen collection process
 def: "A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed." []
-is_a: OBI:0000011 ! planned process
-intersection_of: OBI:0000011 ! planned process
+is_a: BFO:0000003 ! occurrent
+is_a: COB:0000035
+intersection_of: COB:0000035
 intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
 relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
 relationship: OBI:0000299 OBI:0100051 ! has specified output specimen
@@ -371,25 +345,6 @@ def: "A material entity that has two or more specimens as its parts." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0002351 OBI:0100051 {all_only="true"} ! has member specimen
-
-[Term]
-id: OBI:0002648
-name: individual organism specimen
-def: "A specimen composed of an individual organism to be studied in an investigation." []
-is_a: OBI:0100051 ! specimen
-intersection_of: OBI:0100051 ! specimen
-intersection_of: RO:0002180 OBI:0100026 {cardinality="1"} ! has component organism
-relationship: RO:0002180 OBI:0100026 ! has component organism
-
-[Term]
-id: OBI:0100026
-name: organism
-def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
-is_a: BFO:0000040 ! material entity
-union_of: NCBITaxon:10239
-union_of: NCBITaxon:2
-union_of: NCBITaxon:2157
-union_of: NCBITaxon:2759
 
 [Term]
 id: OBI:0100051
@@ -468,54 +423,40 @@ is_transitive: true
 is_a: RO:0002131 ! overlaps
 
 [Typedef]
-id: BFO:0000054
-name: realized in
-domain: BFO:0000017 ! realizable entity
-range: BFO:0000015 ! process
-inverse_of: BFO:0000055 ! realizes
-
-[Typedef]
-id: BFO:0000055
-name: realizes
-def: "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" []
-domain: BFO:0000015 ! process
-range: BFO:0000017 ! realizable entity
-
-[Typedef]
 id: OBI:0000293
 name: has specified input
 def: "The inverse property of is specified input of" []
-domain: OBI:0000011 ! planned process
+domain: COB:0000035
 is_a: RO:0000057 ! has participant
 inverse_of: OBI:0000295 ! is specified input of
 
 [Typedef]
 id: OBI:0000295
 name: is specified input of
-def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
-range: OBI:0000011 ! planned process
+def: "A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
+range: COB:0000035
 is_a: RO:0000056 ! participates in
 
 [Typedef]
 id: OBI:0000299
 name: has specified output
 def: "The inverse property of is specified output of" []
-domain: OBI:0000011 ! planned process
+domain: COB:0000035
 is_a: RO:0000057 ! has participant
 inverse_of: OBI:0000312 ! is specified output of
 
 [Typedef]
 id: OBI:0000312
 name: is specified output of
-def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
-range: OBI:0000011 ! planned process
+def: "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
+range: COB:0000035
 is_a: RO:0000056 ! participates in
 
 [Typedef]
 id: OBI:0000417
 name: achieves_planned_objective
 def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." []
-domain: OBI:0000011 ! planned process
+domain: COB:0000035
 range: IAO:0000005
 inverse_of: OBI:0000833 ! objective_achieved_by
 
@@ -524,7 +465,7 @@ id: OBI:0000833
 name: objective_achieved_by
 def: "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process." []
 domain: IAO:0000005
-range: OBI:0000011 ! planned process
+range: COB:0000035
 
 [Typedef]
 id: RO:0000052
@@ -557,19 +498,6 @@ property_value: terms:source "http://www.obofoundry.org/ro/#OBO_REL:has_particip
 domain: BFO:0000003 ! occurrent
 range: BFO:0000002 ! continuant
 holds_over_chain: BFO:0000051 RO:0000057
-
-[Typedef]
-id: RO:0000058
-name: is concretized as
-def: "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes." []
-domain: BFO:0000031 ! generically dependent continuant
-inverse_of: RO:0000059 ! concretizes
-
-[Typedef]
-id: RO:0000059
-name: concretizes
-def: "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant." []
-range: BFO:0000031 ! generically dependent continuant
 
 [Typedef]
 id: RO:0000081
@@ -669,23 +597,6 @@ is_a: BFO:0000051 ! has part
 [Typedef]
 id: RO:0002502
 name: depends on
-
-[Typedef]
-id: RO:0010001
-name: generically depends on
-def: "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*." []
-domain: BFO:0000031 ! generically dependent continuant
-range: BFO:0000004 ! independent continuant
-holds_over_chain: RO:0000052 RO:0000058
-inverse_of: RO:0010002 ! is carrier of
-
-[Typedef]
-id: RO:0010002
-name: is carrier of
-def: "*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*" []
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000031 ! generically dependent continuant
-holds_over_chain: RO:0000059 RO:0000053
 
 [Typedef]
 id: VFBext:0000001
