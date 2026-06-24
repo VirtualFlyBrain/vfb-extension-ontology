@@ -19,9 +19,9 @@
         <dc:description>An ontology of miscellaneous terms for data annotation in VFB.</dc:description>
         <dc:title>VFB Extension Ontology</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/&lt;/terms:license&gt;</terms:license>
-        <oboInOwl:date>17:04:2026 06:22</oboInOwl:date>
+        <oboInOwl:date>24:06:2026 15:14</oboInOwl:date>
         <rdfs:comment>VFB extension ontology</rdfs:comment>
-        <owl:versionInfo>2026-04-17</owl:versionInfo>
+        <owl:versionInfo>2026-06-24</owl:versionInfo>
     </owl:Ontology>
     
 
