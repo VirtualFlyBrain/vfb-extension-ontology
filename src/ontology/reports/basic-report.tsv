@@ -8,7 +8,6 @@
 <http://purl.obolibrary.org/obo/BFO_0000002>		
 <http://purl.obolibrary.org/obo/CARO_0001000>	"A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part."	
 <http://purl.obolibrary.org/obo/SO_0000110>		
-<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>		
 <http://purl.obolibrary.org/obo/CARO_0000032>	"Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument."@en	
 <http://purl.obolibrary.org/obo/OBI_0000112>	"A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen."@en	
 <http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005>		
@@ -38,6 +37,7 @@
 <http://purl.obolibrary.org/obo/PATO_0002266>		
 <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014>		
 <http://purl.obolibrary.org/obo/PATO_0000125>		
+<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>	"A material anatomical entity that is part of an expression pattern."	
 <http://purl.obolibrary.org/obo/BFO_0000040>		
 <http://purl.obolibrary.org/obo/PATO_0001993>		
 <http://purl.obolibrary.org/obo/CARO_0000012>	"Anatomical structure that is an individual member of a clade and, at some point in its life-cycle, consists of more than one cell."	
