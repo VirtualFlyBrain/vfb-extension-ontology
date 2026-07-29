@@ -157,11 +157,11 @@ SubClassOf(vfb:VFB_10000005 obo:BFO_0000004)
 
 # Class: vfb:VFBext_0000004 (expression pattern fragment)
 
+AnnotationAssertion(obo:IAO_0000115 vfb:VFBext_0000004 "A material anatomical entity that is part of an expression pattern.")
 AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000004 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000004 "2018-03-04T10:55:59Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:comment vfb:VFBext_0000004 "A multicellular structure that is part of an expression pattern.")
 AnnotationAssertion(rdfs:label vfb:VFBext_0000004 "expression pattern fragment"@en)
-EquivalentClasses(vfb:VFBext_0000004 ObjectIntersectionOf(obo:FBbt_00100313 ObjectSomeValuesFrom(obo:BFO_0000050 obo:CARO_0030002)))
+EquivalentClasses(vfb:VFBext_0000004 ObjectIntersectionOf(obo:FBbt_00007016 ObjectSomeValuesFrom(obo:BFO_0000050 obo:CARO_0030002)))
 
 # Class: vfb:VFBext_0000006 (multi channel image)
 
@@ -181,7 +181,7 @@ SubClassOf(vfb:VFBext_0000007 vfb:VFBext_0000014)
 AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000010 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000010 "2018-09-26T07:54:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000010 "intersectional expression pattern"@en)
-SubClassOf(vfb:VFBext_0000010 obo:FBbt_10000000)
+SubClassOf(vfb:VFBext_0000010 obo:FBbt_00007016)
 
 # Class: vfb:VFBext_0000014 (channel)
 
