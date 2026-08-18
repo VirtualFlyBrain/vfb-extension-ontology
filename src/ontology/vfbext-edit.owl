@@ -146,10 +146,6 @@ AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/depicts> "depicts")
 #   Classes
 ############################
 
-# Class: obo:SO_0000110 (obo:SO_0000110)
-
-SubClassOf(obo:SO_0000110 obo:BFO_0000040)
-
 # Class: vfb:VFB_10000005 (cell cluster)
 
 AnnotationAssertion(rdfs:label vfb:VFB_10000005 "cell cluster")
