@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: vfbext/releases/2026-07-29/vfbext-full.owl
-date: 29:07:2026 15:07
+data-version: vfbext/releases/2026-08-18/vfbext-full.owl
+date: 18:08:2026 10:16
 subsetdef: clone ""
 subsetdef: core ""
 subsetdef: cur ""
@@ -23,7 +23,7 @@ remark: VFB extension ontology
 ontology: vfbext/vfbext-full
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2026-07-29" xsd:string
+property_value: owl:versionInfo "2026-08-18" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
@@ -355,10 +355,6 @@ is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
 relationship: RO:0000087 OBI:0000112 ! has role specimen role
-
-[Term]
-id: SO:0000110
-is_a: BFO:0000040 ! material entity
 
 [Term]
 id: VFB:10000005
