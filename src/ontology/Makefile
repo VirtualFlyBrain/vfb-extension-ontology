@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                f536379bcd203347d28185a6c0c3abdac1af3338ef70a92870fa1c31ea32920f
+CONFIG_HASH=                f603a64ba0c10c7ab311015702d17738dfe952af2b9f58cac003fe70538f28bf
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo ro caro fbbt obi
+IMPORTS =  bfo ro fbbt obi
 
 IMPORT_ROOTS =  $(IMPORTDIR)/merged_import
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -462,14 +462,6 @@ mirror-bfo: | $(TMPDIR)
 mirror-ro: | $(TMPDIR)
 	curl -L $(OBOBASE)/ro/ro-base.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/ro-download.owl -o $(TMPDIR)/$@.owl
-
-
-## ONTOLOGY: caro
-.PHONY: mirror-caro
-.PRECIOUS: $(MIRRORDIR)/caro.owl
-mirror-caro: | $(TMPDIR)
-	curl -L $(OBOBASE)/caro.owl --create-dirs -o $(TMPDIR)/caro-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) remove -i $(TMPDIR)/caro-download.owl --base-iri http://purl.obolibrary.org/obo/CARO_ --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: fbbt
