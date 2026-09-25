@@ -157,8 +157,8 @@ SubClassOf(vfb:VFB_10000005 obo:BFO_0000004)
 # Class: vfb:VFBext_0000004 (expression pattern fragment)
 
 AnnotationAssertion(obo:IAO_0000115 vfb:VFBext_0000004 "An expression pattern that is some subset of another expression pattern due to additional genetic constraints (e.g. FLP recombination).")
-AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000004 "dos")
-AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000004 "2018-03-04T10:55:59Z"^^xsd:dateTime)
+AnnotationAssertion(terms:contributor vfb:VFBext_0000004 "https://orcid.org/0000-0002-7073-9172")
+AnnotationAssertion(terms:date vfb:VFBext_0000004 "2018-03-04T10:55:59Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000004 "expression pattern fragment"@en)
 SubClassOf(vfb:VFBext_0000004 vfb:VFBext_0000100)
 
@@ -169,8 +169,8 @@ SubClassOf(vfb:VFBext_0000006 <http://xmlns.com/foaf/0.1/image>)
 
 # Class: vfb:VFBext_0000007 (template image)
 
-AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000007 "dos")
-AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000007 "2018-05-15T15:53:38Z"^^xsd:dateTime)
+AnnotationAssertion(terms:contributor vfb:VFBext_0000007 "https://orcid.org/0000-0002-7073-9172")
+AnnotationAssertion(terms:date vfb:VFBext_0000007 "2018-05-15T15:53:38Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment vfb:VFBext_0000007 "A single channel image that is used as a template for image registration.")
 AnnotationAssertion(rdfs:label vfb:VFBext_0000007 "template image"@en)
 SubClassOf(vfb:VFBext_0000007 vfb:VFBext_0000014)
@@ -178,8 +178,8 @@ SubClassOf(vfb:VFBext_0000007 vfb:VFBext_0000014)
 # Class: vfb:VFBext_0000010 (intersectional expression pattern)
 
 AnnotationAssertion(obo:IAO_0000115 vfb:VFBext_0000010 "An expression pattern that depends upon the combined synthesis of multiple components, which drive expression only when combined within the same cell (e.g. split-GAL4).")
-AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000010 "dos")
-AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000010 "2018-09-26T07:54:17Z"^^xsd:dateTime)
+AnnotationAssertion(terms:contributor vfb:VFBext_0000010 "https://orcid.org/0000-0002-7073-9172")
+AnnotationAssertion(terms:date vfb:VFBext_0000010 "2018-09-26T07:54:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000010 "intersectional expression pattern"@en)
 SubClassOf(vfb:VFBext_0000010 vfb:VFBext_0000100)
 
