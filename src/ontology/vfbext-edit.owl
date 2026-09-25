@@ -25,6 +25,7 @@ Declaration(Class(vfb:VFBext_0000006))
 Declaration(Class(vfb:VFBext_0000007))
 Declaration(Class(vfb:VFBext_0000010))
 Declaration(Class(vfb:VFBext_0000014))
+Declaration(Class(vfb:VFBext_0000100))
 Declaration(Class(<http://xmlns.com/foaf/0.1/image>))
 Declaration(ObjectProperty(obo:C888C3DB-AEFA-447F-BD4C-858DFE33DBE7))
 Declaration(ObjectProperty(obo:c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0))
@@ -43,6 +44,8 @@ Declaration(AnnotationProperty(vfb2:tract))
 Declaration(AnnotationProperty(vfb:VFBext_0000005))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(terms:contributor))
+Declaration(AnnotationProperty(terms:date))
 Declaration(AnnotationProperty(terms:license))
 Declaration(AnnotationProperty(terms:references))
 Declaration(AnnotationProperty(terms:source))
@@ -153,11 +156,11 @@ SubClassOf(vfb:VFB_10000005 obo:BFO_0000004)
 
 # Class: vfb:VFBext_0000004 (expression pattern fragment)
 
-AnnotationAssertion(obo:IAO_0000115 vfb:VFBext_0000004 "A material anatomical entity that is part of an expression pattern.")
+AnnotationAssertion(obo:IAO_0000115 vfb:VFBext_0000004 "An expression pattern that is some subset of another expression pattern due to additional genetic constraints (e.g. FLP recombination).")
 AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000004 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000004 "2018-03-04T10:55:59Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000004 "expression pattern fragment"@en)
-EquivalentClasses(vfb:VFBext_0000004 ObjectIntersectionOf(obo:FBbt_00007016 ObjectSomeValuesFrom(obo:BFO_0000050 obo:CARO_0030002)))
+SubClassOf(vfb:VFBext_0000004 vfb:VFBext_0000100)
 
 # Class: vfb:VFBext_0000006 (multi channel image)
 
@@ -174,15 +177,24 @@ SubClassOf(vfb:VFBext_0000007 vfb:VFBext_0000014)
 
 # Class: vfb:VFBext_0000010 (intersectional expression pattern)
 
+AnnotationAssertion(obo:IAO_0000115 vfb:VFBext_0000010 "An expression pattern that depends upon the combined synthesis of multiple components, which drive expression only when combined within the same cell (e.g. split-GAL4).")
 AnnotationAssertion(oboInOwl:created_by vfb:VFBext_0000010 "dos")
 AnnotationAssertion(oboInOwl:creation_date vfb:VFBext_0000010 "2018-09-26T07:54:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label vfb:VFBext_0000010 "intersectional expression pattern"@en)
-SubClassOf(vfb:VFBext_0000010 obo:FBbt_00007016)
+SubClassOf(vfb:VFBext_0000010 vfb:VFBext_0000100)
 
 # Class: vfb:VFBext_0000014 (channel)
 
 AnnotationAssertion(rdfs:label vfb:VFBext_0000014 "channel")
 SubClassOf(vfb:VFBext_0000014 <http://xmlns.com/foaf/0.1/image>)
+
+# Class: vfb:VFBext_0000100 (expression pattern)
+
+AnnotationAssertion(obo:IAO_0000115 vfb:VFBext_0000100 "All cells within a single organism in which expression of some genetic entity occurs.")
+AnnotationAssertion(terms:contributor vfb:VFBext_0000100 <https://orcid.org/0000-0002-1373-1705>)
+AnnotationAssertion(terms:date vfb:VFBext_0000100 "2026-09-25T16:04:54Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label vfb:VFBext_0000100 "expression pattern"@en)
+SubClassOf(vfb:VFBext_0000100 obo:FBbt_00007016)
 
 
 )
