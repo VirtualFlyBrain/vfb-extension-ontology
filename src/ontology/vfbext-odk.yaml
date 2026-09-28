@@ -34,10 +34,6 @@ import_group:
         - http://purl.obolibrary.org/obo/BFO_
     - id: ro
       use_base: TRUE
-    - id: caro
-      make_base: TRUE
-      base_iris:
-        - http://purl.obolibrary.org/obo/CARO_
     - id: fbbt
       use_base: TRUE
     - id: obi
