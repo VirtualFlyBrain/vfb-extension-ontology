@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vfbext/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/vfbext/releases/2026-08-18/imports/merged_import.owl>
-Annotation(owl:versionInfo "2026-08-18")
+<http://purl.obolibrary.org/obo/vfbext/releases/2026-10-02/imports/merged_import.owl>
+Annotation(owl:versionInfo "2026-10-02")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -19,27 +19,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000004>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000006>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000007>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000012>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000013>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000014>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000032>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000040>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000042>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001008>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001010>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0010000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0010004>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0020000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0020003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0030000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0030002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007001>))
@@ -54,11 +34,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000684>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001479>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0002076>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100051>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000125>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001993>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002266>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0010000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0010001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000477>))
 Declaration(Class(<http://xmlns.com/foaf/0.1/image>))
@@ -78,7 +53,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000081>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000087>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002026>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002180>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002206>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002314>))
@@ -93,14 +67,13 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_anno
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_gp2term>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_ontology>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_gocam>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/caro#core>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/caro#plus>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#EmbDevSlim>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#cur>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#larval_OF>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
@@ -132,14 +105,6 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/valid_for_go_ontology> <
 # Annotation Property: <http://purl.obolibrary.org/obo/valid_for_gocam> (<http://purl.obolibrary.org/obo/valid_for_gocam>)
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/valid_for_gocam> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
-
-# Annotation Property: <http://purl.obolibrary.org/obo/caro#core> (<http://purl.obolibrary.org/obo/caro#core>)
-
-SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/caro#core> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
-
-# Annotation Property: <http://purl.obolibrary.org/obo/caro#plus> (<http://purl.obolibrary.org/obo/caro#plus>)
-
-SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/caro#plus> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/fbbt#EmbDevSlim> (<http://purl.obolibrary.org/obo/fbbt#EmbDevSlim>)
 
@@ -302,13 +267,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002131> "over
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/RO_0002323>)
 SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002180> (has component)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002180> "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002180> "has component"@en)
-SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/BFO_0000051>)
-
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002206> (expressed in)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002206> "x expressed in y if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and the transcription of x is part of the gene expression process (iii) x is a mature gene product such as a protein, and x was translated or otherwise processes from a transcript that was transcribed as part of this gene expression process")
@@ -422,188 +380,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> ObjectAllValuesFrom(<htt
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
-DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000141>)
-DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000141>))
-
-# Class: <http://purl.obolibrary.org/obo/BFO_0000141> (immaterial entity)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)
-DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BFO_0000040>))
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000000> (anatomical entity)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CAROC:Brownsville2014") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000000> "A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000000> "anatomical entity")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/CARO_0030000>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000003> (connected anatomical structure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000003> "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0000003> <http://purl.obolibrary.org/obo/caro#core>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000003> "connected anatomical structure")
-EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000003> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CARO_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002266>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0010000>)))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000003> <http://purl.obolibrary.org/obo/CARO_0000006>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002266>))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0010000>))
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000004> (organism substance)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000004> "Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body and that does not have inherent 3D shape generated by coordinated expression of the organism's own genome.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000004> "organism substance")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000004> <http://purl.obolibrary.org/obo/CARO_0001008>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000006> (material anatomical entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000006> "An anatomical entity that has mass.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0000006> <http://purl.obolibrary.org/obo/caro#core>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000006> "material anatomical entity")
-EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000006> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CARO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000125>)))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000006> <http://purl.obolibrary.org/obo/CARO_0000000>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000125>))
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000006> <http://purl.obolibrary.org/obo/CARO_0000007>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000007>))
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000007> (immaterial anatomical entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000007> "Anatomical entity that has no mass.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0000007> <http://purl.obolibrary.org/obo/caro#core>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000007> "immaterial anatomical entity")
-EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000007> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CARO_0000000> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000125>))))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000007> <http://purl.obolibrary.org/obo/BFO_0000141>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000007> <http://purl.obolibrary.org/obo/CARO_0000000>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CARO_0000006>))
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000012> (multicellular organism)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000012> "Anatomical structure that is an individual member of a clade and, at some point in its life-cycle, consists of more than one cell.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000012> "multicellular organism")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000012> <http://purl.obolibrary.org/obo/CARO_0010004>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000013> (cell)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000013> "An anatomical structure that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CARO_0000013> "CL:0000000")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CARO_0000013> "GO:0005623")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000013> "cell")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0020003>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000014>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000040>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000042>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0001000>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0010000>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000014> (cell part)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000014> "Anatomical structure that is part of a cell and that has a granularity level equal to that of a protein complex or higher.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000014> "cell part"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000014> <http://purl.obolibrary.org/obo/CARO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000013>))
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000014> <http://purl.obolibrary.org/obo/CARO_0000040>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000014> <http://purl.obolibrary.org/obo/CARO_0000042>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000014> <http://purl.obolibrary.org/obo/CARO_0001000>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000014> <http://purl.obolibrary.org/obo/CARO_0010000>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000032> (organism subdivision)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000032> "Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0000032> <http://purl.obolibrary.org/obo/caro#core>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000032> "organism subdivision")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000032> <http://purl.obolibrary.org/obo/CARO_0010000>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000040> (acellular anatomical structure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000040> "An anatomical structure that has no cells or cell parts as a part.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000040> "acellular anatomical structure")
-EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000040> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CARO_0000003> ObjectExactCardinality(0 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/CARO_0000013>) ObjectExactCardinality(0 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/CARO_0000014>)))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000040> <http://purl.obolibrary.org/obo/CARO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000040> <http://purl.obolibrary.org/obo/CARO_0001008>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000040> <http://purl.obolibrary.org/obo/CARO_0000042>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000040> <http://purl.obolibrary.org/obo/CARO_0001000>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000040> <http://purl.obolibrary.org/obo/CARO_0010000>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0000042> (extraembryonic structure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000042> "A multicellular anatomical structure that is associated with an embryo and derived from the zygote from which it develops, but which does not contribute to the embryo proper or to structures that are part of the same organism after embryogenesis.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0000042> <http://purl.obolibrary.org/obo/caro#plus>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000042> "extraembryonic structure")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000042> <http://purl.obolibrary.org/obo/CARO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000042> <http://purl.obolibrary.org/obo/CARO_0001008>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000042> <http://purl.obolibrary.org/obo/CARO_0001000>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000042> <http://purl.obolibrary.org/obo/CARO_0010000>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0001000> (multi-cell-part structure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0001000> "A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0001000> <http://purl.obolibrary.org/obo/caro#core>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0001000> "multi-cell-part structure")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0001000> <http://purl.obolibrary.org/obo/CARO_0001008>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0001000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CARO_0000003> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectComplementOf(<http://purl.obolibrary.org/obo/CARO_0000013>)) ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/CARO_0000014>)))
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0001000> <http://purl.obolibrary.org/obo/CARO_0010000>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0001008> (gross anatomical part)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0001008> "Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells. ")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0001008> <http://purl.obolibrary.org/obo/caro#plus>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0001008> "gross anatomical part"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0001008> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000004> <http://purl.obolibrary.org/obo/CARO_0000032> <http://purl.obolibrary.org/obo/CARO_0000040> <http://purl.obolibrary.org/obo/CARO_0000042> <http://purl.obolibrary.org/obo/CARO_0001000> <http://purl.obolibrary.org/obo/CARO_0010000>))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0001008> <http://purl.obolibrary.org/obo/CARO_0000006>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0001008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000012>))
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0001010> (organism)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0001010> "Material anatomical entity that is a member of an individual species or is a viral or viroid particle.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0001010> "organism")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0001010> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0010000> (multicellular anatomical structure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0010000> "An anatomical structure that has more than one cell as a part.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0010000> <http://purl.obolibrary.org/obo/caro#core>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0010000> "multicellular anatomical structure")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0010000> <http://purl.obolibrary.org/obo/CARO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0010000> <http://purl.obolibrary.org/obo/CARO_0001008>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0010000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001993>))
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0010004> (cellular organism)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0010004> "An individual member of a clade of cellular organisms.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0010004> "cellular organism")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0010004> <http://purl.obolibrary.org/obo/CARO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0010004> <http://purl.obolibrary.org/obo/CARO_0001010>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0020000> (disconnected anatomical group)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0020000> "Material anatomical entity consisting of multiple anatomical structures that are not connected to each other.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CARO_0020000> <http://purl.obolibrary.org/obo/caro#core>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0020000> "disconnected anatomical group")
-EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0020000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CARO_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0010001>) ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/CARO_0000003>)))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0020000> <http://purl.obolibrary.org/obo/CARO_0000006>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0020000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0010001>))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0020000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/CARO_0000003>))
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0020003> (cellular anatomical structure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0020003> "An anatomical structure consisting of one or more cells.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CARO_0020003> <https://orcid.org/0000-0002-7073-9172>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CARO_0020003> "2018-09-28T14:20:19Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0020003> "cellular anatomical structure"@en)
-EquivalentClasses(Annotation(<http://purl.obolibrary.org/obo/IAO_0000115> "With a reflexive part_of relation this might safely be defined as 'anatomical structure' that has_part some cell") <http://purl.obolibrary.org/obo/CARO_0020003> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CARO_0000013>)))
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0020003> <http://purl.obolibrary.org/obo/CARO_0000006>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0030000> (biological entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0030000> "Entity that is, is part of, or derived from an organism, virus, or viroid or a collection of them.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0030000> "biological entity")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0030000> <http://purl.obolibrary.org/obo/BFO_0000004>)
-
-# Class: <http://purl.obolibrary.org/obo/CARO_0030002> (expression pattern)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0030002> "The mereological sum of all cells in a single organism in which expression of some specified gene occurs.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0030002> "expression pattern")
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0030002> <http://purl.obolibrary.org/obo/CARO_0020003>)
-SubClassOf(<http://purl.obolibrary.org/obo/CARO_0030002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CARO_0000013>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007001> (anatomical structure)
 
@@ -627,6 +403,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007016> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/FBbt_00100313> (multicellular structure)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-7073-9172") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00100313> "Anatomical structure that has multiple cells as parts.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00100313> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00100313> "2010-11-02T02:25:04Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00100313> "UBERON:0010000")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00100313> "multicellular structure")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100313> <http://purl.obolibrary.org/obo/FBbt_00007001>)
@@ -687,7 +465,6 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0100051> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0100051> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 
-DisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000003> <http://purl.obolibrary.org/obo/CARO_0000004> <http://purl.obolibrary.org/obo/CARO_0020000>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002131>)
 SubObjectPropertyOf(Annotation(<http://purl.obolibrary.org/obo/RO_0002582> "true"^^xsd:boolean) ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002131>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0000057>) <http://purl.obolibrary.org/obo/RO_0000057>)

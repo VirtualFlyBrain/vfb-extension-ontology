@@ -6,6 +6,4 @@ WARN	missing_definition	has_signal_channel	IAO:0000115
 WARN	missing_definition	source_data_link	IAO:0000115	
 WARN	missing_definition	multi channel image	IAO:0000115	
 WARN	missing_definition	template image	IAO:0000115	
-WARN	missing_definition	intersectional expression pattern	IAO:0000115	
 WARN	missing_definition	channel	IAO:0000115	
-INFO	missing_superclass	expression pattern fragment	rdfs:subClassOf	
