@@ -13,15 +13,15 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/</terms:license>"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "18:08:2026 10:17"
+        "val" : "02:10:2026 10:24"
       }, {
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "VFB extension ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-08-18"
+        "val" : "2026-10-02"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/vfbext/releases/2026-08-18/vfbext-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/vfbext/releases/2026-10-02/vfbext-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005",
@@ -33,13 +33,13 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A material anatomical entity that is part of an expression pattern."
+          "val" : "An expression pattern that is some subset of another expression pattern due to additional genetic constraints (e.g. FLP recombination)."
         },
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "dos"
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "pred" : "http://purl.org/dc/terms/date",
           "val" : "2018-03-04T10:55:59Z"
         } ]
       }
@@ -54,10 +54,10 @@
       "meta" : {
         "comments" : [ "A single channel image that is used as a template for image registration." ],
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "dos"
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "pred" : "http://purl.org/dc/terms/date",
           "val" : "2018-05-15T15:53:38Z"
         } ]
       }
@@ -66,11 +66,14 @@
       "lbl" : "intersectional expression pattern",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "An expression pattern that depends upon the combined synthesis of multiple components, which drive expression only when combined within the same cell (e.g. split-GAL4)."
+        },
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "dos"
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "pred" : "http://purl.org/dc/terms/date",
           "val" : "2018-09-26T07:54:17Z"
         } ]
       }
@@ -79,15 +82,20 @@
       "lbl" : "channel",
       "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "lbl" : "part of",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
+      "id" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100",
+      "lbl" : "expression pattern",
+      "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "a core relation that holds between a part and its whole"
+          "val" : "All cells within a single organism in which expression of some genetic entity occurs."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_gp2term", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ]
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2026-09-25T16:04:54Z"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7",
@@ -141,14 +149,14 @@
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.",
+          "val" : "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression. For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain. In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control of UAS enhancer/promoter elements.",
           "xrefs" : [ "PMID:17088209" ]
         },
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "dos"
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "pred" : "http://purl.org/dc/terms/date",
           "val" : "2018-09-26T07:48:55Z"
         } ]
       }
@@ -159,14 +167,14 @@
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements.",
+          "val" : "A relation that applies between a synthetic expression pattern and a transgene that drives it. For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements.",
           "xrefs" : [ "PMID:8223268", "Wikipedia:GAL4/UAS_system" ]
         },
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "dos"
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "pred" : "http://purl.org/dc/terms/date",
           "val" : "2018-09-26T07:49:10Z"
         } ]
       }
@@ -177,22 +185,6 @@
       "propertyType" : "OBJECT"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/valid_for_go_ontology",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/valid_for_gocam",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -226,6 +218,14 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/elements/1.1/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/date",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -269,13 +269,17 @@
       "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002350",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000050"
+      "sub" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0",
       "pred" : "subPropertyOf",
@@ -296,6 +300,9 @@
     "domainRangeAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000009",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100" ]
     } ]
   } ]
 }

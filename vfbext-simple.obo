@@ -1,11 +1,7 @@
 format-version: 1.2
-data-version: vfbext/releases/2026-08-18/vfbext-simple.owl
-date: 18:08:2026 10:17
+data-version: vfbext/releases/2026-10-02/vfbext-simple.owl
+date: 02:10:2026 10:24
 subsetdef: clone ""
-subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
-subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
-subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
-subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: neuron ""
 subsetdef: ns_part ""
 subsetdef: synaptic_neuropil ""
@@ -17,7 +13,7 @@ remark: VFB extension ontology
 ontology: vfbext/vfbext-simple
 property_value: dc:description "An ontology of miscellaneous terms for data annotation in VFB." xsd:string
 property_value: dc:title "VFB Extension Ontology" xsd:string
-property_value: owl:versionInfo "2026-08-18" xsd:string
+property_value: owl:versionInfo "2026-10-02" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/</terms:license>" xsd:string
 
 [Term]
@@ -27,9 +23,10 @@ name: cell cluster
 [Term]
 id: VFBext:0000004
 name: expression pattern fragment
-def: "A material anatomical entity that is part of an expression pattern." []
-created_by: dos
-creation_date: 2018-03-04T10:55:59Z
+def: "An expression pattern that is some subset of another expression pattern due to additional genetic constraints (e.g. FLP recombination)." []
+is_a: VFBext:0000100 ! expression pattern
+property_value: terms:contributor https://orcid.org/0000-0002-7073-9172
+property_value: terms:date "2018-03-04T10:55:59Z" xsd:dateTime
 
 [Term]
 id: VFBext:0000006
@@ -40,28 +37,27 @@ id: VFBext:0000007
 name: template image
 comment: A single channel image that is used as a template for image registration.
 is_a: VFBext:0000014 ! channel
-created_by: dos
-creation_date: 2018-05-15T15:53:38Z
+property_value: terms:contributor https://orcid.org/0000-0002-7073-9172
+property_value: terms:date "2018-05-15T15:53:38Z" xsd:dateTime
 
 [Term]
 id: VFBext:0000010
 name: intersectional expression pattern
-created_by: dos
-creation_date: 2018-09-26T07:54:17Z
+def: "An expression pattern that depends upon the combined synthesis of multiple components, which drive expression only when combined within the same cell (e.g. split-GAL4)." []
+is_a: VFBext:0000100 ! expression pattern
+property_value: terms:contributor https://orcid.org/0000-0002-7073-9172
+property_value: terms:date "2018-09-26T07:54:17Z" xsd:dateTime
 
 [Term]
 id: VFBext:0000014
 name: channel
 
-[Typedef]
-id: BFO:0000050
-name: part of
-def: "a core relation that holds between a part and its whole" []
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
-subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-is_transitive: true
+[Term]
+id: VFBext:0000100
+name: expression pattern
+def: "All cells within a single organism in which expression of some genetic entity occurs." []
+property_value: terms:contributor https://orcid.org/0000-0002-1373-1705
+property_value: terms:date "2026-09-25T16:04:54Z" xsd:dateTime
 
 [Typedef]
 id: RO:0002292
@@ -72,7 +68,6 @@ def: "y expresses x if and only if there is a gene expression process (GO:001046
 id: RO:0002350
 name: member of
 def: "is member of is a mereological relation between a item and a collection." []
-is_a: BFO:0000050 ! part of
 
 [Typedef]
 id: VFBext:0000001
@@ -91,18 +86,19 @@ is_a: VFBext:0000001 ! has_channel
 [Typedef]
 id: VFBext:0000008
 name: has hemidriver
-def: "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements." [PMID:17088209]
+def: "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression. For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain. In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control of UAS enhancer/promoter elements." [PMID:17088209]
+property_value: terms:contributor https://orcid.org/0000-0002-7073-9172
+property_value: terms:date "2018-09-26T07:48:55Z" xsd:dateTime
 domain: VFBext:0000010 ! intersectional expression pattern
-created_by: dos
-creation_date: 2018-09-26T07:48:55Z
 
 [Typedef]
 id: VFBext:0000009
 name: has driver
-def: "A relation that applies between a synthetic expression pattern and a transgene that drives it.  For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements." [PMID:8223268, Wikipedia:GAL4/UAS_system]
+def: "A relation that applies between a synthetic expression pattern and a transgene that drives it. For example, the GAL4 UAS system uses the yeast transcription factor GAL4 transgenes with specific expression patterns are used to drive expression of transgenes under the control of UAS promoter elements." [PMID:8223268, Wikipedia:GAL4/UAS_system]
+property_value: terms:contributor https://orcid.org/0000-0002-7073-9172
+property_value: terms:date "2018-09-26T07:49:10Z" xsd:dateTime
+domain: VFBext:0000100 ! expression pattern
 is_a: RO:0002292 ! expresses
-created_by: dos
-creation_date: 2018-09-26T07:49:10Z
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7
